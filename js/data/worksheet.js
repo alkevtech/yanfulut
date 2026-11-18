@@ -544,7 +544,7 @@ export const UNITS = [
       },
       {
         id: 'u6-nese',
-        title: 'Neşeye Övgü · tam hali',
+        title: 'Neşeye Övgü (Sol majör)',
         focus: 'Beethoven, 9. Senfoni (1824) · Sol majör, orta bölümüyle',
         time: 4,
         bpm: 84,
@@ -607,6 +607,7 @@ export const UNITS = [
       { sym: "Fa'", title: 'İnce Fa', text: 'Pes Fa parmaklarıyla, hızlı ve ince bir hava akımıyla bir oktav yukarı üfle.' },
       { sym: "La'", title: 'İnce La', text: 'La parmaklarıyla bir oktav yukarı. Dudak açıklığını küçült, havayı yukarı yönlendir.' },
       { sym: 'Sol♯', title: 'Sol diyez', text: 'Sol parmaklarına ek olarak sol serçe parmağınla Sol♯ anahtarına bas. La minörde sık gelir.' },
+      { sym: '𝄾', title: 'Sekizlik sus', text: 'Yarım vuruş sessizlik: sekizlik notanın susu. Caddelerde Rüzgar\'da ilk kez geçer; kısa bir nefes anı.' },
       { sym: '5/8', title: 'Beş sekizlik (aksak) ölçü', text: 'Her ölçüde 5 sekizlik: "bir-iki, bir-iki-üç" diye ikili ve üçlü gruplar halinde say. Metronom her sekizlikte vurur, ölçü başında vurgulu.' },
     ],
     exercises: [
@@ -766,7 +767,7 @@ export const UNITS = [
       },
       {
         id: 'nese',
-        title: 'Neşeye Övgü',
+        title: 'Neşeye Övgü (Fa majör)',
         focus: 'Kolay düzenleme · Fa majör, noktalı dörtlük ve sekizlik',
         credit: 'Ludwig van Beethoven, 9. Senfoni (1824). Üçüncü satırın sonunda pes Do yerine ince Do çalınır.',
         time: 4,
