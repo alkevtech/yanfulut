@@ -4,7 +4,7 @@
 // Sus işaretleri sayılır ama puanlanmaz; korona (𝄐) notası yazılanın iki katı tutulur; bağlı notalar tek nota sayılır.
 import { noteSymbol } from './art.js';
 import { longName, midiOf, shortName, titleName, staffStep, parseNote } from './data/notes.js';
-import { prepareExercise } from './data/worksheet.js';
+import { KEY_NAMES, KEY_SIGNATURES, keyAlter, prepareExercise } from './data/worksheet.js';
 import { PitchListener, playNote, playChime, playClick, matchesTarget, HOLD_TOLERANCE, TOLERANCE, learnTuning, tuningOffset, micErrorMessage, SILENT_MIC_MESSAGE } from './audio.js';
 import { fingeringSvg, fingeringToggle, h, heardName, wrongNoteText } from './checkpoints.js';
 import { commandNotes, goNext, navButtons, takeHandoff, tuningNote } from './drill.js';
@@ -40,15 +40,17 @@ function timeSig(g, x, sig) {
 }
 
 /** Nota başı, sapı, ek çizgileri, bemol/diyez işareti ve uzatma noktası */
-function noteGlyph(g, note, beats, cx) {
+function noteGlyph(g, note, beats, cx, sign) {
   const cy = g.yOf(note);
   const step = staffStep(note);
   let out = '';
   const ledger = (k) => `<line x1="${cx - g.sp * 1.05}" y1="${g.bottom - (k * g.sp) / 2}" x2="${cx + g.sp * 1.05}" y2="${g.bottom - (k * g.sp) / 2}" class="ink thin"/>`;
   for (let k = -2; k >= step; k -= 2) out += ledger(k);
   for (let k = 10; k <= step; k += 2) out += ledger(k);
+  // sign: donanım ve ölçü içi değişimlere göre yazılacak işaret (♯ ♭ ♮ ya da yok); verilmezse notanın kendi işareti
   const { alter } = parseNote(note);
-  if (alter) out += `<text x="${cx - g.sp * 1.5}" y="${cy + g.sp * 0.7}" font-size="${g.sp * 2.6}" text-anchor="middle" class="clef ink-fill">${alter > 0 ? '♯' : '♭'}</text>`;
+  const mark = sign === undefined ? (alter > 0 ? '♯' : alter < 0 ? '♭' : '') : sign;
+  if (mark) out += `<text x="${cx - g.sp * 1.5}" y="${cy + g.sp * 0.7}" font-size="${g.sp * 2.6}" text-anchor="middle" class="clef ink-fill">${mark}</text>`;
   out += noteSymbol(cx, cy, g.sp, valueOf(beats)[1], step >= 4);
   if (beats === 3 || beats === 1.5) {
     // Nokta, çizgi üzerindeki notada bir üst aralığa kayar
@@ -80,6 +82,21 @@ function fermataGlyph(g, cx, y) {
   return `<path d="M${cx - r} ${y} A${r} ${r} 0 0 1 ${cx + r} ${y}" class="ink" fill="none"/><circle cx="${cx}" cy="${y - g.sp * 0.25}" r="${g.sp * 0.17}" class="fill-ink"/>`;
 }
 
+/** Donanım: sol anahtarında diyezler Fa Do Sol Re La Mi Si, bemoller Si Mi La Re Sol Do Fa sırasıyla */
+const SHARP_SPOTS = ['F5', 'C5', 'G5', 'D5', 'A4', 'E5', 'B4'];
+const FLAT_SPOTS = ['B4', 'E5', 'A4', 'D5', 'G4', 'C5', 'F4'];
+function keySigSvg(g, x, key) {
+  const n = KEY_SIGNATURES[key] || 0;
+  const spots = n > 0 ? SHARP_SPOTS.slice(0, n) : FLAT_SPOTS.slice(0, -n);
+  return spots.map((id, i) => `<text x="${x + i * 11}" y="${g.yOf(id) + g.sp * 0.7}" font-size="${g.sp * 2.4}" text-anchor="middle" class="clef ink-fill">${n > 0 ? '♯' : '♭'}</text>`).join('');
+}
+const keyAccText = (key) => {
+  const n = KEY_SIGNATURES[key] || 0;
+  const names = { F: 'Fa', C: 'Do', G: 'Sol', D: 'Re', A: 'La', E: 'Mi', B: 'Si' };
+  return (n > 0 ? ['F', 'C', 'G', 'D', 'A', 'E', 'B'].slice(0, n).map((l) => `${names[l]}♯`) : ['B', 'E', 'A', 'D', 'G', 'C', 'F'].slice(0, -n).map((l) => `${names[l]}♭`)).join(', ');
+};
+const keySigWidth = (key) => (Math.abs(KEY_SIGNATURES[key] || 0) ? Math.abs(KEY_SIGNATURES[key]) * 11 + 8 : 0);
+
 // ------------------------------------------------------------------ satır portesi
 const SP = 16;
 const TOP = 56;
@@ -90,23 +107,42 @@ const MIN_W = 44;
  * Bir satırı çizer. items: parseRow çıktısı. first: egzersizin ilk satırı mı (ölçü işareti çizilir)
  * startPos: satır başında ölçü içindeki vuruş konumu. Dönüş: {svg, geo: [{x, w, cx}], endPos}
  */
-function rowSvg(items, { time, unit = 1, sig, first, startPos, rowIndex, baseIndex }) {
+function rowSvg(items, { time, unit = 1, sig, first, startPos, rowIndex, baseIndex, key }) {
   const g = geometry(SP, TOP);
-  const nameY = g.bottom + 30;
-  const barY = g.bottom + 37;
-  const numY = g.bottom + 68;
+  // Dinamik işareti varsa porte altında onlara bir şerit açılır
+  const band = items.some((it) => it.dyn) ? 18 : 0;
+  const dynY = g.bottom + 30;
+  const nameY = g.bottom + 30 + band;
+  const barY = g.bottom + 37 + band;
+  const numY = g.bottom + 68 + band;
   const height = numY + 10;
-  let x = 66 + (first ? 34 : 0);
+  const kw = keySigWidth(key);
+  let x = 66 + kw + (first ? 34 : 0);
+  // Ölçü içi değişim işaretleri: donanımdan farklıysa işaret konur, ölçü boyunca geçerli kalır
+  let measureAcc = {};
+  const signOf = (note) => {
+    const { letter, alter, octave } = parseNote(note);
+    const k = `${letter}${octave}`;
+    const expected = k in measureAcc ? measureAcc[k] : keyAlter(key, letter);
+    measureAcc[k] = alter;
+    if (alter === expected) return '';
+    return alter > 0 ? '♯' : alter < 0 ? '♭' : '♮';
+  };
+  const prevTied = (k) => k > 0 && items[k - 1].tie && items[k - 1].note === items[k].note;
   let body = '';
   const geo = [];
   let pos = startPos;
   items.forEach((it, k) => {
-    const w = Math.max(MIN_W, it.beats * BW);
-    const cx = it.rest && (it.beats === time || it.beats === 4) && pos === 0 ? x + w / 2 : x + 16;
+    // İşaretli notaya (♯ ♭ ♮) yer açılır: işaret önceki notaya yapışık görünmesin
+    const sign = it.rest || prevTied(k) ? '' : signOf(it.note);
+    const pad = sign ? 14 : 0;
+    const w = Math.max(MIN_W, it.beats * BW) + pad;
+    const cx = it.rest && (it.beats === time || it.beats === 4) && pos === 0 ? x + w / 2 : x + 16 + pad;
     geo.push({ x, w, cx });
     let mark = '';
     if (it.rest) mark = restGlyph(g, it.beats, cx, it.beats === time && pos === 0);
-    else mark = noteGlyph(g, it.note, it.beats, cx);
+    else mark = noteGlyph(g, it.note, it.beats, cx, sign);
+    if (it.dyn) mark += `<text x="${cx - 6}" y="${dynY}" class="dyn-mark">${it.dyn}</text>`;
     if (it.fermata) {
       let y = g.top - g.sp * 0.6;
       if (!it.rest) {
@@ -122,7 +158,7 @@ function rowSvg(items, { time, unit = 1, sig, first, startPos, rowIndex, baseInd
     // 5/8 gibi ölçülerde vuruş birimi sekizliktir (unit 0,5)
     for (let t = Math.ceil(pos / unit - 1e-9) * unit; t < pos + it.beats - 1e-9; t += unit) {
       const n = Math.round((t % time) / unit) + 1;
-      nums += `<text x="${x + 16 + ((t - pos) / it.beats) * (w - 16)}" y="${numY}" text-anchor="middle" class="beat-num ${n === 1 ? 'strong' : ''}">${n}</text>`;
+      nums += `<text x="${x + 16 + pad + ((t - pos) / it.beats) * (w - 16 - pad)}" y="${numY}" text-anchor="middle" class="beat-num ${n === 1 ? 'strong' : ''}">${n}</text>`;
     }
     const idx = baseIndex + k;
     body += `<g class="drill-note ws-item ${it.rest ? 'rest' : ''}" data-i="${idx}">
@@ -136,7 +172,9 @@ function rowSvg(items, { time, unit = 1, sig, first, startPos, rowIndex, baseInd
     </g>`;
     pos = (pos + it.beats) % time;
     x += w;
+    if (it.breath) body += `<text x="${x - 6}" y="${g.top - 4}" text-anchor="middle" class="breath-mark">,</text>`;
     if (it.bar) {
+      measureAcc = {};
       const bx = x + 4;
       if (it.bar === 'final') body += `<path d="M${bx} ${g.top} V${g.bottom}" class="ink thin"/><rect x="${bx + 4}" y="${g.top}" width="4.5" height="${g.sp * 4}" class="fill-ink"/>`;
       else if (it.bar === 'double') body += `<path d="M${bx} ${g.top} V${g.bottom} M${bx + 5} ${g.top} V${g.bottom}" class="ink thin"/>`;
@@ -155,9 +193,31 @@ function rowSvg(items, { time, unit = 1, sig, first, startPos, rowIndex, baseInd
     const c = down ? -g.sp * 0.9 : g.sp * 0.9;
     body += `<path d="M${a} ${y} Q${(a + b) / 2} ${y + c} ${b} ${y}" class="ink tie" fill="none"/>`;
   });
+  // Legato yayları: ( ile ) arasındaki notaları üstten kucaklar (yukarı saplar ve bayraklar dahil)
+  let open = null;
+  const topStep = (x2) => {
+    const st = staffStep(x2.note);
+    return st < 4 && x2.beats < 4 ? st + 7 : st + 1; // yukarı sap yaklaşık 3,5 aralık
+  };
+  items.forEach((it, k) => {
+    if (it.slurStart) open = k;
+    if (!it.slurEnd || open == null) return;
+    const span = items.slice(open, k + 1).filter((x2) => !x2.rest);
+    const first = span[0];
+    const last = span[span.length - 1];
+    const yAt = (st) => g.bottom - (st * g.sp) / 2;
+    const y0 = yAt(staffStep(first.note) + 1.6);
+    const y1 = yAt(staffStep(last.note) + 1.6);
+    const peak = Math.max(...span.map(topStep), staffStep(first.note) + 2, staffStep(last.note) + 2);
+    const yE = yAt(peak + 2.4);
+    const a = geo[open].cx + 2;
+    const b2 = geo[k].cx + 2;
+    body += `<path d="M${a} ${y0} C${a + (b2 - a) * 0.15} ${yE} ${b2 - (b2 - a) * 0.15} ${yE} ${b2} ${y1}" class="ink slur" fill="none"/>`;
+    open = null;
+  });
   const width = x + 14;
-  let head = staffLines(g, 8, width - 6) + clef(g, 10);
-  if (first) head += timeSig(g, 80, sig || `${time}/4`);
+  let head = staffLines(g, 8, width - 6) + clef(g, 10) + keySigSvg(g, 58, key);
+  if (first) head += timeSig(g, 80 + kw, sig || `${time}/4`);
   head += `<line class="playhead" x1="0" y1="${g.top - g.sp * 2.4}" x2="0" y2="${numY + 4}" hidden/>`;
   return {
     svg: `<svg class="ws-row-svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="${rowIndex + 1}. satır">${head}${body}</svg>`,
@@ -236,7 +296,7 @@ export class SheetGame {
           <div>
             <div class="cp-tag">Egzersiz Yap</div>
             <h2>${ex.title}</h2>
-            <p class="muted">${ex.focus} · ${ex.sig || `${ex.time}/4`} ölçü · yazılı tempo ${ex.bpm} vuruş/dakika · ${this.scored.length} nota</p>
+            <p class="muted">${ex.focus} · ${ex.sig || `${ex.time}/4`} ölçü${ex.key && KEY_SIGNATURES[ex.key] ? ` · donanım: ${KEY_NAMES[ex.key]} (${keyAccText(ex.key)})` : ''} · yazılı tempo ${ex.bpm} vuruş/dakika · ${this.scored.length} nota</p>
             ${ex.credit ? `<p class="muted small-print ws-credit">${ex.credit}</p>` : ''}
           </div>
           <div class="stars" aria-label="Yıldızlar"></div>
@@ -307,7 +367,7 @@ export class SheetGame {
     let base = 0;
     this.geo = [];
     this.rowEls = ex.parsed.map((row, r) => {
-      const { svg, geo, endPos } = rowSvg(row, { time: ex.time, unit: ex.beatUnit, sig: ex.sig, first: r === 0, startPos: pos, rowIndex: r, baseIndex: base });
+      const { svg, geo, endPos } = rowSvg(row, { time: ex.time, unit: ex.beatUnit, sig: ex.sig, first: r === 0, startPos: pos, rowIndex: r, baseIndex: base, key: ex.key });
       pos = endPos;
       base += row.length;
       this.geo.push(...geo);
