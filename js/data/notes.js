@@ -64,6 +64,10 @@ const TIPS = {
   B5: 'Si ile aynı parmaklar; hızlı ve ince bir hava akımı.',
   C6: 'İnce Do ile aynı parmaklar; bir oktav yukarı üfle.',
   C4: 'Flütün en pes notası: tüm delikler kapalı, serçe parmak ayaktaki Do anahtarında.',
+  'C#5': 'Neredeyse bütün delikler açık: yalnızca sağ serçe parmak Mi♭ anahtarında. Havayı yumuşak ver; ses kolayca tizleşir.',
+  Eb4: 'Pes Re parmaklarına sağ serçe parmakla Mi♭ anahtarını ekle.',
+  Eb5: 'İnce Re parmakları (sol işaret parmağı açık) ve sağ serçe parmak Mi♭ anahtarında.',
+  Bb5: 'Si bemol parmaklarıyla bir oktav yukarı: dudak açıklığı küçük, hava hızlı.',
   D4: 'Bütün delikleri kapat, sağ serçe parmak havada kalsın.',
 };
 

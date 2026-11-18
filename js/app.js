@@ -383,7 +383,8 @@ function showWorksheetList() {
         <ul class="ws-concepts">${u.concepts.map((c) => `<li><span class="ws-sym">${c.sym}</span><span><b>${c.title}:</b> ${c.text}</span></li>`).join('')}</ul>
         <div class="drill-cards">${u.exercises.map((e) => {
           const stars = progress.songStars(`ws-${e.id}`);
-          const notes = [...new Set(e.rows.join(' ').split(/\s+/).map((t) => t.split(':')[0].replace(/[!~]/g, '')).filter((t) => /^[A-G]/.test(t)))]
+          // Legato yayı "(" ")" ve dinamik işaretleri de olabilir: yalnızca nota adını al
+          const notes = [...new Set(e.rows.join(' ').split(/\s+/).map((t) => (/^\(?([A-G][#b]?\d)/.exec(t) || [])[1]).filter(Boolean))]
             .sort((a, b) => midiOf(a) - midiOf(b)).map(shortName).join(' · ');
           return `<a class="drill-card" href="#/egzersiz/${e.id}">
             <span class="node-kind">${e.sig || `${e.time}/4`} · ${e.rows.length} satır</span>

@@ -56,7 +56,7 @@ bağ, 2/4, tam ölçü sus) ve Mi telinde parmaklar (Fa♯, Sol♯, La; sekizlik
 ezgiler: Saint Margarita Ninnisi, Küçük Hans, Ay Işığında, Zil Sesleri, Londra Köprüsü, Küçük Ördekler. Kemanda büyük flüt resmi
 yerine parmak yeri şeması görünür; aynı nota tekrarında "yayı yeniden başlat" denir.
 
-**Flüt**: 7 ünitede toplam 61 egzersiz. Kağıttaki egzersizlerin ardından her ünitede aynı notalar ve ritimlerle ek alıştırmalar
+**Flüt**: kağıttaki 7 ünite (61 egzersiz) ve ek içerikle toplam 10 ünite. Kağıttaki egzersizlerin ardından her ünitede aynı notalar ve ritimlerle ek alıştırmalar
 (basamaklar, atlamalar, 3/4 vals, sus ile başlayan ölçüler, ölçüyü aşan bağlar, Si/Si bemol ayrımı, Fa majör dizisi) ve
 telif süresi dolmuş, bilindik ezgiler var: Sıcak Çörekler, Ay Işığında (Au clair de la lune), Küçük Yıldız, Küçük Hans
 (Hänschen klein), Zil Sesleri (Jingle Bells nakaratı), Küçük Kuzu ve Neşeye Övgü (Beethoven).
@@ -69,6 +69,17 @@ doğrulanamayan nakarat eklenmedi. Başka türküler, notası (fotoğraf ya da d
 **Ünite 8** ince Fa, ince La ve Sol diyezi tanıtır; 5/8 aksak ölçü (`time: 2.5, sig: '5/8', beatUnit: 0.5`: metronom ve sayım
 sekizlik vurur). Öğretmenin gönderdiği notalardan: Caddelerde Rüzgar, Fikrimin İnce Gülü (giriş ve ilk dize), Gönül Sayfam ve
 Kara Tren; tekrarlar ve 1./2. sonlar satırlara açıldı, üçlemeler ve onaltılıklar sekizliğe sadeleştirildi.
+
+**Ek içerik** (`js/data/worksheet-extra.js`, uygulamaya özgü; toplam 10 ünite + Parçalar, 105 egzersiz):
+- Nefes işareti (Ünite 2), dinamik `p mf f cresc. dim.` (Ünite 3), legato (Ünite 4), natürel ♮ (Ünite 5), donanım (Ünite 6),
+  6/8 ölçü (Ünite 7). Her üniteye uzun ses, gam, arpej ve legato alıştırmaları; Ünite 7'ye tam oktav Sol majör, arpej, legato
+  oktavlar ve Kayıkçı (Row, Row, Row Your Boat, 6/8); Ünite 8'e Fa majör, La minör (doğal ve armonik) ve Greensleeves.
+- **Ünite 9**: ince Do diyez, pes ve ince Mi bemol; Re majör ve Si bemol majör dizileri, Re majör arpeji, kromatik adımlar,
+  İyi ki Doğdun (Re majör). **Ünite 10**: pes Do, ince Si bemol, ince Si, tiz Do; iki oktav Do majör dizi ve arpej, Fa majör
+  ince Si bemole kadar, Küçük Yıldız iki oktav.
+- Yazım: `(G4 A4 B4)` legato yayı, `p`/`mf`/`f`/`cresc.`/`dim.` sonraki notanın altına, `,` nefes işareti, `key: 'G'` donanım
+  (porte başında ♯/♭; ölçü içi değişimler kurala göre: işaret ölçü boyunca geçerli, gerekince ♮). Sol majör ve Fa majör ezgilere
+  donanım eklendi. Puanlamada legato bağlı geçiş olarak kabul edilir; dinamikler gösterilir, puanlanmaz.
 
 **Parçalar** bölümünde "Bana Bir Masal Anlat Baba" (Söz: Yavuz Turgul – Cengiz Onural, Müzik: Cengiz Onural) dört notaya
 (La, Si, İnce Do, İnce Re) uyarlanmış kolay düzenlemesiyle bulunur: sekizlik, noktalı dörtlük ve sekizlik sus içerir.
@@ -188,7 +199,7 @@ js/dots.js            Nota Noktaları oyunu
 js/drill.js           Antrenman: nota + süre çalışması (kendi hızımda / tempolu)
 js/data/drills.js     Flüt antrenmanları (keman: js/violin/drills.js)
 js/scoring.js         Ortak puanlama: tam süre toleransı, dil vurma (nota başlangıcı) algılama
-js/sheet.js           Egzersiz Yap: egzersizler satır satır (sus, korona, bağ, 2/4-3/4-4/4)
+js/sheet.js           Egzersiz Yap: egzersizler satır satır (sus, korona, bağ, legato, dinamik, nefes, donanım; 2/4-3/4-4/4-5/8-6/8)
 js/metronome.js       Metronom: zamanlanmış vuruşlar, çalarken tıkırtı, tempo düğmeleri
 js/data/worksheet.js  Flüt çalışma kağıdı: Ünite 1–5 egzersizleri ve yeni notalar
 js/data/shapes.js     Kısa şarkıların resimleri

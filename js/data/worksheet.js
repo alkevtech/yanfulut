@@ -13,7 +13,9 @@
 // Her ünite yeni notalarını "newNotes" ile tanıtır; egzersizler yalnızca o üniteye kadar tanıtılan
 // notaları kullanır (tools/check-course.mjs denetler).
 
-export const SOURCE = 'Learn As You Play Flute çalışma kağıdı, Ünite 1–5; ek alıştırmalar, Ünite 6–7 ve geleneksel ezgiler uygulamaya özgüdür';
+import { KEY_OF, NEW_UNITS, UNIT_ADDITIONS } from './worksheet-extra.js';
+
+export const SOURCE = 'Learn As You Play Flute çalışma kağıdı, Ünite 1–5; ek alıştırmalar (nefes, dinamik, legato, gam ve arpejler), Ünite 6–10 ve geleneksel ezgiler uygulamaya özgüdür';
 
 export const UNITS = [
   {
@@ -784,19 +786,55 @@ export const UNITS = [
 ];
 
 /** Satır dizgesini öğelere çevirir: {rest, note, beats, fermata, tie, bar} — bar: öğeden sonra gelen çizgi */
+// Ek içerik (worksheet-extra.js): ünitelere kavram ve alıştırma, Parçalar'dan önce yeni üniteler, donanımlar
+for (const u of UNITS) {
+  const add = UNIT_ADDITIONS[u.id];
+  if (add) {
+    u.concepts = [...(u.concepts || []), ...add.concepts];
+    u.exercises.push(...add.exercises);
+  }
+  for (const e of u.exercises) if (KEY_OF[e.id]) e.key = KEY_OF[e.id];
+}
+UNITS.splice(UNITS.findIndex((u) => u.id === 'parcalar'), 0, ...NEW_UNITS);
+
 export function parseRow(str) {
   const items = [];
+  let dyn = null;
   for (const tok of str.trim().split(/\s+/)) {
     if (tok === '|' || tok === '||') {
       if (items.length) items[items.length - 1].bar = tok === '||' ? 'double' : 'single';
       continue;
     }
-    const m = /^([A-G][#b]?\d|R)(?::([\d.]+))?(!?)(~?)$/.exec(tok);
+    // Dinamik (sonraki notanın altına yazılır) ve nefes işareti (önceki notanın ardından)
+    if (/^(pp|p|mp|mf|f|ff|cresc\.|dim\.)$/.test(tok)) {
+      dyn = tok;
+      continue;
+    }
+    if (tok === ',') {
+      if (items.length) items[items.length - 1].breath = true;
+      continue;
+    }
+    // ( legato başlangıcı, ) legato sonu: aradaki notalar dil vurmadan bağlı çalınır
+    const m = /^(\(?)([A-G][#b]?\d|R)(?::([\d.]+))?(!?)(~?)(\)?)$/.exec(tok);
     if (!m) throw new Error(`Geçersiz egzersiz öğesi: ${tok}`);
-    const [, name, beats, fermata, tie] = m;
-    items.push({ rest: name === 'R', note: name === 'R' ? null : name, beats: beats ? Number(beats) : 1, fermata: !!fermata, tie: !!tie, bar: null });
+    const [, open, name, beats, fermata, tie, close] = m;
+    items.push({ rest: name === 'R', note: name === 'R' ? null : name, beats: beats ? Number(beats) : 1, fermata: !!fermata, tie: !!tie, bar: null, slurStart: !!open, slurEnd: !!close, dyn });
+    dyn = null;
   }
   return items;
+}
+
+/** Donanım (ton işareti): diyez (+) ya da bemol (−) sayısı */
+export const KEY_SIGNATURES = { C: 0, Am: 0, G: 1, Em: 1, D: 2, Bm: 2, A: 3, F: -1, Dm: -1, Bb: -2, Gm: -2, Eb: -3, Cm: -3 };
+export const KEY_NAMES = { C: 'Do majör', Am: 'La minör', G: 'Sol majör', Em: 'Mi minör', D: 'Re majör', Bm: 'Si minör', A: 'La majör', F: 'Fa majör', Dm: 'Re minör', Bb: 'Si bemol majör', Gm: 'Sol minör', Eb: 'Mi bemol majör', Cm: 'Do minör' };
+const SHARP_ORDER = ['F', 'C', 'G', 'D', 'A', 'E', 'B'];
+const FLAT_ORDER = ['B', 'E', 'A', 'D', 'G', 'C', 'F'];
+/** Donanımdaki bir harfin değişimi: +1 diyez, −1 bemol, 0 doğal */
+export function keyAlter(key, letter) {
+  const n = KEY_SIGNATURES[key] || 0;
+  if (n > 0) return SHARP_ORDER.slice(0, n).includes(letter) ? 1 : 0;
+  if (n < 0) return FLAT_ORDER.slice(0, -n).includes(letter) ? -1 : 0;
+  return 0;
 }
 
 /** Bir egzersizi satırlarıyla birlikte hazırlar */
