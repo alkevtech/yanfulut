@@ -131,7 +131,11 @@ export class DotsGame {
       const key = e.target.closest('.pad-key');
       if (!key || this.index >= this.song.notes.length) return;
       e.preventDefault();
-      key.setPointerCapture?.(e.pointerId);
+      try {
+        key.setPointerCapture?.(e.pointerId);
+      } catch {
+        /* yapay olaylarda etkin işaretçi yok */
+      }
       this.releasePad(false);
       key.classList.add('down');
       this.padSound = playNote(key.dataset.note, 12);

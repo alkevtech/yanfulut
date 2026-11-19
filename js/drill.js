@@ -287,7 +287,11 @@ export class DrillGame {
       const key = e.target.closest('.pad-key');
       if (!key) return;
       e.preventDefault();
-      key.setPointerCapture?.(e.pointerId);
+      try {
+        key.setPointerCapture?.(e.pointerId);
+      } catch {
+        /* yapay olaylarda etkin işaretçi yok */
+      }
       release();
       key.classList.add('down');
       this.pressed = midiOf(key.dataset.note);
