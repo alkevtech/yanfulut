@@ -259,6 +259,7 @@ export class SheetGame {
 
   destroy() {
     this.stop();
+    this.stageWatch?.disconnect();
   }
 
   /** Öğeleri düzleştirir ve bağlı notaları tek olaya toplar */
@@ -336,6 +337,7 @@ export class SheetGame {
           <span class="ws-live-value"></span>
           <span class="ws-live-fb"></span>
           <span class="ws-live-heard muted"></span>
+          <div class="ws-live-flute"></div>
         </div>
         <div class="ws-rows"></div>
         <div class="touch-pad" hidden>
@@ -361,6 +363,17 @@ export class SheetGame {
     live('.ws-live-value', '.value-text');
     live('.ws-live-fb', '.cp-feedback');
     live('.ws-live-heard', '.mic-status');
+    // Parmak resmi de şeritte: satırlar ekranın üstüne kayınca flüt tutuşu hep görünür kalsın
+    const flute = $('.ws-flute');
+    const liveFlute = $('.ws-live-flute');
+    const syncFlute = () => {
+      liveFlute.innerHTML = flute.innerHTML;
+      liveFlute.classList.toggle('dim', flute.classList.contains('dim'));
+    };
+    new MutationObserver(syncFlute).observe(flute, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
+    // Çalmıyorken de: büyük hedef kartları ekrandan çıkınca şerit görünür
+    this.stageWatch = new IntersectionObserver(([e]) => this.el.classList.toggle('stage-off', !e.isIntersecting), { threshold: 0.05 });
+    this.stageWatch.observe($('.ws-stage'));
 
     const rowsEl = $('.ws-rows');
     let pos = ex.pickup ? ex.time - ex.pickup : 0;
@@ -419,7 +432,11 @@ export class SheetGame {
       const key = e.target.closest('.pad-key');
       if (!key) return;
       e.preventDefault();
-      key.setPointerCapture?.(e.pointerId);
+      try {
+        key.setPointerCapture?.(e.pointerId);
+      } catch {
+        /* yapay olaylarda etkin işaretçi yok */
+      }
       release();
       key.classList.add('down');
       this.pressed = midiOf(key.dataset.note);

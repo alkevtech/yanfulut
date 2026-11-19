@@ -616,7 +616,14 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
   display: none; position: sticky; top: var(--live-top, 0px); z-index: 6; align-items: baseline; gap: 6px 14px; flex-wrap: wrap;
   margin-top: 14px; padding: 8px 14px; background: var(--paper); border: 2.5px solid var(--ink); border-radius: 14px; box-shadow: var(--shadow);
 }
-.ws.running .ws-live { display: flex; }
+.ws.running .ws-live, .ws.stage-off .ws-live { display: flex; }
+/* Şeritteki flüt tutuşu: satırlar kayarken de parmaklar görünür */
+.ws-live-flute { flex-basis: 100%; overflow: hidden; }
+.ws-live-flute:empty { display: none; }
+.ws-live-flute .mini-flute { display: block; width: 112%; max-width: none; margin: -3% 0 -2.5% -12%; }
+.ws-live-flute.dim .mini-flute { opacity: 0.55; }
+.ws-live-flute .ws-flute-cap { font-size: 0.9rem; }
+.ws-live-flute .mini-fingerboard { display: block; height: 120px; width: auto; margin: 0 auto; }
 .ws-live-count:not(:empty) { font-size: 1.6rem; font-weight: 700; color: var(--coral); }
 .ws-live-name { font-size: 1.5rem; }
 .ws-live-value { font-weight: 600; }
@@ -702,6 +709,8 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
   .ws-target .value-line { font-size: 1rem; }
   .ws-target .beat-dots span { width: 22px; height: 22px; }
   .ws-target .mic-status { font-size: 0.8rem; }
+  /* Şeritteki flüt de dar ekranda yalnızca parmak bölümüyle, büyük */
+  .ws-live-flute .mini-flute { width: 160%; margin: -6% 0 -4% -55%; }
   /* Dar ekranda flütün yalnızca parmak bölümü gösterilir (baş kısmı kırpılır), resim büyür */
   .ws-flute .mini-flute { width: 165%; margin: -6% 0 -4% -57%; }
 }
