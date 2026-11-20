@@ -6,7 +6,7 @@
 import { noteSymbol } from './art.js';
 import { longName, midiOf, shortName, titleName, staffStep, parseNote } from './data/notes.js';
 import { PitchListener, playNote, playChime, playClick, matchesTarget, HOLD_TOLERANCE, TOLERANCE, learnTuning, tuningOffset, micErrorMessage, SILENT_MIC_MESSAGE } from './audio.js';
-import { fingeringSvg, fingeringToggle, noteNamesToggle, heardName, staffSvg, h, wrongNoteText } from './checkpoints.js';
+import { fingeringSvg, fingeringToggle, noteNamesShown, noteNamesToggle, heardName, staffSvg, h, wrongNoteText } from './checkpoints.js';
 import { instrument } from './instrument.js';
 import { progress } from './progress.js';
 import { CommandNote, OnsetDetector, TempoFollower, beatsPlayed, holdNeedMs, judgeNote, latencyOf, valueOf } from './scoring.js';
@@ -262,7 +262,7 @@ export class DrillGame {
     this.$ = $;
     this.noteEls = [...this.el.querySelectorAll('.drill-note')];
     $('.drill-options').appendChild(fingeringToggle(() => this.showTarget(this.index || 0)));
-    $('.drill-options').appendChild(noteNamesToggle());
+    $('.drill-options').appendChild(noteNamesToggle(() => this.showTarget(this.index || 0)));
     this.tempo = tempoControl({ bpm: this.bpm, written: this.written, onChange: (v) => this.setBpm(v) });
     $('.drill-options').appendChild(this.tempo.el);
 
@@ -399,13 +399,14 @@ export class DrillGame {
     const n = this.notes[i];
     if (!n) return;
     const [vName, vSym, vBeats] = valueOf(n.beats);
-    this.$('.target-name').textContent = titleName(n.note);
+    // Nota adları kapalıysa ad ve parmak resmi yok: nota porteden okunur
+    this.$('.target-name').textContent = noteNamesShown() ? titleName(n.note) : '♪';
     this.$('.value-sym').innerHTML = noteSymbol(16, 44, 11, vSym, false) + (n.beats === 3 || n.beats === 1.5 ? '<circle cx="30" cy="44" r="2.4" class="fill-ink"/>' : '');
     this.$('.value-text').textContent = `${vName} · ${vBeats}`;
     const dots = Math.max(1, Math.ceil(n.beats));
     this.$('.beat-dots').innerHTML = Array.from({ length: dots }, (_, k) => `<span class="${n.beats < 1 ? 'half' : ''}" data-k="${k}"></span>`).join('');
     // Parmak resmi gizlendiyse yalnızca porte üzerindeki nota gösterilir
-    this.$('.target-visual').innerHTML = fingeringSvg(n.note) || staffSvg(n.note);
+    this.$('.target-visual').innerHTML = (noteNamesShown() && fingeringSvg(n.note)) || staffSvg(n.note);
     this.setHold(0, n.beats);
   }
 
@@ -649,7 +650,7 @@ export class DrillGame {
     playhead.setAttribute('x2', X0);
     const latency = latencyOf(this.input);
     const fb = this.$('.cp-feedback');
-    fb.textContent = `Hazır olduğunda ilk notayı (${longName(this.notes[0].note)}) çal: okuma çizgisi seni bekliyor.`;
+    fb.textContent = `Hazır olduğunda ilk notayı${noteNamesShown() ? ` (${longName(this.notes[0].note)})` : ''} çal: okuma çizgisi seni bekliyor.`;
     this.showTarget(0);
     this.highlight(0);
     let t0 = null; // ilk ses duyulunca kurulur

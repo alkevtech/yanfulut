@@ -84,7 +84,8 @@ Kara Tren; tekrarlar ve 1./2. sonlar satırlara açıldı, üçlemeler ve onalt�
 **Tempolu kip** (varsayılan): okuma çizgisi metronomla akar. Doğru çalınan notada küçük tempo kaymalarına uyar (erken geçiş
 ya da kısa bekleme, en çok 320 ms); şimdiki nota yanlış ya da çalınmamışsa ya da sınırda başka bir nota çalınıyorsa ne öne
 atlar ne bekler, nota yazılı süresini doldurur (`TempoFollower`, `curOk`/`sounding`). **Kendi hızımda**: her notayı süresi
-kadar tut, yanlışta bekler. Porte altındaki nota adları "🏷️ Nota adları" düğmesiyle açılıp kapanır (seçim hatırlanır).
+kadar tut, yanlışta bekler. "🏷️ Nota adı ve parmaklar" düğmesi kapalıyken porte altındaki adlar, büyük karttaki ad ve parmak resmi gizlenir;
+yanlış nota mesajı hedefin adını söylemez, nota yalnızca porteden okunur (seçim hatırlanır).
 
 **Parçalar** bölümünde "Bana Bir Masal Anlat Baba" (Söz: Yavuz Turgul – Cengiz Onural, Müzik: Cengiz Onural) dört notaya
 (La, Si, İnce Do, İnce Re) uyarlanmış kolay düzenlemesiyle bulunur: sekizlik, noktalı dörtlük ve sekizlik sus içerir.

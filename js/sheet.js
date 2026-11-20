@@ -6,7 +6,7 @@ import { noteSymbol } from './art.js';
 import { longName, midiOf, shortName, titleName, staffStep, parseNote } from './data/notes.js';
 import { KEY_NAMES, KEY_SIGNATURES, keyAlter, prepareExercise } from './data/worksheet.js';
 import { PitchListener, playNote, playChime, playClick, matchesTarget, HOLD_TOLERANCE, TOLERANCE, learnTuning, tuningOffset, micErrorMessage, SILENT_MIC_MESSAGE } from './audio.js';
-import { fingeringSvg, fingeringToggle, noteNamesToggle, h, heardName, wrongNoteText } from './checkpoints.js';
+import { fingeringSvg, fingeringToggle, noteNamesShown, noteNamesToggle, h, heardName, wrongNoteText } from './checkpoints.js';
 import { commandNotes, goNext, navButtons, takeHandoff, tuningNote } from './drill.js';
 import { instrument } from './instrument.js';
 import { progress } from './progress.js';
@@ -404,7 +404,7 @@ export class SheetGame {
     this.itemEls = [...this.el.querySelectorAll('.ws-item')];
 
     $('.drill-options').appendChild(fingeringToggle(() => this.showTarget(this.cur ?? this.range[0])));
-    $('.drill-options').appendChild(noteNamesToggle());
+    $('.drill-options').appendChild(noteNamesToggle(() => this.showTarget(this.cur ?? this.range[0])));
     this.tempo = tempoControl({ bpm: this.bpm, written: this.written, onChange: (v) => this.setBpm(v) });
     $('.drill-options').appendChild(this.tempo.el);
     $('.drill-options').addEventListener('click', (e) => {
@@ -576,7 +576,8 @@ export class SheetGame {
       this.$('.target-name').textContent = 'Sus';
       this.$('.value-text').textContent = `${REST_NAME[ev.beats] || 'sus'} · ${beatsText(ev.beats)}${ev.fermata ? ' + korona' : ''}`;
     } else {
-      this.$('.target-name').textContent = titleName(ev.note);
+      // Nota adları kapalıysa büyük kartta ad yok: nota yalnızca büyük porteden okunur
+      this.$('.target-name').textContent = noteNamesShown() ? titleName(ev.note) : '♪';
       const tied = ev.parts.length > 1 ? ` (bağlı: ${ev.parts.map((p) => this.items[p].beats).join(' + ')})` : '';
       this.$('.value-text').textContent = `${ev.parts.length > 1 ? 'bağlı nota' : valueOf(ev.beats)[0]} · ${beatsText(ev.beats)}${tied}${ev.fermata ? ' · korona: daha uzun tut' : ''}`;
     }
@@ -586,7 +587,7 @@ export class SheetGame {
     this.$('.ws-big').innerHTML = bigNoteSvg({ ...first, beats: ev.parts.length > 1 ? first.beats : ev.beats });
     // Susta sıradaki notanın parmakları gösterilir (hazırlan)
     const next = ev.rest ? this.events.slice(i + 1).find((e) => !e.rest) : ev;
-    const fing = next ? fingeringSvg(next.note) : '';
+    const fing = next && noteNamesShown() ? fingeringSvg(next.note) : '';
     this.$('.ws-flute').innerHTML = fing ? `${ev.rest ? `<div class="ws-flute-cap muted">Sıradaki: ${longName(next.note)}</div>` : ''}${fing}` : '';
     this.$('.ws-flute').classList.toggle('dim', !!ev.rest);
     this.setHold(0);
@@ -884,7 +885,7 @@ export class SheetGame {
     let last = performance.now();
     let cur = -1;
     const fb = this.$('.cp-feedback');
-    fb.textContent = `Hazır olduğunda ilk notayı (${longName(this.events[firstNote].note)}) çal: okuma çizgisi seni bekliyor.`;
+    fb.textContent = `Hazır olduğunda ilk notayı${noteNamesShown() ? ` (${longName(this.events[firstNote].note)})` : ''} çal: okuma çizgisi seni bekliyor.`;
     this.showTarget(firstNote);
     this.highlight(firstNote);
     this.movePlayhead(firstNote, 0);
