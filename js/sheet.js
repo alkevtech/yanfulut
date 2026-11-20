@@ -811,7 +811,7 @@ export class SheetGame {
       const beatsHeld = Math.max(0.5, Math.round(((this.lastHit - (this.holdStart || this.lastHit)) / this.beatMs) * 2) / 2);
       this.mark(i, this.firstTry === 'wrong' ? 'wrong' : 'short');
       this.enter(i + 1);
-      fb.textContent = `Önceki nota (${shortName(ev.note)}) kısa kaldı: ${beatsText(ev.beats * (ev.fermata ? FERMATA : 1))} tutulmalıydı (yaklaşık ${beatsText(beatsHeld)} tuttun).`;
+      fb.textContent = `Önceki nota${noteNamesShown() ? ` (${shortName(ev.note)})` : ''} kısa kaldı: ${beatsText(ev.beats * (ev.fermata ? FERMATA : 1))} tutulmalıydı (yaklaşık ${beatsText(beatsHeld)} tuttun).`;
       return;
     }
     if (m != null && !this.isTarget(s, target, true) && !(m === this.prevMidi && !this.lastHit)) {
@@ -903,11 +903,11 @@ export class SheetGame {
       const got = beatsText(beatsPlayed(correct[i] || 0, this.beatMs));
       // Geri bildirim az önce biten nota içindir
       fb.textContent =
-        `Önceki nota (${shortName(ev.note)}): ` +
+        `Önceki nota${noteNamesShown() ? ` (${shortName(ev.note)})` : ''}: ` +
         {
           ok: '✓ doğru nota, tam süre',
           short: rearticulated ? `süre eksik! ${want} çalmalıydın, yaklaşık ${got} çaldın.` : `aynı notayı yeniden başlatmadın: ${instrument().restrikeHint}.`,
-          wrong: wrongFrame[i] ? wrongNoteText(wrongFrame[i], ev.note) : `yanlış nota, hedef ${longName(ev.note)} idi.`,
+          wrong: wrongFrame[i] ? wrongNoteText(wrongFrame[i], ev.note) : noteNamesShown() ? `yanlış nota, hedef ${longName(ev.note)} idi.` : 'yanlış nota.',
           miss: 'kaçırdın.',
         }[kind];
     };

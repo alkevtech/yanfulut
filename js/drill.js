@@ -570,7 +570,7 @@ export class DrillGame {
       this.noteEls[this.index].classList.remove('current');
       this.noteEls[this.index].classList.add('short');
       this.advance();
-      this.$('.cp-feedback').textContent = `Önceki nota (${shortName(n.note)}) kısa kaldı: ${valueOf(n.beats)[2]} tutulmalıydı (yaklaşık ${String(beatsHeld).replace('.', ',')} vuruş tuttun).`;
+      this.$('.cp-feedback').textContent = `Önceki nota${noteNamesShown() ? ` (${shortName(n.note)})` : ''} kısa kaldı: ${valueOf(n.beats)[2]} tutulmalıydı (yaklaşık ${String(beatsHeld).replace('.', ',')} vuruş tuttun).`;
       return;
     }
     // Yanlış nota (önceki notanın sesi bir süre daha duyulabilir: o sayılmaz)
@@ -671,11 +671,11 @@ export class DrillGame {
       this.noteEls[i].classList.add(kind);
       const got = String(beatsPlayed(correct[i], this.beatMs)).replace('.', ',');
       fb.textContent =
-        `Önceki nota (${shortName(n.note)}): ` +
+        `Önceki nota${noteNamesShown() ? ` (${shortName(n.note)})` : ''}: ` +
         {
           ok: '✓ doğru nota, tam süre',
           short: rearticulated ? `süre eksik! ${valueOf(n.beats)[2]} çalmalıydın, yaklaşık ${got} vuruş çaldın.` : `aynı notayı yeniden başlatmadın: ${instrument().restrikeHint}.`,
-          wrong: wrongFrame[i] ? wrongNoteText(wrongFrame[i], n.note) : `yanlış nota, hedef ${longName(n.note)} idi.`,
+          wrong: wrongFrame[i] ? wrongNoteText(wrongFrame[i], n.note) : noteNamesShown() ? `yanlış nota, hedef ${longName(n.note)} idi.` : 'yanlış nota.',
           miss: 'kaçırdın.',
         }[kind];
     };
