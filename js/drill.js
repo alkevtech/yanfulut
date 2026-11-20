@@ -6,7 +6,7 @@
 import { noteSymbol } from './art.js';
 import { longName, midiOf, shortName, titleName, staffStep, parseNote } from './data/notes.js';
 import { PitchListener, playNote, playChime, playClick, matchesTarget, HOLD_TOLERANCE, TOLERANCE, learnTuning, tuningOffset, micErrorMessage, SILENT_MIC_MESSAGE } from './audio.js';
-import { fingeringSvg, fingeringToggle, heardName, staffSvg, h, wrongNoteText } from './checkpoints.js';
+import { fingeringSvg, fingeringToggle, noteNamesToggle, heardName, staffSvg, h, wrongNoteText } from './checkpoints.js';
 import { instrument } from './instrument.js';
 import { progress } from './progress.js';
 import { CommandNote, OnsetDetector, TempoFollower, beatsPlayed, holdNeedMs, judgeNote, latencyOf, valueOf } from './scoring.js';
@@ -262,6 +262,7 @@ export class DrillGame {
     this.$ = $;
     this.noteEls = [...this.el.querySelectorAll('.drill-note')];
     $('.drill-options').appendChild(fingeringToggle(() => this.showTarget(this.index || 0)));
+    $('.drill-options').appendChild(noteNamesToggle());
     this.tempo = tempoControl({ bpm: this.bpm, written: this.written, onChange: (v) => this.setBpm(v) });
     $('.drill-options').appendChild(this.tempo.el);
 
@@ -697,7 +698,10 @@ export class DrillGame {
       last = now;
       const rms = this.input === 'mic' ? (this.frame?.rmsFast ?? this.frame?.rms) || 0 : s != null ? 1 : 0;
       const onset = detector.update(s != null, rms);
-      const heard = follower.update(now - t0 - latency, cur, (m) => this.isTarget(s, m), onset);
+      // Şimdiki nota doğru çalındıysa erken geçişe izin var; yanlışsa çizgi öne atlamaz, süresini doldurur
+      const curEv = cur >= 0 ? this.notes[cur] : null;
+      const curOk = !curEv || (correct[cur] || 0) >= curEv.beats * this.beatMs * 0.4;
+      const heard = follower.update(now - t0 - latency, cur, (m) => this.isTarget(s, m), onset, { curOk, sounding: s != null });
       clicks?.update(heard);
       if (onset) onsets.push(heard - (this.input === 'mic' ? 30 : 0));
       playhead.setAttribute('x1', X0 + (heard / this.beatMs) * BEAT_W);

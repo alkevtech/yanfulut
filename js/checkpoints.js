@@ -43,6 +43,28 @@ export function fingeringToggle(onChange, cls = 'chip-btn standalone') {
   return btn;
 }
 
+/** Porte altındaki nota adları (Sol, La, Si…): açılıp kapatılabilir, seçim hatırlanır */
+export const noteNamesShown = () => progress.settings.showNoteNames !== false;
+export function noteNamesToggle(cls = 'chip-btn standalone') {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = `${cls} names-toggle`;
+  const label = () => {
+    const on = noteNamesShown();
+    btn.textContent = on ? '🏷️ Nota adları açık' : '🏷️ Nota adları kapalı';
+    btn.title = on ? 'Porte altındaki nota adlarını gizle: notayı porteden oku' : 'Porte altındaki nota adlarını göster';
+    btn.setAttribute('aria-pressed', String(on));
+    btn.classList.toggle('active', on);
+    document.body.classList.toggle('no-note-names', !on);
+  };
+  btn.addEventListener('click', () => {
+    progress.setSetting('showNoteNames', !noteNamesShown());
+    label();
+  });
+  label();
+  return btn;
+}
+
 export function staffSvg(note) {
   return `<svg class="mini-staff" viewBox="0 0 170 110" role="img" aria-label="Porte üzerinde ${longName(note)}">
     <g filter="url(#sketchy-sm)">${staff({ x: 6, y: 34, w: 158, sp: 10, notes: [note] })}</g></svg>`;

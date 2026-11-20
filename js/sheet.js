@@ -6,7 +6,7 @@ import { noteSymbol } from './art.js';
 import { longName, midiOf, shortName, titleName, staffStep, parseNote } from './data/notes.js';
 import { KEY_NAMES, KEY_SIGNATURES, keyAlter, prepareExercise } from './data/worksheet.js';
 import { PitchListener, playNote, playChime, playClick, matchesTarget, HOLD_TOLERANCE, TOLERANCE, learnTuning, tuningOffset, micErrorMessage, SILENT_MIC_MESSAGE } from './audio.js';
-import { fingeringSvg, fingeringToggle, h, heardName, wrongNoteText } from './checkpoints.js';
+import { fingeringSvg, fingeringToggle, noteNamesToggle, h, heardName, wrongNoteText } from './checkpoints.js';
 import { commandNotes, goNext, navButtons, takeHandoff, tuningNote } from './drill.js';
 import { instrument } from './instrument.js';
 import { progress } from './progress.js';
@@ -250,8 +250,8 @@ export class SheetGame {
     this.beatMs = 60000 / this.bpm;
     this.onFinish = onFinish;
     this.input = 'mic';
-    // Varsayılan: doğru notayı bekleyen "Kendi hızımda"; öğrencinin son seçimi hatırlanır
-    this.mode = progress.settings.wsMode === 'tempo' ? 'tempo' : 'hold';
+    // Varsayılan: metronomla akışta çalınan "Tempolu"; öğrencinin son seçimi hatırlanır
+    this.mode = progress.settings.wsMode === 'hold' ? 'hold' : 'tempo';
     this.build();
     this.render();
     this.reset();
@@ -309,8 +309,8 @@ export class SheetGame {
             <button class="chip-btn" data-input="touch">👆 Tuşa basılı tut</button>
           </div>
           <div class="seg-group" role="group" aria-label="Mod">
-            <button class="chip-btn" data-mode="hold" title="Doğru notayı bekler: yanlış çalarsan aynı notada kalır, doğrusunu süresi kadar tutunca geçer">⏳ Kendi hızımda</button>
-            <button class="chip-btn" data-mode="tempo" title="Metronomla durmadan çal: okuma çizgisi beklemez, yanlış nota ✗ ile işaretlenir ve çizgi devam eder">🥁 Tempolu</button>
+            <button class="chip-btn" data-mode="tempo" title="Metronomla akışta çal: okuma çizgisi sabit hızla gider; yanlış çalsan da nota kendi süresini doldurur, çizgi öne atlamaz">🥁 Tempolu</button>
+            <button class="chip-btn" data-mode="hold" title="Metronomsuz: doğru notayı süresi kadar tutunca sıradakine geçer, yanlışta bekler">⏳ Kendi hızımda</button>
           </div>
           <button class="btn primary" data-act="start">▶ Baştan sona çal</button>
           <button class="btn ghost" data-act="listen">🔊 Dinle</button>
@@ -404,6 +404,7 @@ export class SheetGame {
     this.itemEls = [...this.el.querySelectorAll('.ws-item')];
 
     $('.drill-options').appendChild(fingeringToggle(() => this.showTarget(this.cur ?? this.range[0])));
+    $('.drill-options').appendChild(noteNamesToggle());
     this.tempo = tempoControl({ bpm: this.bpm, written: this.written, onChange: (v) => this.setBpm(v) });
     $('.drill-options').appendChild(this.tempo.el);
     $('.drill-options').addEventListener('click', (e) => {
@@ -506,7 +507,7 @@ export class SheetGame {
     this.showTarget(this.range[0]);
     this.$('.mic-status').textContent =
       (this.input === 'mic' ? '"Baştan sona çal"a ya da bir satırdaki "Bu satırı çal"a bas; mikrofon açılsın.' : 'Başlat, sonra tuşa notanın süresi kadar basılı tut.') +
-      (this.mode === 'tempo' ? ' Tempolu kipte okuma çizgisi durmaz; yanlış notada beklemesi için "Kendi hızımda"yı seç.' : ' Yanlış notada beklenir: doğrusunu süresi kadar tutunca sıradakine geçilir.');
+      (this.mode === 'tempo' ? ' Okuma çizgisi metronomla sabit gider: yanlış çalsan da nota süresi dolunca sıradakine geçer.' : ' Yanlış notada beklenir: doğrusunu süresi kadar tutunca sıradakine geçilir.');
   }
 
   renderStars(n) {
@@ -930,7 +931,10 @@ export class SheetGame {
       last = now;
       const rms = this.input === 'mic' ? (this.frame?.rmsFast ?? this.frame?.rms) || 0 : s != null ? 1 : 0;
       const onset = detector.update(s != null, rms);
-      const heard = follower.update(now - t0 - latency, cur, (m) => this.isTarget(s, m), onset);
+      // Şimdiki nota doğru çalındıysa erken geçişe izin var; yanlışsa çizgi öne atlamaz, süresini doldurur
+      const curEv = cur >= 0 ? this.events[cur] : null;
+      const curOk = !curEv || curEv.rest || (correct[cur] || 0) >= (curEv.ms || 0) * 0.4;
+      const heard = follower.update(now - t0 - latency, cur, (m) => this.isTarget(s, m), onset, { curOk, sounding: s != null });
       clicks?.update(heard);
       if (onset) onsets.push(heard - (this.input === 'mic' ? 30 : 0));
       let i = cur < 0 ? a - 1 : cur;

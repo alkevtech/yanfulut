@@ -104,9 +104,13 @@ export class TempoFollower {
 
   /**
    * raw: düzeltmesiz okuma zamanı; cur: şu anki olay; isMidi(m): şu an m çalınıyor mu; onset: bu karede yeni başlangıç var mı.
+   * curOk: şu anki nota doğru çalındı mı. Yanlış ya da çalınmamış notada çizgi ne öne atlar ne bekler: nota yazılı
+   * süresini doldurur, akış metronomla sabit gider (yanlış nota sıradaki notaya denk gelse bile).
+   * sounding: şu an bir ses var mı. Sınırda öğrenci şimdiki notadan başka bir ses çalıyorsa geç kalmamış, yanlış
+   * çalıyordur: çizgi beklemez.
    * @returns düzeltilmiş okuma zamanı
    */
-  update(raw, cur, isMidi, onset) {
+  update(raw, cur, isMidi, onset, { curOk = true, sounding = false } = {}) {
     let heard = raw - this.offset;
     if (onset) this.lastOnset = heard;
     const k = cur + 1;
@@ -119,11 +123,16 @@ export class TempoFollower {
     // şimdiki notanın kendi başlangıcı sayılmasın: yeni vuruş notanın ikinci yarısında olmalı
     const reach = Math.min(this.win, (start - (this.starts[cur] ?? start - this.win)) / 2);
     const started = isMidi(next.midi) && (!same || this.lastOnset >= start - reach);
+    if (!curOk) return heard;
     if (heard < start && heard >= start - this.win && started) {
       this.offset -= start - heard; // erken geçiş: çizgiyi ileri al
       return start;
     }
-    if (heard >= start - 1 && !started && (this.waited[k] || 0) < this.win) {
+    // Geç kalma yalnızca öğrenci susuyorsa ya da şimdiki notayı hâlâ tutuyorsa: başka bir ses yanlış notadır
+    // Şimdiki notayı sınırda yeniden üflemek (yeni dil vuruşu) de yeni ve yanlış bir notadır
+    const holdingCur = prev && !prev.rest && isMidi(prev.midi) && !(this.lastOnset >= start - 80);
+    const playingOther = sounding && !holdingCur;
+    if (heard >= start - 1 && !started && !playingOther && (this.waited[k] || 0) < this.win) {
       const hold = heard - (start - 1); // geç geçiş: sınırda bekle
       this.offset += hold;
       this.waited[k] = (this.waited[k] || 0) + hold;
