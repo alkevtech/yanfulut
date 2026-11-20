@@ -893,3 +893,5 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
 .ws-item .slur, .ws-row-svg .slur { stroke-width: 2; }
 .dyn-mark { font: italic 700 17px Georgia, 'Times New Roman', serif; fill: var(--ink); }
 .breath-mark { font: 700 26px Georgia, serif; fill: var(--ink); }
+/* Nota adları kapalıyken porte altındaki adlar gizlenir (yer korunur, satırlar oynamaz) */
+.no-note-names .dur-name { visibility: hidden; }
