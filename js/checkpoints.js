@@ -45,14 +45,16 @@ export function fingeringToggle(onChange, cls = 'chip-btn standalone') {
 
 /** Porte altındaki nota adları (Sol, La, Si…): açılıp kapatılabilir, seçim hatırlanır */
 export const noteNamesShown = () => progress.settings.showNoteNames !== false;
-export function noteNamesToggle(cls = 'chip-btn standalone') {
+export function noteNamesToggle(onChange, cls = 'chip-btn standalone') {
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.className = `${cls} names-toggle`;
   const label = () => {
     const on = noteNamesShown();
-    btn.textContent = on ? '🏷️ Nota adları açık' : '🏷️ Nota adları kapalı';
-    btn.title = on ? 'Porte altındaki nota adlarını gizle: notayı porteden oku' : 'Porte altındaki nota adlarını göster';
+    btn.textContent = on ? '🏷️ Nota adı ve parmaklar açık' : '🏷️ Nota adı ve parmaklar kapalı';
+    btn.title = on
+      ? 'Nota adlarını ve parmak resmini gizle: notayı porteden oku'
+      : 'Nota adlarını ve parmak resmini göster';
     btn.setAttribute('aria-pressed', String(on));
     btn.classList.toggle('active', on);
     document.body.classList.toggle('no-note-names', !on);
@@ -60,6 +62,7 @@ export function noteNamesToggle(cls = 'chip-btn standalone') {
   btn.addEventListener('click', () => {
     progress.setSetting('showNoteNames', !noteNamesShown());
     label();
+    onChange?.();
   });
   label();
   return btn;
@@ -188,12 +191,15 @@ export function wrongNoteText(heard, targetId) {
   const midi = mf != null ? Math.round(mf) : typeof heard === 'number' ? heard : heard.midi;
   const heardId = noteFromMidi(midi);
   const target = midiOf(targetId);
-  const text = `Bu ${longName(heardId)}; hedef ${longName(targetId)}.`;
+  // Nota adları kapalıyken hedefin adı ve parmak ipucu söylenmez: öğrenci notayı porteden bulur
+  const named = noteNamesShown();
+  const text = named ? `Bu ${longName(heardId)}; hedef ${longName(targetId)}.` : `Bu ${longName(heardId)}; çalınacak nota bu değil.`;
   if (mf != null && Math.abs(mf - target) < 1.5 && Math.abs(mf - midi) > 0.25) {
     const c = Math.round((mf - target) * 100);
     const adv = c > 0 ? instrument().sharpAdvice : instrument().flatAdvice;
     return `${text} Ses hedefe yakın ama ${Math.abs(c)} sent ${c > 0 ? 'tiz' : 'pes'}: ${typeof adv === 'function' ? adv(targetId) : adv}.`;
   }
+  if (!named) return `${text} Porteye tekrar bak: nota hangi çizgide ya da aralıkta?`;
   const fix = instrument().fingerFix?.(heardId, targetId);
   return `${text} ${fix || 'Parmaklarını resimle karşılaştır.'}`;
 }
