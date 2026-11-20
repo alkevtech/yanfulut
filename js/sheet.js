@@ -250,7 +250,8 @@ export class SheetGame {
     this.beatMs = 60000 / this.bpm;
     this.onFinish = onFinish;
     this.input = 'mic';
-    this.mode = 'tempo';
+    // Varsayılan: doğru notayı bekleyen "Kendi hızımda"; öğrencinin son seçimi hatırlanır
+    this.mode = progress.settings.wsMode === 'tempo' ? 'tempo' : 'hold';
     this.build();
     this.render();
     this.reset();
@@ -308,8 +309,8 @@ export class SheetGame {
             <button class="chip-btn" data-input="touch">👆 Tuşa basılı tut</button>
           </div>
           <div class="seg-group" role="group" aria-label="Mod">
-            <button class="chip-btn" data-mode="tempo" title="Metronomla, okuma çizgisiyle birlikte çal">🥁 Tempolu</button>
-            <button class="chip-btn" data-mode="hold" title="Her notayı süresi kadar tut, sonra sıradakine geç">⏳ Kendi hızımda</button>
+            <button class="chip-btn" data-mode="hold" title="Doğru notayı bekler: yanlış çalarsan aynı notada kalır, doğrusunu süresi kadar tutunca geçer">⏳ Kendi hızımda</button>
+            <button class="chip-btn" data-mode="tempo" title="Metronomla durmadan çal: okuma çizgisi beklemez, yanlış nota ✗ ile işaretlenir ve çizgi devam eder">🥁 Tempolu</button>
           </div>
           <button class="btn primary" data-act="start">▶ Baştan sona çal</button>
           <button class="btn ghost" data-act="listen">🔊 Dinle</button>
@@ -461,6 +462,7 @@ export class SheetGame {
 
   setMode(mode) {
     this.mode = mode;
+    progress.setSetting('wsMode', mode);
     this.reset();
     this.updateButtons();
   }
@@ -503,7 +505,8 @@ export class SheetGame {
     this.renderStars(progress.songStars(`ws-${this.ex.id}`));
     this.showTarget(this.range[0]);
     this.$('.mic-status').textContent =
-      this.input === 'mic' ? '"Baştan sona çal"a ya da bir satırdaki "Bu satırı çal"a bas; mikrofon açılsın.' : 'Başlat, sonra tuşa notanın süresi kadar basılı tut.';
+      (this.input === 'mic' ? '"Baştan sona çal"a ya da bir satırdaki "Bu satırı çal"a bas; mikrofon açılsın.' : 'Başlat, sonra tuşa notanın süresi kadar basılı tut.') +
+      (this.mode === 'tempo' ? ' Tempolu kipte okuma çizgisi durmaz; yanlış notada beklemesi için "Kendi hızımda"yı seç.' : ' Yanlış notada beklenir: doğrusunu süresi kadar tutunca sıradakine geçilir.');
   }
 
   renderStars(n) {
