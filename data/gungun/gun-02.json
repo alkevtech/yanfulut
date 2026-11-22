@@ -1,0 +1,126 @@
+{
+  "day": 2,
+  "title": "Sessizliği Saymak",
+  "goals": [
+    "Dörtlük, ikilik ve birlik susları tanımak ve saymak",
+    "Notaları dille 'tu' diyerek başlatmak",
+    "Yeni nota Do'yu çalmak"
+  ],
+  "newNotes": ["C5"],
+  "sections": [
+    {
+      "title": "Suslar: Müziğin Sessiz Anları",
+      "text": "Sus, o süre boyunca çalmadığın anlamına gelir; ama saymayı bırakmazsın. Dörtlük sus 1 vuruş, ikilik sus 2 vuruş, birlik sus 4 vuruş sürer. Birlik sus dördüncü çizgiden aşağı sarkan küçük bir dikdörtgendir; ikilik sus ise üçüncü çizginin üstüne oturur. Susları nefes almak için de kullanabilirsin."
+    },
+    {
+      "title": "Dil Vuruşu: 'tu'",
+      "text": "Her notayı, dilinin ucunu üst ön dişlerinin arkasına dokundurup 'tu' der gibi geri çekerek başlat. Dil bir musluğun kapağı gibidir: havayı o vermez, yalnızca açar. Aynı notayı tekrar ederken hava akışını kesmeden 'tu-tu-tu' de. Notayı bitirirken dili geri vurma; yalnızca havayı durdur."
+    },
+    {
+      "title": "Yeni Nota: Do",
+      "text": "Do'da yalnızca sol işaret parmağı kapalıdır; sol başparmak perdesini bırakır. Sağ serçe parmak yine Mi bemol perdesinde kalır ve flütü dengede tutar. Si'den Do'ya geçerken başparmağını kaldırman yeter. Do portenin üçüncü aralığındadır."
+    }
+  ],
+  "items": [
+    {
+      "id": "g2-i1",
+      "kind": "info",
+      "title": "Sessiz 'tu' Isınması",
+      "text": "Flütsüz başla: elini ağzının önüne tut ve eşit vuruşlarla 'tu tu tu tu' fısılda; her 'tu'da elinde havayı hisset. Sonra aynısını yalnız ağızlıkla yap: dört 'tu', ardından dört vuruş sessizlik. Dört kez tekrarla."
+    },
+    {
+      "id": "g2-i2",
+      "kind": "info",
+      "title": "Uzun Seslerle Başla",
+      "text": "Flütü birleştir. Si notasını 'tu' ile başlatıp 6 vuruş tut, sonra 4 vuruş dinlen. Aynısını La ve Sol için yap. Sesin baştan sona aynı güçte kalmasına dikkat et."
+    },
+    {
+      "id": "g2-c1",
+      "kind": "calisma",
+      "title": "Dörtlük Sus",
+      "text": "Her notayı 'tu' ile başlat, susta içinden 'sus' diye say. Notalar kısa ve net olsun.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "B4 R B4 R | A4 R A4 R | G4 R A4 R | B4:2 R:2 |",
+        "B4 R A4 R | G4 R G4 R | A4 R B4 R | G4:2 R:2 ||"
+      ]
+    },
+    {
+      "id": "g2-c2",
+      "kind": "calisma",
+      "title": "Do ile Tanış",
+      "text": "Si'den Do'ya geçerken yalnızca sol başparmağını kaldır. Do'yu uzun ve düz tut.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "B4:4 | C5:4 | B4:2 C5:2 | C5:2 R:2 |",
+        "C5 B4 C5 B4 | C5:2 B4:2 | A4 B4 C5:2 | C5:4 ||"
+      ]
+    },
+    {
+      "id": "g2-c3",
+      "kind": "calisma",
+      "title": "İkilik ve Birlik Sus",
+      "text": "İkilik sus iki, birlik sus dört vuruş sürer. Sus sırasında saymaya devam et ve sonraki nota için nefes al.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "C5:2 R:2 | B4:2 R:2 | A4:4 | R:4 |",
+        "G4 A4 B4 C5 | R:4 | C5 B4 A4 G4 | R:2 G4:2 ||"
+      ]
+    },
+    {
+      "id": "g2-c4",
+      "kind": "calisma",
+      "title": "Tu-tu Merdiveni",
+      "text": "Aynı notayı dört kez 'tu-tu-tu-tu' diye çal. Hava akışı hiç durmasın, yalnızca dil hareket etsin.",
+      "time": 4,
+      "bpm": 69,
+      "rows": [
+        "G4 G4 G4 G4 | A4 A4 A4 A4 | B4 B4 B4 B4 | C5:2 R:2 |",
+        "C5 C5 C5 C5 | B4 B4 B4 B4 | A4 A4 A4 A4 | G4:2 R:2 ||"
+      ]
+    },
+    {
+      "id": "g2-c5",
+      "kind": "calisma",
+      "title": "Yankı Oyunu",
+      "text": "Her küçük cümleden sonra bir sus var. Aynı cümleyi ikinci kez bir yankı gibi biraz daha yumuşak çal.",
+      "time": 4,
+      "bpm": 69,
+      "rows": [
+        "G4 A4 B4 R | G4 A4 B4 R | C5 B4 A4 R | C5 B4 A4 R |",
+        "B4 C5 B4 R | A4 B4 A4 R | G4:2 R:2 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g2-p1",
+      "kind": "parca",
+      "title": "Saklambaç",
+      "text": "Suslarda saklan, notalarda ortaya çık! Susları tam say ki arkadaşın seni bulamasın.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "G4 A4 B4 C5 | B4:2 R:2 | C5 B4 A4 B4 | G4:2 R:2 |",
+        "C5 R C5 R | B4 R B4 R | A4 B4 C5 B4 | A4:2 R:2 |",
+        "G4 A4 B4 C5 | B4:2 A4:2 | B4 A4 G4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g2-p2",
+      "kind": "parca",
+      "title": "Tu Tu Treni",
+      "text": "Tren istasyondan kalkıyor! Her notayı 'tu' ile açıkça vur; suslarda tren bir an durup bekler.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "G4 G4 G4 R | A4 A4 A4 R | B4 B4 C5 B4 | A4:2 R:2 |",
+        "C5 C5 C5 R | B4 B4 B4 R | A4 B4 A4 G4 | A4:2 R:2 |",
+        "G4 G4 A4 A4 | B4 B4 C5 R | C5 B4 A4 B4 | G4:4 ||"
+      ]
+    }
+  ]
+}

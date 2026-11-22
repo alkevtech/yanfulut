@@ -1,0 +1,141 @@
+{
+  "day": 10,
+  "title": "Fısıltıdan Fırtınaya",
+  "goals": [
+    "Dinamik işaretlerini (p, mf, f, cresc., dim.) çalmak",
+    "Nefes işaretinde zamanında nefes almak",
+    "Anakruzla, yani eksik bir ölçüyle başlamak",
+    "Flütün en pes notası pes Do'yu çalmak"
+  ],
+  "newNotes": ["C4"],
+  "sections": [
+    {
+      "title": "Dinamikler",
+      "text": "Dinamikler sesin ne kadar yumuşak ya da güçlü çalınacağını söyler ve notaların altına İtalyanca kısaltmalarla yazılır. p (piyano) yumuşak, mf (mezzoforte) orta güçte, f (forte) güçlü demektir. cresc. (kreşendo) sesi yavaş yavaş güçlendir, dim. (diminuendo) yavaş yavaş yumuşat anlamına gelir. Bir işaret, yenisi gelene kadar geçerlidir."
+    },
+    {
+      "title": "Flütte yumuşak ve güçlü çalmak",
+      "text": "Güçlü çalmak için daha çok hava ver ve dudak açıklığını biraz büyüt; yumuşak çalarken açıklığı küçült ve havayı ince bir şerit gibi ver. Flütte sesi yumuşatınca perde düşmeye, güçlendirince yükselmeye eğilimlidir. Bunu dengelemek için p'de havayı biraz yukarı, f'de biraz aşağı yönelt ve her durumda karından destek ver."
+    },
+    {
+      "title": "Nefes işareti ve anakruz",
+      "text": "Notanın üstündeki küçük virgül nefes işaretidir: nefesini orada al, notadan biraz zaman çalarak ama vuruşu kaçırmadan. Bazı ezgiler tam ölçüyle değil, bir ya da birkaç vuruşluk eksik bir ölçüyle başlar; buna anakruz denir. Anakruz bir sonraki ölçünün güçlü ilk vuruşuna doğru koşan bir hazırlıktır. Eksik vuruşlar çoğu zaman parçanın son ölçüsünden düşülür, böylece ikisi birlikte tam bir ölçü eder."
+    },
+    {
+      "title": "Yeni nota: pes Do",
+      "text": "Pes Do flütün en pes notasıdır ve bütün delikler kapalıdır: sol başparmak, sol işaret, orta ve yüzük parmakları; sağ işaret, orta ve yüzük parmakları. Sağ serçe parmak ayak kısmındaki Do anahtarına basar. Delikleri tam kapat, dudak açıklığını biraz büyüt ve yavaş, sıcak bir havayla üfle; zorlarsan ses ince Do'ya sıçrar."
+    }
+  ],
+  "items": [
+    {
+      "id": "g10-i1",
+      "kind": "info",
+      "title": "Isınma: Ses Merdiveni",
+      "text": "Sol üzerinde sekiz vuruşluk uzun bir ses çal: çok yumuşak başla, dördüncü vuruşa kadar yavaşça güçlendir, sonra yine yumuşat. Perdenin sabit kalmasını dinle. Ardından aynı şeyi pes Re ve pes Do ile dene; pes notalarda sesi zorlamadan büyütmeye çalış."
+    },
+    {
+      "id": "g10-i2",
+      "kind": "info",
+      "title": "Nefes Planı",
+      "text": "Bir parçayı çalmadan önce nefes işaretlerini bul ve parmağınla göster. Her işarette ağzının köşelerinden hızlı ve derin bir nefes al, omuzlarını kaldırma. Uzun cümlelerde nefesi bölmek için nota süresinden biraz kısarsın, ama bir sonraki notaya tam zamanında girersin."
+    },
+    {
+      "id": "g10-c1",
+      "kind": "calisma",
+      "title": "Pes Do",
+      "text": "Pes Re ve pes Mi'den pes Do'ya in. Bütün delikleri tam kapattığından emin ol ve havayı yavaş, sıcak ver.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "D4:2 C4:2 | E4:2 C4:2 | F4 E4 D4 C4 | C4:4 |",
+        "C4 E4 G4 C5 | G4:2 E4:2 | F4 E4 D4 E4 | C4:4 ||"
+      ]
+    },
+    {
+      "id": "g10-c2",
+      "kind": "calisma",
+      "title": "Dinamik Basamakları",
+      "text": "Aynı notayı önce p, sonra mf ve f çal; ikinci satırda cresc. ile güçlendir, dim. ile yumuşat. Ses güçlenince perdenin yükselmemesine dikkat et.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "p G4:4 | mf G4:4 | f G4:4 | mf G4:4 |",
+        "cresc. C4 D4 E4 F4 | G4:4 | dim. G4 F4 E4 D4 | p C4:4 ||"
+      ]
+    },
+    {
+      "id": "g10-c3",
+      "kind": "calisma",
+      "title": "Virgülde Nefes",
+      "text": "Her nefes işaretinde hızlıca nefes al ve sonraki ölçüye zamanında gir. Cümleleri nefes işaretine kadar tek bir hava akımıyla bağla.",
+      "time": 4,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "F4 G4 A4 Bb4 | C5:2 A4:2 , | Bb4 A4 G4 F4 | E4:2 C4:2 , |",
+        "F4 A4 C5 F5 | E5:2 D5:2 , | C5 Bb4 A4 G4 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g10-c4",
+      "kind": "calisma",
+      "title": "Bir Vuruşluk Anakruz",
+      "text": "Alıştırma dördüncü vuruşta tek bir notayla başlar: önce içinden \"1-2-3\" say, 4'te gir. Son ölçü de bu yüzden üç vuruştur.",
+      "time": 4,
+      "bpm": 76,
+      "key": "G",
+      "pickup": 1,
+      "rows": [
+        "D4 | G4:2 B4 G4 | A4:2 F#4 D4 | G4 A4 B4 G4 | A4:3 D4 |",
+        "G4:2 B4 G4 | A4:2 F#4 D4 | G4 B4 A4 F#4 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g10-c5",
+      "kind": "calisma",
+      "title": "Üçlü Ölçüde Anakruz",
+      "text": "3/4 ölçüde üçüncü vuruştan başla. Hepsini bir arada dene: anakruz, cresc. ile büyüyen ve dim. ile sönen bir cümle.",
+      "time": 3,
+      "bpm": 80,
+      "key": "F",
+      "pickup": 1,
+      "rows": [
+        "mp C4 | F4:2 G4 | A4:2 F4 | Bb4:2 A4 | G4:2 C4 |",
+        "cresc. A4:2 Bb4 | C5:2 D5 | dim. C5 Bb4 G4 | F4:2 ||"
+      ]
+    },
+    {
+      "id": "g10-p1",
+      "kind": "parca",
+      "title": "Amazing Grace",
+      "text": "Dünyanın en çok söylenen ilahilerinden biri, pes Do'dan başlayan bir anakruzla açılır. Sekizlik çiftlerini yayla bağla, nefes işaretlerinde nefes al; ince Do'ya doğru büyüt, sona doğru yumuşat.",
+      "credit": "Geleneksel Amerikan ezgisi",
+      "time": 3,
+      "bpm": 80,
+      "key": "F",
+      "pickup": 1,
+      "rows": [
+        "mp C4 | F4:2 (A4:.5 F4:.5) | A4:2 G4 | F4:2 D4 | C4:2 , C4 |",
+        "F4:2 (A4:.5 F4:.5) | cresc. A4:2 G4 | mf C5:3~ | C5:2 , A4 |",
+        "C5:2 (A4:.5 F4:.5) | A4:2 G4 | F4:2 D4 | C4:2 , C4 |",
+        "F4:2 (A4:.5 F4:.5) | dim. A4:2 G4 | p F4:2 ||"
+      ]
+    },
+    {
+      "id": "g10-p2",
+      "kind": "parca",
+      "title": "Dağ ve Yankı",
+      "text": "Dağın tepesinden f ile seslenen bir çağrı ve vadiden p ile dönen yankısı. Anakruzla başla, dinamikleri abartarak çal ve sondaki koronada pp ile sesi yavaşça söndür.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 84,
+      "pickup": 1,
+      "rows": [
+        "f G4 | C5:1.5 B4:.5 A4 G4 | E4:2 C4 , G4 | p C5:1.5 B4:.5 A4 G4 | E4:2 C4 , E4 |",
+        "mf F4 A4 G4 E4 | D4 F4 E4 C4 | cresc. D4 E4 F4 G4 | f A4:2 G4:1.5 , G4:.5 |",
+        "C5:1.5 B4:.5 A4 G4 | A4:1.5 B4:.5 C5 E4 | p C5:1.5 B4:.5 A4 G4 | A4:1.5 B4:.5 C5 , E4 |",
+        "dim. F4:1.5 E4:.5 D4 F4 | E4:1.5 D4:.5 C4 D4 | pp C4:3! ||"
+      ]
+    }
+  ]
+}

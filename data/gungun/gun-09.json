@@ -1,0 +1,139 @@
+{
+  "day": 9,
+  "title": "Noktalı Dörtlük ve Re Majör",
+  "goals": [
+    "Noktalı dörtlüğü bir buçuk vuruş tutmak",
+    "İnce Do diyezi çalmak",
+    "Re majör donanımını okumak",
+    "Natürel (doğal) işaretini tanımak"
+  ],
+  "newNotes": ["C#5"],
+  "sections": [
+    {
+      "title": "Noktalı dörtlük",
+      "text": "Notanın sağındaki nokta, notaya kendi süresinin yarısını ekler. Dörtlük bir vuruştur, yarısı yarım vuruş: noktalı dörtlük bir buçuk vuruş sürer. Çoğunlukla ardından bir sekizlik gelir ve ikisi birlikte iki vuruş eder. Sayarken \"1-(ve)-2-ve\" de: nota 1'de başlar, \"ve\"yi de geçip 2'nin üstünde sürer, sekizlik 2'nin \"ve\"sine düşer."
+    },
+    {
+      "title": "Re majör",
+      "text": "Re majör dizisi Re'den başlar ve iki diyez ister: Fa♯ ve Do♯. Bu yüzden donanımda iki diyez vardır; parçadaki bütün Fa'lar Fa♯, bütün Do'lar Do♯ çalınır. Re majör flütte çok parlak ve aydınlık duyulur."
+    },
+    {
+      "title": "Natürel işareti (♮)",
+      "text": "Natürel ya da doğal işareti, diyezi veya bemolü bir süreliğine iptal eder. Re majörde bir Do'nun önünde natürel varsa o ölçünün sonuna kadar diyezsiz, sade Do çalarsın. Sonraki ölçüde donanım yine geçerli olur ve Do'lar Do♯'ye döner."
+    },
+    {
+      "title": "Yeni nota: ince Do diyez",
+      "text": "İnce Do diyez flütün en açık notasıdır: sol başparmak dahil bütün parmaklar kalkar, yalnızca sağ serçe parmak Mi♭ anahtarında kalır. Flütü dengede tutmak için sağ başparmak ve sol işaret parmağının kökü destek olur. Ses kolayca sertleşir ya da tizleşir; havayı yumuşak ver ve dudaklarını gevşek tut."
+    }
+  ],
+  "items": [
+    {
+      "id": "g9-i1",
+      "kind": "info",
+      "title": "Ritim Isınması: Uzun-Kısa",
+      "text": "Ayağınla vuruşu tut ve \"1-ve-2-ve\" diye say. Önce iki dörtlük alkışla. Sonra 1'de alkışla, \"ve\" ile 2'yi bekle ve 2'nin \"ve\"sinde bir kez daha alkışla: uzun-kısa, uzun-kısa. Bu, noktalı dörtlük ile sekizliğin ritmidir. \"Ta-a-ti, ta-a-ti\" diye söyleyerek de deneyebilirsin."
+    },
+    {
+      "id": "g9-i2",
+      "kind": "info",
+      "title": "Isınma: Dengede Do Diyez",
+      "text": "Flütü yalnızca sağ serçe parmak Mi♭ anahtarında olacak şekilde tut ve düşmediğini hisset: sol işaret parmağının kökü, sağ başparmak ve çene üç destek noktasıdır. Sonra Si'den ince Do diyeze, oradan ince Re'ye yavaşça uzun sesler çal. Do diyezde ses sertleşirse havayı yumuşat."
+    },
+    {
+      "id": "g9-c1",
+      "kind": "calisma",
+      "title": "İnce Do Diyez Uzun Sesler",
+      "text": "Si, ince Do diyez ve ince Re arasında yavaş adımlar. Do diyezde parmakların neredeyse hepsi açık; flütü dengede tut ve sesi yumuşak ver.",
+      "time": 4,
+      "bpm": 66,
+      "key": "D",
+      "rows": [
+        "B4:2 C#5:2 | D5:4 | C#5:2 A4:2 | B4:2 C#5:2 |",
+        "D5 C#5 B4 C#5 | D5:2 A4:2 | B4 C#5 D5 C#5 | D5:4 ||"
+      ]
+    },
+    {
+      "id": "g9-c2",
+      "kind": "calisma",
+      "title": "Uzun-Kısa Ritmi",
+      "text": "Noktalı dörtlüğü bir buçuk vuruş tut, ardından gelen sekizliği kısa ama net çal. İçinden \"1-(ve)-2-ve\" diye saymayı unutma.",
+      "time": 4,
+      "bpm": 66,
+      "key": "D",
+      "rows": [
+        "A4:1.5 A4:.5 A4:2 | B4:1.5 B4:.5 B4:2 | C#5:1.5 C#5:.5 C#5 C#5 | D5:4 |",
+        "D5:1.5 C#5:.5 B4:2 | A4:1.5 G4:.5 F#4:2 | E4:1.5 F#4:.5 G4 E4 | D4:4 ||"
+      ]
+    },
+    {
+      "id": "g9-c3",
+      "kind": "calisma",
+      "title": "Re Majör Dizisi",
+      "text": "Önce Re majör dizisini dörtlüklerle çık ve in, sonra aynı notaları noktalı ritimle ve ikişerli yaylarla çal. Donanımdaki iki diyezi unutma: Fa♯ ve Do♯.",
+      "time": 4,
+      "bpm": 72,
+      "key": "D",
+      "rows": [
+        "D4 E4 F#4 G4 | A4 B4 C#5 D5 | C#5 B4 A4 G4 | F#4 E4 D4:2 |",
+        "(D4:1.5 E4:.5) (F#4:1.5 G4:.5) | (A4:1.5 B4:.5) (C#5:1.5 D5:.5) | (C#5:1.5 B4:.5) (A4:1.5 G4:.5) | (F#4:1.5 E4:.5) D4:2 ||"
+      ]
+    },
+    {
+      "id": "g9-c4",
+      "kind": "calisma",
+      "title": "Natürel İşareti: Do mu, Do Diyez mi?",
+      "text": "Re majörde bazı ölçülerdeki Do'ların önünde natürel işareti var: o ölçüde sade Do (ince Do) çal. Natürelsiz ölçülerde Do'lar yine Do♯; iki sesin farkını dinle.",
+      "time": 4,
+      "bpm": 66,
+      "key": "D",
+      "rows": [
+        "D5 C#5 B4 C#5 | D5:2 A4:2 | D5 C5 B4 C5 | D5:2 A4:2 |",
+        "B4 C5 D5:2 | B4 C#5 D5:2 | A4 C5 B4 G4 | A4 C#5 D5:2 ||"
+      ]
+    },
+    {
+      "id": "g9-c5",
+      "kind": "calisma",
+      "title": "Noktalı Vals",
+      "text": "3/4 ölçüde noktalı dörtlük: ölçünün ilk iki vuruşunu uzun-kısa olarak, üçüncü vuruşu dörtlük olarak çal. \"1-(ve)-2-ve-3\" diye say.",
+      "time": 3,
+      "bpm": 76,
+      "key": "D",
+      "rows": [
+        "D5:1.5 C#5:.5 B4 | A4:2 F#4 | G4:1.5 A4:.5 B4 | A4:3 |",
+        "B4:1.5 C#5:.5 D5 | E5:2 C#5 | D5:1.5 B4:.5 A4 | D5:3 ||"
+      ]
+    },
+    {
+      "id": "g9-p1",
+      "kind": "parca",
+      "title": "Greensleeves",
+      "text": "Yüzyıllardır çalınan hüzünlü bir İngiliz halk ezgisi, noktalı dörtlükle dolu. İlk ölçüdeki susu say ve üçüncü vuruşta gir. Bu eski ezgi majör ya da minör değil, kendine özgü bir dizide; bu yüzden donanım yok, Si bemoller ve Fa diyezler notaların önünde yazılı.",
+      "credit": "Geleneksel İngiliz ezgisi",
+      "time": 3,
+      "bpm": 88,
+      "rows": [
+        "R:2 G4 | Bb4:2 C5 | D5:1.5 E5:.5 D5 | C5:2 A4 |",
+        "F4:1.5 G4:.5 A4 | Bb4:2 G4 | G4:1.5 F#4:.5 G4 | A4:2 F#4 |",
+        "D4:2 G4 | Bb4:2 C5 | D5:1.5 E5:.5 D5 | C5:2 A4 |",
+        "F4:1.5 G4:.5 A4 | Bb4:1.5 A4:.5 G4 | F#4:1.5 E4:.5 F#4 | G4:3! ||"
+      ]
+    },
+    {
+      "id": "g9-p2",
+      "kind": "parca",
+      "title": "Uçurtma",
+      "text": "Re majörde rüzgâra kapılıp yükselen bir ezgi. Noktalı ritimleri sallanır gibi, uzun-kısa çal; ince Fa diyeze çıkarken havayı hızlandır.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 80,
+      "key": "D",
+      "rows": [
+        "D4 F#4 A4 D5 | C#5:1.5 B4:.5 A4:2 | B4 C#5 D5 E5 | D5:1.5 C#5:.5 B4:2 |",
+        "A4:1.5 B4:.5 A4 F#4 | G4:1.5 A4:.5 G4 E4 | F#4 A4 D5 C#5 | B4:4 |",
+        "G4:1.5 A4:.5 B4 G4 | A4:1.5 B4:.5 C#5 A4 | D5:1.5 E5:.5 F#5 D5 | E5:4 |",
+        "F#5:1.5 E5:.5 D5 C#5 | B4:1.5 C#5:.5 D5 A4 | G4 B4 A4 C#5 | D5:4 ||"
+      ]
+    }
+  ]
+}

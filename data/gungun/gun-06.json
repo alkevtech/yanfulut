@@ -1,0 +1,130 @@
+{
+  "day": 6,
+  "title": "Bir Kat Yukarı: İnce Mi ve İnce Fa",
+  "goals": [
+    "Aynı parmakla bir oktav yukarı çıkmayı öğrenmek",
+    "İnce Mi ve ince Fa'yı temiz çalmak",
+    "Legato yayını tanımak ve dil vurmadan bağlı çalmak",
+    "Dil vurarak ve legato çalmayı ayırt etmek"
+  ],
+  "newNotes": ["E5", "F5"],
+  "sections": [
+    {
+      "title": "Oktav nedir?",
+      "text": "Pes Mi ile ince Mi aynı adı taşır ama biri ötekinin bir kat üstündedir; bu uzaklığa oktav denir. Flütte ince oktavın çoğu notası, pes oktavdaki parmaklarla çalınır. Değişen parmaklar değil, havadır: daha hızlı, daha dar bir hava akımı sesi bir kat yukarı sıçratır."
+    },
+    {
+      "title": "Hava hızı ve dudaklar",
+      "text": "Üst oktava çıkarken daha çok değil, daha hızlı üfle. Dudak açıklığını biraz küçült, sanki uzaktaki bir mumu söndürmek istiyormuşsun gibi. Çeneyi hafifçe öne almak ve havayı biraz yukarı yöneltmek de yardım eder. Omuzlar ve boğaz rahat kalsın; sıkmak sesi kısar."
+    },
+    {
+      "title": "Yeni notalar: ince Mi ve ince Fa",
+      "text": "İnce Mi, pes Mi ile aynı parmaklarla çalınır: sol başparmak, sol işaret, orta ve yüzük parmakları kapalı; sağ işaret ve orta parmak kapalı; sağ serçe parmak Mi♭ anahtarında. İnce Fa da pes Fa gibidir: sol elin hepsi kapalı, sağda yalnızca işaret parmağı ve serçe parmak Mi♭ anahtarında. Fark yalnızca hava hızındadır."
+    },
+    {
+      "title": "Legato yayı",
+      "text": "Birkaç notanın üstüne ya da altına çizilen kavisli çizgiye legato yayı denir. Yayın altındaki ilk notaya 'tu' diye dil vurursun, öbürlerinde dil vurmazsın; yalnızca parmaklar değişir, hava hiç kesilmez. Bağdan farkı şudur: bağ aynı iki notayı birleştirir, legato yayı ise farklı notaları birbirine akıtır."
+    }
+  ],
+  "items": [
+    {
+      "id": "g6-i1",
+      "kind": "info",
+      "title": "Isınma: Sesi Sıçrat",
+      "text": "Pes Mi parmaklarını tut ve dört vuruş boyunca rahat, yumuşak bir ses çal. Parmaklarını hiç oynatmadan dudak açıklığını küçült ve havayı hızlandır: ses ince Mi'ye sıçrasın. Sonra yine yavaşla ve pes Mi'ye dön. Aynısını Fa parmaklarıyla yap. Her denemeden sonra rahatça nefes al; zorlanırsan bir dakika dinlen."
+    },
+    {
+      "id": "g6-c1",
+      "kind": "calisma",
+      "title": "Aynı Parmak, İki Ses",
+      "text": "Pes Mi'den ince Mi'ye, pes Fa'dan ince Fa'ya parmak değiştirmeden çık. Her ince notada yalnızca havayı hızlandır ve dudak açıklığını küçült.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "E4:2 E5:2 | R:2 E5:2 | F4:2 F5:2 | R:2 F5:2 |",
+        "E4 E5 F4 F5 | E5:2 F5:2 | E5:4 ||"
+      ]
+    },
+    {
+      "id": "g6-c2",
+      "kind": "calisma",
+      "title": "İnce Mi'ye Adım Adım",
+      "text": "Bildiğin ince Do ve ince Re'den basamak basamak ince Mi ve ince Fa'ya çık. Hava akımını yukarı çıktıkça biraz daha hızlandır, sesi sıkmadan.",
+      "time": 4,
+      "bpm": 66,
+      "key": "F",
+      "rows": [
+        "C5 D5 E5:2 | D5 E5 F5:2 | E5 D5 C5 D5 | E5:4 |",
+        "F5 E5 D5 C5 | Bb4 C5 D5:2 | E5 C5 D5 E5 | F5:4 ||"
+      ]
+    },
+    {
+      "id": "g6-c3",
+      "kind": "calisma",
+      "title": "İlk Legato Yayı",
+      "text": "Her yayın yalnızca ilk notasına dil vur, ötekilerde havayı kesmeden parmaklarını değiştir. Parmaklar aynı anda ve tam vaktinde inip kalksın.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "(G4 A4) (B4 C5) | (D5:2 C5:2) | (A4 B4) (C5 D5) | E5:4 |",
+        "(E5 D5) (C5 B4) | (A4:2 B4:2) | (C5 D5 E5 F5) | E5:4 ||"
+      ]
+    },
+    {
+      "id": "g6-c4",
+      "kind": "calisma",
+      "title": "Legato Oktavlar",
+      "text": "Pes notadan ince notaya dil vurmadan geç: yalnızca hava hızlanır. Önce yavaş çal; ses kırılırsa havayı biraz daha erken hızlandır.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "(D4:2 D5:2) | (E4:2 E5:2) | (F4:2 F5:2) | (E4:2 E5:2) |",
+        "(F5 E5 D5 C5) | (D5:2 E5:2) | (F5 D5) (E5 C5) | D5:4 ||"
+      ]
+    },
+    {
+      "id": "g6-c5",
+      "kind": "calisma",
+      "title": "Dil mi, Yay mı?",
+      "text": "Birinci satırda notalar legato yayının altında, ikinci satırda her notaya dil vuruyorsun. İki satırın sesindeki farkı dinle.",
+      "time": 3,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "(F4 A4 C5) | (F5:2 E5) | (D5 C5 Bb4) | A4:3 |",
+        "G4 Bb4 D5 | E5:2 F5 | E5 D5 C5 | F5:3 ||"
+      ]
+    },
+    {
+      "id": "g6-p1",
+      "kind": "parca",
+      "title": "Gökyüzüne Merdiven",
+      "text": "Fa majörde, basamak basamak ince Fa'ya tırmanan bir ezgi. Yayların altını su gibi akıt, yay dışındaki notalara hafifçe dil vur.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "F4 G4 A4 Bb4 | (C5 D5 E5 F5) | (E5:2 D5:2) | C5:4 |",
+        "(A4 Bb4 C5 D5) | E5:2 C5:2 | (D5 C5 Bb4 A4) | G4:4 |",
+        "F4 A4 C5 F5 | (E5 D5) (C5 Bb4) | A4 C5 G4 E4 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g6-p2",
+      "kind": "parca",
+      "title": "Yankı Vadisi",
+      "text": "Vadide söylenen her küçük ezgi, bir oktav yukarıdan yankı olarak geri döner. Pes ezgiyi dolgun, ince yankıyı hafif ve parlak çal; sondaki koronada sesi dilediğin kadar tut.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "bpm": 80,
+      "key": "F",
+      "rows": [
+        "F4 E4 D4 | E4:2 F4 | F5 E5 D5 | E5:2 F5 |",
+        "(C5 D5 C5) | Bb4:2 A4 | (G4 A4 Bb4) | A4:3 |",
+        "D4 E4 F4 | E4:2 D4 | D5 E5 F5 | E5:2 D5 |",
+        "(C5 Bb4 A4) | (G4 A4 Bb4) | A4:2 G4 | F4:3! ||"
+      ]
+    }
+  ]
+}

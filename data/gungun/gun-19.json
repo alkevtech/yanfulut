@@ -1,0 +1,128 @@
+{
+  "day": 19,
+  "title": "Kır-mı-zı Üçlemeler",
+  "goals": [
+    "Üçlemeyi tanımak: bir vuruşa üç eşit nota",
+    "İki sekizlik ile üçlemeyi birbirinden ayırmak",
+    "Üçlemeli arpejleri legato çalmak",
+    "Swing'in üçlemeyle nasıl yazıldığını görmek"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Üçleme nedir?",
+      "text": "Bir vuruş normalde iki sekizliğe bölünür. Üçlemede aynı vuruşa üç eşit nota sığdırırız. Notaların üstünde ya da altında küçük bir '3' rakamı ve çoğu zaman bir köşeli ayraç görürsün. Üç notanın hiçbiri uzun ya da kısa değildir: hepsi tam olarak eşittir."
+    },
+    {
+      "title": "Kelimelerle sayma",
+      "text": "İki sekizlik için 'ma-vi', üçleme için 'kır-mı-zı' de: iki kelime de tam bir vuruş sürer. Ayağın vururken 'kır' tam vuruşun üstüne düşsün, 'mı-zı' ise eşit aralıkla arkasından gelsin. Dörtlüklerden sonra üçlemeye geçerken hızlanma, sekizliklere dönerken yavaşlama: vuruşun hızı hiç değişmez."
+    },
+    {
+      "title": "Üçleme ve swing",
+      "text": "Dün öğrendiğin swing aslında üçlemeden doğar: üçlemenin ilk iki notası birbirine bağlanınca 'uzun-kısa' ortaya çıkar. Caz müzisyenleri bu yüzden swing'i 'üçlemeli his' diye anlatır. Bugünkü son alıştırmada swing'i bu yolla, bağlı üçlemelerle yazılmış olarak göreceksin."
+    }
+  ],
+  "items": [
+    {
+      "id": "g19-i1",
+      "kind": "info",
+      "title": "Isınma: Ma-vi, Kır-mı-zı",
+      "text": "Ayağınla yavaş vuruşlar say. Dört vuruş boyunca 'ma-vi' de, dört vuruş boyunca 'kır-mı-zı' de; sonra her vuruşta değiştir. Ardından flütle La notasında aynısını çal: önce iki sekizlik, sonra üçleme. Tek nefeste rahatça bitirebildiğin kadar sürdür."
+    },
+    {
+      "id": "g19-c1",
+      "kind": "calisma",
+      "title": "Kırmızı Vuruşlar",
+      "text": "Önce aynı notada üçlemeler, sonra basamak basamak inen ve çıkan üçlemeler. Her üçlemenin ilk notası vuruşun tam üstüne düşsün.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "C5:.333 C5:.333 C5:.334 C5:.333 C5:.333 C5:.334 C5 C5 | D5:.333 D5:.333 D5:.334 D5:.333 D5:.333 D5:.334 D5:2",
+        "E5:.333 D5:.333 C5:.334 D5:.333 C5:.333 B4:.334 C5:.333 B4:.333 A4:.334 G4 | A4:.333 B4:.333 C5:.334 D5:.333 E5:.333 F5:.334 G5:2 ||"
+      ]
+    },
+    {
+      "id": "g19-c2",
+      "kind": "calisma",
+      "title": "İkiler ve Üçler",
+      "text": "Her ölçüde iki sekizlik ve bir üçleme yan yana: 'ma-vi, kır-mı-zı'. Vuruşun hızı aynı kalsın, yalnızca bölünüşü değişsin.",
+      "time": 2,
+      "key": "G",
+      "bpm": 66,
+      "rows": [
+        "G4:.5 A4:.5 B4:.333 A4:.333 G4:.334 | D5:.5 C5:.5 B4:.333 C5:.333 D5:.334 | E5:.5 D5:.5 C5:.333 B4:.333 A4:.334 | G4:2",
+        "B4:.333 C5:.333 D5:.334 B4:.5 G4:.5 | A4:.333 B4:.333 C5:.334 A4:.5 F#4:.5 | G4:.333 A4:.333 B4:.334 D5:.333 C5:.333 A4:.334 | G4:2 ||"
+      ]
+    },
+    {
+      "id": "g19-c3",
+      "kind": "calisma",
+      "title": "Üçlemeli Arpejler",
+      "text": "Akorların notalarını üçlemelerle yukarı ve aşağı çal. Yay altındaki atlamalarda havayı kesme; dudaklarını ince notalar için biraz daralt.",
+      "time": 4,
+      "key": "Am",
+      "bpm": 60,
+      "rows": [
+        "(A4:.333 C5:.333 E5:.334 A5:.333 E5:.333 C5:.334) A4:2 | (G4:.333 B4:.333 D5:.334 G5:.333 D5:.333 B4:.334) G4:2",
+        "(F4:.333 A4:.333 C5:.334 F5:.333 C5:.333 A4:.334) F4:2 | (E4:.333 G#4:.333 B4:.334 E5:.333 B4:.333 G#4:.334) A4:2 ||"
+      ]
+    },
+    {
+      "id": "g19-c4",
+      "kind": "calisma",
+      "title": "Uzun Nota, Kısa Üçleme",
+      "text": "3/4 ölçüde uzun bir ikilikten sonra üçüncü vuruşta bir üçleme: bir sonraki ölçüye uçan küçük bir köprü. Üçlemeyi acele etmeden, vuruşun tamamına yay.",
+      "time": 3,
+      "key": "F",
+      "bpm": 72,
+      "rows": [
+        "F4:2 G4:.333 A4:.333 Bb4:.334 | C5:2 D5:.333 C5:.333 Bb4:.334 | A4 G4 F4 | C5:3",
+        "Bb4:2 C5:.333 Bb4:.333 A4:.334 | G4:2 A4:.333 G4:.333 F4:.334 | E4 G4 C5 | F4:3 ||"
+      ]
+    },
+    {
+      "id": "g19-c5",
+      "kind": "calisma",
+      "title": "Üçlemeyle Yazılmış Swing",
+      "text": "Her vuruşta üçlemenin ilk iki notası bağlı: duyduğun 'uzun-kısa' swing'in ta kendisi. Bağlı notayı dille vurma, kısa notayı hafif bırak.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "C5:.333~ C5:.333 D5:.334 E5:.333~ E5:.333 C5:.334 G4:2 | A4:.333~ A4:.333 B4:.334 C5:.333~ C5:.333 A4:.334 G4:2",
+        "E4:.333~ E4:.333 G4:.334 A4:.333~ A4:.333 Bb4:.334 A4:.333~ A4:.333 G4:.334 E4 | D4:.333~ D4:.333 E4:.334 G4:.333~ G4:.333 E4:.334 C4:2 ||"
+      ]
+    },
+    {
+      "id": "g19-p1",
+      "kind": "parca",
+      "title": "Ay Işığı Sonatı (Açılış)",
+      "text": "Beethoven'ın ünlü sonatının, durmadan akan üçlemeli açılışı; La minöre aktarıldı, ilk beş ölçüden sonra kısa bir kapanış eklendi. Çok yumuşak ve eşit çal, sanki gece bir gölün üstünde süzülüyormuşsun gibi.",
+      "credit": "L. van Beethoven",
+      "time": 4,
+      "key": "Am",
+      "bpm": 56,
+      "rows": [
+        "pp (E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) (E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) | (E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) (E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334)",
+        "(F4:.333 A4:.333 C5:.334 F4:.333 A4:.333 C5:.334) (F4:.333 Bb4:.333 D5:.334 F4:.333 Bb4:.333 D5:.334) | (E4:.333 G#4:.333 D5:.334 E4:.333 A4:.333 C5:.334) (E4:.333 A4:.333 B4:.334 D4:.333 G#4:.333 B4:.334)",
+        "(E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) (E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) | (F4:.333 A4:.333 D5:.334 F4:.333 A4:.333 D5:.334) (E4:.333 G#4:.333 B4:.334 E4:.333 G#4:.333 B4:.334)",
+        "(E4:.333 A4:.333 C5:.334 E4:.333 A4:.333 C5:.334) (E4:.333 G#4:.333 B4:.334 E4:.333 G#4:.333 B4:.334) | C4:.333 E4:.333 A4:.334 A4:3! ||"
+      ]
+    },
+    {
+      "id": "g19-p2",
+      "kind": "parca",
+      "title": "Dağ Yolunda Rüzgâr",
+      "text": "Re majörde, tepelere tırmanan neşeli bir yürüyüş; üçlemeler yolda esen rüzgâr gibi. Her satırın sonunda nefes al, son ölçüde pes Do diyezden Re'ye yumuşakça in.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "key": "D",
+      "bpm": 76,
+      "rows": [
+        "mf D5 A4:.333 B4:.333 C#5:.334 D5 F#5 | E5:.333 D5:.333 C#5:.334 B4 A4:2 ,",
+        "B4 G4:.333 A4:.333 B4:.334 C#5 E5 | D5:.333 C#5:.333 B4:.334 A4:.333 G4:.333 F#4:.334 E4:2 ,",
+        "f F#5 E5:.333 F#5:.333 G5:.334 A5 F#5 | G5:.333 F#5:.333 E5:.334 D5:.333 C#5:.333 B4:.334 A4:2 ,",
+        "dim. B4:.333 C#5:.333 D5:.334 E5 A4 C#5 | D5:.333 A4:.333 F#4:.334 G4:.333 E4:.333 C#4:.334 p D4:2! ||"
+      ]
+    }
+  ]
+}

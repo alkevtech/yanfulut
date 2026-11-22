@@ -1,0 +1,135 @@
+{
+  "day": "tekrar-4",
+  "title": "Son Tekrar: Bütün Kitap",
+  "goals": [
+    "16–20. günlerin konularını sorularla hatırlamak",
+    "Kromatik notaları, senkopu, onaltılığı ve üçlemeyi karışık çalmak",
+    "Kitabın başından beri öğrendiğin ölçü ve işaretleri tekrar etmek"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Son beş günde neler öğrendin?",
+      "text": "16. günde pes Do diyezi, kromatik diziyi ve eş sesli notaları (La♯ = Si♭) öğrendin. 17. günde senkop ve swing ile vuruşun arkasında çalmayı, 18. günde onaltılıkları ve noktalı sekizlik + onaltılık ritmini, 19. günde üçlemeleri çalıştın. 20. günde de hepsini bir konserde birleştirdin."
+    },
+    {
+      "title": "Bütün kitabın tekrarı",
+      "text": "Aşağıdaki sorular yalnızca son günleri değil, kitabın başından beri gördüğün ölçüleri ve işaretleri de soruyor. Cevabını önce kendin söyle, sonra kontrol et. Çalma bölümündeki alıştırmalar ve son parça, kromatik notaları, senkopu, onaltılığı, üçlemeyi, 6/8 ölçüyü, bağları ve dinamikleri bir arada kullanıyor."
+    }
+  ],
+  "items": [
+    {
+      "id": "t4-q1",
+      "kind": "test",
+      "title": "Soru 1",
+      "text": "La diyez (La♯) ile aynı sesi veren, aynı parmakla çalınan nota hangisidir?",
+      "answer": "Si bemol (Si♭). İkisi eş sesli notalardır."
+    },
+    {
+      "id": "t4-q2",
+      "kind": "test",
+      "title": "Soru 2",
+      "text": "Senkop nedir? En sık görülen senkop ritmi hangisidir?",
+      "answer": "Vurgunun vuruşun üstünden aradaki 've'ye kaymasıdır. En sık görüleni sekizlik-dörtlük-sekizlik (ta-taa-ta)."
+    },
+    {
+      "id": "t4-q3",
+      "kind": "test",
+      "title": "Soru 3",
+      "text": "Bir dörtlük notada kaç onaltılık vardır?",
+      "answer": "Dört onaltılık (iki onaltılık bir sekizlik eder)."
+    },
+    {
+      "id": "t4-q4",
+      "kind": "test",
+      "title": "Soru 4",
+      "text": "Noktalı sekizlik kaç onaltılık sürer? Arkasından bir onaltılık gelince toplam ne kadar eder?",
+      "answer": "Üç onaltılık sürer; bir onaltılıkla birlikte tam bir vuruş (bir dörtlük) eder."
+    },
+    {
+      "id": "t4-q5",
+      "kind": "test",
+      "title": "Soru 5",
+      "text": "Üçleme nedir, nasıl tanınır?",
+      "answer": "Bir vuruşa sığan üç eşit notadır; üstünde ya da altında küçük bir 3 rakamı yazar."
+    },
+    {
+      "id": "t4-q6",
+      "kind": "test",
+      "title": "Soru 6",
+      "text": "Pes Do diyez nasıl basılır?",
+      "answer": "Pes Re'deki gibi bütün parmaklar kapalı; sağ serçe parmak ayak parçasındaki Do diyez tuşuna basar."
+    },
+    {
+      "id": "t4-q7",
+      "kind": "test",
+      "title": "Soru 7",
+      "text": "6/8 ölçüde kaç büyük vuruş vardır ve her biri kaç sekizlikten oluşur?",
+      "answer": "İki büyük vuruş; her biri üç sekizlik (bir noktalı dörtlük)."
+    },
+    {
+      "id": "t4-q8",
+      "kind": "test",
+      "title": "Soru 8",
+      "text": "Bağ ile legato yayının farkı nedir?",
+      "answer": "Bağ aynı iki notayı birleştirip sesi uzatır; legato yayı farklı notaları dille vurmadan bağlı çaldırır."
+    },
+    {
+      "id": "t4-c1",
+      "kind": "calisma",
+      "title": "Kromatik Senkoplar",
+      "text": "Yarım ses adımlarla çıkan ve inen senkoplar; bağlı notalar ölçü çizgisinin ötesine taşıyor. Diyezli ve bemollü yazımlara dikkat et.",
+      "time": 4,
+      "bpm": 76,
+      "rows": [
+        "E4:.5 F4 F#4:.5 G4 G#4:.5 A4:.5~ | A4:2 G#4 G4 | F#4:.5 G4 G#4:.5 A4 A#4:.5 B4:.5~ | B4:2 C5:2",
+        "C5:.5 B4 Bb4:.5 A4 Ab4:.5 G4:.5~ | G4 F#4 F4 E4 | E4:.5 G4 C5:.5 E5 D#5:.5 E5:.5~ | E5:2 C5:2 ||"
+      ]
+    },
+    {
+      "id": "t4-c2",
+      "kind": "calisma",
+      "title": "Onaltılık, Noktalı, Üçleme",
+      "text": "Son günlerin üç ritmi karışık: onaltılık koşular, noktalı sekme ve üçlemeler. Her ölçüde vuruşun nasıl bölündüğünü önce gözünle bul.",
+      "time": 2,
+      "key": "G",
+      "bpm": 66,
+      "rows": [
+        "G4:.25 A4:.25 B4:.25 C5:.25 D5 | B4:.75 C5:.25 D5:.75 B4:.25 | E5:.333 D5:.333 C5:.334 B4:.333 A4:.333 G4:.334 | A4:2",
+        "D5:.333 E5:.333 F#5:.334 G5 | E5:.25 D5:.25 C5:.25 B4:.25 A4:.75 B4:.25 | G4:.5 B4:.5 A4:.333 F#4:.333 D4:.334 | G4:2 ||"
+      ]
+    },
+    {
+      "id": "t4-c3",
+      "kind": "calisma",
+      "title": "6/8 ile Uzun-Kısa",
+      "text": "15. günün 6/8 ölçüsü ve 17. günün swing hissi bir arada, Fa majörde. İki büyük vuruşu say ve dörtlük-sekizlik çiftlerini salınarak çal.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "F",
+      "bpm": 76,
+      "rows": [
+        "F4 A4:.5 C5 A4:.5 | Bb4 G4:.5 E4:1.5 | F4:.5 A4:.5 C5:.5 F5 E5:.5 | F5:3",
+        "D5 Bb4:.5 G4 Bb4:.5 | C5 A4:.5 F4:1.5 | G4:.5 A4:.5 Bb4:.5 E4 G4:.5 | F4:3 ||"
+      ]
+    },
+    {
+      "id": "t4-p1",
+      "kind": "parca",
+      "title": "Yirmi Günün Hikâyesi",
+      "text": "Kitabın veda parçası: anakruz, senkoplu bağlar, noktalı ritimler, kromatik geçişler, onaltılıklar, üçlemeler, dinamikler ve korona hepsi bir arada. Nefes işaretlerinde rahatça nefes al ve son notayı gururla uzat.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "key": "G",
+      "pickup": 1,
+      "bpm": 80,
+      "rows": [
+        "mp D4 | G4 A4:.5 B4:.5~ B4 D5 | C5:.75 B4:.25 A4:.75 G4:.25 A4:2 , | B4:.333 C5:.333 D5:.334 E5 D5:.5 C#5:.5 D5 | (E5:.25 F#5:.25 G5:.25 F#5:.25) E5 D5:2 ,",
+        "mf G4 A4:.5 B4:.5~ B4 D5 | E5:.75 D5:.25 C5:.75 B4:.25 A4 A#4 | B4:.333 A4:.333 G4:.334 A4:.333 B4:.333 C5:.334 D5 F#4 | G4:3 , D5",
+        "f G5:.5 F#5:.5 E5:.5 D5:.5 C5 E5:.5 G5:.5~ | G5 F#5:.75 E5:.25 D5:2 , | C5:.25 D5:.25 E5:.25 C5:.25 B4:.25 C5:.25 D5:.25 B4:.25 A4:.333 B4:.333 C5:.334 D5 | E5:2 D5:2 ,",
+        "dim. G5:.5 D5 B4:.5 C5:.5 A4 F#4:.5 | G4:.333 A4:.333 B4:.334 C5:.333 D5:.333 E5:.334 D5:2 | p C5:.75 B4:.25 A4:.75 G4:.25 F#4:.5 G4:.5 A4 | G4:3! ||"
+      ]
+    }
+  ]
+}

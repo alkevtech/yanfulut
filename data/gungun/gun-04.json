@@ -1,0 +1,125 @@
+{
+  "day": 4,
+  "title": "Fa ve Si Bemol",
+  "goals": [
+    "Fa ve Si bemol notalarını çalmak",
+    "Bemol işaretini ve donanımı tanımak",
+    "Fa majör tonunda parça çalmak"
+  ],
+  "newNotes": ["F4", "Bb4"],
+  "sections": [
+    {
+      "title": "Bemol İşareti (♭)",
+      "text": "Bemol, bir notayı yarım ses pesleştirir. Si bemol, Si'den biraz daha pes, La'dan biraz daha incedir. Bemol notanın soluna yazılır ve o ölçünün sonuna kadar geçerlidir."
+    },
+    {
+      "title": "Donanım ve Fa Majör",
+      "text": "Bir parça boyunca hep aynı nota değişiyorsa, işaret her seferinde yazılmaz; anahtarın hemen yanına bir kez konur. Buna donanım denir. Fa majörün donanımında bir bemol vardır: Si bemol. Donanımda bu bemolü görürsen parçadaki bütün Si'leri Si bemol çalarsın. Fa majör dizisi: Fa, Sol, La, Si♭, Do, Re, Mi, Fa."
+    },
+    {
+      "title": "Yeni Nota: Fa",
+      "text": "Fa'da sol elin başparmak, işaret, orta ve yüzük parmakları kapalıdır, tıpkı Sol'daki gibi. Buna sağ işaret parmağı eklenir; sağ serçe parmak Mi bemol perdesinde kalır. Fa portenin birinci aralığındadır."
+    },
+    {
+      "title": "Yeni Nota: Si Bemol (Si♭)",
+      "text": "Si bemolün en kolay parmağı 'bir-bir' parmağıdır: sol başparmak ve sol işaret parmağı kapalı (Si gibi), buna sağ işaret parmağı eklenir. Bazı flütçüler sol başparmağı Si perdesinin yanındaki küçük Si bemol kolunun üstüne kaydırır; o zaman sağ el gerekmez. Öğretmenin hangisini önerirse onu kullan."
+    }
+  ],
+  "items": [
+    {
+      "id": "g4-i1",
+      "kind": "info",
+      "title": "Uzun Ses ve Parmak Isınması",
+      "text": "Sol'u 'tu' ile başlatıp 8 vuruş tut, sonra yeni Fa'yı 8 vuruş tut; ses titremeden düz bir çizgi gibi kalsın. Ardından Si ile Si bemol arasında yavaşça gidip gel ve sağ işaret parmağının sesi nasıl pesleştirdiğini dinle. Parmaklarını perdelerden uzaklaştırma, hep yakında beklesinler."
+    },
+    {
+      "id": "g4-c1",
+      "kind": "calisma",
+      "title": "Yeni Nota: Fa",
+      "text": "Sol'dan Fa'ya geçerken yalnızca sağ işaret parmağını indir. Pes Fa için havayı biraz yavaşlat.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "G4:4 | F4:4 | G4:2 F4:2 | G4 F4 G4:2 |",
+        "A4 G4 F4:2 | A4 G4 F4:2 | G4:2 A4:2 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g4-c2",
+      "kind": "calisma",
+      "title": "Yeni Nota: Si Bemol",
+      "text": "Donanımda Si bemol var, yani bütün Si'ler Si bemol. Do'ya geçerken sol başparmağı ve sağ işaret parmağını birlikte kaldır.",
+      "time": 4,
+      "bpm": 66,
+      "key": "F",
+      "rows": [
+        "A4:4 | Bb4:4 | A4:2 Bb4:2 | C5:4 |",
+        "C5 Bb4 A4 Bb4 | C5:2 Bb4:2 | A4 G4 A4 Bb4 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g4-c3",
+      "kind": "calisma",
+      "title": "Si mi, Si Bemol mü?",
+      "text": "Burada donanım yok; bemol yalnızca işaretli notada ve o ölçüde geçerli. Düz Si ile Si bemolün farkını dinle.",
+      "time": 4,
+      "bpm": 60,
+      "rows": ["B4:2 C5:2 | Bb4:2 A4:2 | B4 C5 D5:2 | Bb4 A4 G4:2 ||"]
+    },
+    {
+      "id": "g4-c4",
+      "kind": "calisma",
+      "title": "Fa Majörde Yürüyüş",
+      "text": "Fa'dan Re'ye kadar Fa majör dizisinin notaları. Si bemolü unutma!",
+      "time": 4,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "F4 G4 A4 Bb4 | C5 D5 C5:2 | D5 C5 Bb4 A4 | G4 A4 F4:2 |",
+        "F4:2 A4:2 | C5:2 A4:2 | Bb4 A4 G4 A4 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g4-c5",
+      "kind": "calisma",
+      "title": "Fa Majörde Vals",
+      "text": "3/4 ölçüde Fa majör. Atlamalarda parmakları aynı anda indir ki arada başka ses duyulmasın.",
+      "time": 3,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "F4 A4 C5 | Bb4:2 A4 | G4 Bb4 D5 | C5:3 |",
+        "D5 C5 Bb4 | A4 Bb4 G4 | A4:2 G4 | F4:3 ||"
+      ]
+    },
+    {
+      "id": "g4-p1",
+      "kind": "parca",
+      "title": "Rhody Teyzeye Haber Ver",
+      "text": "Amerika'da kuşaktan kuşağa söylenen bir halk şarkısı (Go Tell Aunt Rhody). Sakin bir yürüyüş hızında, dörtlükleri eşit çal.",
+      "credit": "Geleneksel (Amerikan)",
+      "time": 4,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "A4:2 A4 G4 | F4:2 F4:2 | G4:2 G4 Bb4 | A4:2 G4:2 |",
+        "C5:2 C5 Bb4 | A4:2 A4 G4 | F4 G4 A4 G4 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g4-p2",
+      "kind": "parca",
+      "title": "Parla Parla Küçük Yıldız",
+      "text": "Fransız halk ezgisi 'Ah! vous dirai-je maman'; dünyada en çok bilinen ninnilerden biri. İkilik notaları tam iki vuruş tut, inen cümlelerde Si bemole dikkat et.",
+      "credit": "Geleneksel (Fransız)",
+      "time": 4,
+      "bpm": 72,
+      "key": "F",
+      "rows": [
+        "F4 F4 C5 C5 | D5 D5 C5:2 | Bb4 Bb4 A4 A4 | G4 G4 F4:2 |",
+        "C5 C5 Bb4 Bb4 | A4 A4 G4:2 | C5 C5 Bb4 Bb4 | A4 A4 G4:2 |",
+        "F4 F4 C5 C5 | D5 D5 C5:2 | Bb4 Bb4 A4 A4 | G4 G4 F4:2 ||"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "day": 20,
+  "title": "Büyük Konser",
+  "goals": [
+    "Kromatik dizi, onaltılık, üçleme ve dinamikleri bir ısınmada birleştirmek",
+    "Üç parçalık bir konser programını baştan sona çalmak",
+    "Sahnede nefesini, duruşunu ve sakinliğini korumak",
+    "Kendi çalışını dinleyip neleri öğrendiğini görmek"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Konser günü",
+      "text": "Yirmi gündür öğrendiğin her şey bugün bir araya geliyor: notalar, tonlar, ölçüler, ritimler ve işaretler. Konser programında üç parça var: Beethoven'dan bir Für Elise bölümü, parlak bir marş ve tiz notalara uzanan bir veda valsi. Dinleyicin ailen, arkadaşların ya da sadece aynadaki sen olabilirsin; önemli olan baştan sona durmadan çalmak."
+    },
+    {
+      "title": "Sahneye hazırlık",
+      "text": "Çalmadan önce dik ve rahat dur, omuzlarını indir, iki sakin nefes al. İlk notayı kafanda duy ve tempoyu içinden say. Yanlış bir nota çalarsan durma: müzik akmaya devam etsin, bir sonraki notaya odaklan. Parça bitince flütü indir ve gülümseyerek selam ver."
+    },
+    {
+      "title": "Neler öğrendin?",
+      "text": "Pes Do'dan tiz Re'ye kadar bütün kromatik notaları, birçok farklı donanımı, 2/4, 3/4, 4/4 ve 6/8 ölçüleri biliyorsun. Birlikten onaltılığa, noktalı ritimlerden senkopa ve üçlemeye kadar her süreyi çaldın. Bağ, legato yayı, korona, dinamikler, nefes işareti ve anakruz artık senin için tanıdık. Bu, gerçek bir flütçünün temelidir!"
+    }
+  ],
+  "items": [
+    {
+      "id": "g20-i1",
+      "kind": "info",
+      "title": "Isınma: Konser Öncesi",
+      "text": "Önce flütsüz, dört vuruşta nefes al ve sekiz vuruşta 'sss' diye yavaşça ver; üç kez tekrarla. Sonra pes Re, La ve ince Re'de birer uzun ses çal: önce çok hafif başla, sesi büyüt, sonra yeniden azalt. Isınmanın sonunda ellerini silkele ve parmaklarını gevşet."
+    },
+    {
+      "id": "g20-c1",
+      "kind": "calisma",
+      "title": "Kromatik Isınma Halkası",
+      "text": "Pes Re'den ince Re'ye kromatik çıkış ve iniş, legato sekizliklerle. Çıkarken diyez, inerken bemol okuyorsun; parmakların aynı kalıyor.",
+      "time": 4,
+      "bpm": 80,
+      "rows": [
+        "(D4:.5 D#4:.5 E4:.5 F4:.5) (F#4:.5 G4:.5 G#4:.5 A4:.5) | (A#4:.5 B4:.5 C5:.5 C#5:.5) D5:2",
+        "(D5:.5 Db5:.5 C5:.5 B4:.5) (Bb4:.5 A4:.5 Ab4:.5 G4:.5) | (Gb4:.5 F4:.5 E4:.5 Eb4:.5) D4:2 ||"
+      ]
+    },
+    {
+      "id": "g20-c2",
+      "kind": "calisma",
+      "title": "Ritim Merdiveni",
+      "text": "Bir vuruş önce bir, sonra iki, üç ve dört notaya bölünüyor: dörtlük, sekizlik, üçleme, onaltılık. Son satırda hepsi ve noktalı ritim karışık.",
+      "time": 4,
+      "key": "G",
+      "bpm": 66,
+      "rows": [
+        "G4 G4:.5 G4:.5 G4:.333 G4:.333 G4:.334 G4:.25 G4:.25 G4:.25 G4:.25 | A4 A4:.5 A4:.5 A4:.333 A4:.333 A4:.334 A4:.25 A4:.25 A4:.25 A4:.25",
+        "B4:.25 C5:.25 B4:.25 A4:.25 B4:.333 A4:.333 G4:.334 A4:.5 F#4:.5 G4 | D5:.75 C5:.25 B4:.75 A4:.25 G4:2 ||"
+      ]
+    },
+    {
+      "id": "g20-c3",
+      "kind": "calisma",
+      "title": "Tiz Bölgeye Uçuş",
+      "text": "Akor notalarıyla tiz Re'ye kadar legato tırmanış. Yukarı çıktıkça dudak açıklığını küçült ve havayı hızlandır, boğazını ise rahat bırak.",
+      "time": 4,
+      "key": "D",
+      "bpm": 72,
+      "rows": [
+        "(D5:.5 F#5:.5 A5:.5 C#6:.5) D6:2 | (C#6:.5 A5:.5 E5:.5 G5:.5) F#5:2",
+        "(B4:.5 D5:.5 G5:.5 B5:.5) A5:2 | (A5:.5 C#6:.5 D6:.5 A5:.5) D6:2! ||"
+      ]
+    },
+    {
+      "id": "g20-c4",
+      "kind": "calisma",
+      "title": "Dinamik Yolculuk",
+      "text": "Uzun seslerle çok hafiften çok güçlüye ve geri. Ses büyürken tiz kaçmasın, küçülürken pes düşmesin; perdeyi kulağınla koru.",
+      "time": 4,
+      "key": "F",
+      "bpm": 66,
+      "rows": [
+        "pp F4:4 | cresc. A4:4 | C5:4 | f F5:4 ,",
+        "ff F5:2 dim. C5:2 | A4:2 F4:2 | mp G4:2 E4:2 | pp F4:4! ||"
+      ]
+    },
+    {
+      "id": "g20-p1",
+      "kind": "parca",
+      "title": "Für Elise (Orta Bölüm ve Dönüş)",
+      "text": "16. günde çaldığın açılışın devamı: önce akıcı, şarkı gibi bir orta bölüm, sonra tanıdık temanın dönüşü. Orta bölümdeki noktalı dörtlükleri tam say, temaya dönerken sesi çok hafiflet.",
+      "credit": "L. van Beethoven",
+      "time": 3,
+      "key": "Am",
+      "pickup": 1.5,
+      "bpm": 72,
+      "rows": [
+        "mp B4:.5 C5:.5 D5:.5 | E5:1.5 G4:.5 F5:.5 E5:.5 | D5:1.5 F4:.5 E5:.5 D5:.5 | C5:1.5 E4:.5 D5:.5 C5:.5",
+        "B4 R:.5 E4:.5 E5:.5 D#5:.5 | pp E5:.5 D#5:.5 E5:.5 B4:.5 D5:.5 C5:.5 | A4 R:.5 C4:.5 E4:.5 A4:.5 | B4 R:.5 E4:.5 G#4:.5 B4:.5",
+        "C5 R:.5 E4:.5 E5:.5 D#5:.5 | E5:.5 D#5:.5 E5:.5 B4:.5 D5:.5 C5:.5 | A4 R:.5 C4:.5 E4:.5 A4:.5 | B4 R:.5 E4:.5 C5:.5 B4:.5",
+        "A4:3! ||"
+      ]
+    },
+    {
+      "id": "g20-p2",
+      "kind": "parca",
+      "title": "Konser Marşı",
+      "text": "Re majörde, noktalı ritimler ve onaltılık koşularla dolu parlak bir marş. Orta bölüm hafif başlayıp büyüyor; son ölçüde tiz Re'ye uzanıp koronayla bitir.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "key": "D",
+      "pickup": 1,
+      "bpm": 84,
+      "rows": [
+        "f A4:.75 A4:.25 | D5 D5:.75 E5:.25 F#5 D5 | A5:1.5 F#5:.5 D5:2 , | E5:.75 F#5:.25 G5:.75 E5:.25 C#5:.75 D5:.25 E5:.75 C#5:.25 | A4:2 R A4:.75 A4:.25",
+        "D5 D5:.75 E5:.25 F#5 A5 | B5:.75 A5:.25 G5:.75 F#5:.25 E5:2 , | (F#5:.25 E5:.25 D5:.25 E5:.25) F#5 (E5:.25 D5:.25 C#5:.25 D5:.25) E5 | D5:2 R:2",
+        "p B4:.5 C#5:.5 D5:.5 B4:.5 F#5:2 | G5:.5 F#5:.5 E5:.5 D5:.5 C#5:2 , | cresc. A4:.75 B4:.25 C#5:.75 D5:.25 E5:.75 F#5:.25 G5:.75 A5:.25 | f B5:.75 A5:.25 G5:.75 F#5:.25 E5 A4:.75 A4:.25",
+        "D5 D5:.75 E5:.25 F#5 D5 | A5:.75 B5:.25 C#6:.75 D6:.25 A5 F#5 | G5:.75 F#5:.25 E5:.75 D5:.25 (C#5:.25 D5:.25 E5:.25 C#5:.25) A4 | ff D5:.5 F#5:.5 A5:.5 D6:.5 D6:2! ||"
+      ]
+    },
+    {
+      "id": "g20-p3",
+      "kind": "parca",
+      "title": "Veda Valsi",
+      "text": "Konserin son parçası, Fa majörde zarif bir vals. Üçlemeler dönen eteklikler gibi; üçüncü satırda tiz Do'ya yükselip yavaşça geri iniyor. Son notayı koronayla uzun tut ve dinleyicilerini selamla.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "key": "F",
+      "bpm": 100,
+      "rows": [
+        "mp C5:2 A4 | Bb4:.333 C5:.333 D5:.334 C5:2 | A4:2 F4 | G4:3 ,",
+        "A4:2 C5 | F5:.333 E5:.333 D5:.334 C5:2 | Bb4 A4 G4 | F4:3 ,",
+        "mf (D5 E5 F5) | G5:2~ G5:.5 F5:.5 | cresc. E5:.333 F5:.333 G5:.334 A5 C6 | f C6:3 ,",
+        "dim. (Bb5 A5 G5) | F5:.333 G5:.333 F5:.334 E5:2 | G4:.5 A4:.5 Bb4 E4 | p F4:3! ||"
+      ]
+    }
+  ]
+}

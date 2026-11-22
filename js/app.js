@@ -6,7 +6,7 @@ import { LessonPlayer } from './player.js';
 import { DotsGame } from './dots.js';
 import { DrillGame } from './drill.js';
 import { SheetGame } from './sheet.js';
-import { hergunReady, showHergun } from './hergun.js';
+import { showGungun } from './gungun.js';
 import { ReadingGame, readingKind } from './reading.js';
 import { progress } from './progress.js';
 import { playNote, PitchListener, micErrorMessage, SILENT_MIC_MESSAGE, tuningOffset, resetTuning, setTuning } from './audio.js';
@@ -53,9 +53,9 @@ function route() {
     const ex = worksheetById(id);
     return ex ? showWorksheet(ex) : showWorksheetList();
   }
-  // Her Gün Bir Parça Öğrenelim (yalnızca flüt; kitap verisi girişle sunucudan gelir)
-  if (page === 'hergun' && instrument().id === 'flute')
-    return showHergun([id, ...rest.map(decodeURIComponent)].filter((x) => x != null && x !== ''), { view, pagerHtml, setActive: (g) => (active = g) });
+  // Gün Gün Flüt: gün gün ilerleyen özgün başlangıç kitabı (yalnızca flüt)
+  if (page === 'gungun' && instrument().id === 'flute')
+    return showGungun([id, ...rest.map(decodeURIComponent)].filter((x) => x != null && x !== ''), { view, pagerHtml, setActive: (g) => (active = g) });
   if (page === 'parmak') return showChart(id);
   if (page === 'akort') return showTuner();
   if (page === 'metronom') return showMetronome();
@@ -749,9 +749,6 @@ export async function boot(id) {
   COURSE = inst.course;
   document.title = inst.appTitle;
   document.querySelector('.logo-name').textContent = inst.appTitle;
-  // Her Gün Bir Parça: kurulum (Google istemci kimliği ve sunucu) tamamlanana kadar menüde görünmez
-  const hg = document.querySelector('.nav a[href="#/hergun"]');
-  if (hg) hg.hidden = !hergunReady();
   const other = document.querySelector('.other-instrument');
   if (other && inst.other) {
     // Gömülü görünümde (ör. Claude önizlemesi) göreli adres çalışmaz: canlı siteye git

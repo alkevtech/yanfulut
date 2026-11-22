@@ -1,0 +1,135 @@
+{
+  "day": 5,
+  "title": "Pes Notalara Yolculuk",
+  "goals": [
+    "Mi ve pes Re notalarını çalmak",
+    "Bağ ile aynı notayı uzatmak",
+    "Pes notalarda nefesi karından desteklemek"
+  ],
+  "newNotes": ["E4", "D4"],
+  "sections": [
+    {
+      "title": "Bağ",
+      "text": "Bağ, aynı yükseklikteki iki notayı birleştiren kavisli bir çizgidir. İkinci notayı dille yeniden vurmazsın; iki notanın süresi toplanır ve tek, uzun bir ses olur. Bağ çoğu zaman bir notayı ölçü çizgisinin ötesine taşımak için kullanılır. Örneğin bağlı bir ikilik ile dörtlük, tıpkı noktalı ikilik gibi 3 vuruş sürer."
+    },
+    {
+      "title": "Pes Notalarda Nefes Desteği",
+      "text": "Pes notalar için havayı daha yavaş ve daha geniş bir akışla, biraz aşağıya doğru üfle. Dudak aralığını çok az büyüt ve çeneni gevşet. Hava yavaş akar ama zayıf olmaz: karnından desteklemeyi sürdür. Ses boşalıyor ya da üstteki sese kaçıyorsa daha sert değil, daha sakin ve dolgun üfle."
+    },
+    {
+      "title": "Yeni Notalar: Mi ve Pes Re",
+      "text": "Mi'de sol elin başparmak, işaret, orta ve yüzük parmakları ile sağ elin işaret ve orta parmakları kapalıdır; sağ serçe parmak Mi bemol perdesinde kalır. Pes Re'de buna sağ yüzük parmağı eklenir ve sağ serçe parmak Mi bemol perdesinden kalkar. Mi portenin birinci çizgisinde, pes Re ise portenin hemen altındadır. Bu notalarda küçücük bir aralık bile sesi bozar: parmak uçlarını perdelerin tam ortasına koy."
+    }
+  ],
+  "items": [
+    {
+      "id": "g5-i1",
+      "kind": "info",
+      "title": "Dolgun Pes Sesler",
+      "text": "Sol'u 8 vuruş tut, sonra Fa'ya ve Mi'ye inerek her birini 8 vuruş tut. İnerken havayı yavaşlat ama karnını gevşetme; çeneni biraz aşağı bırak. Pes Re'ye ulaşınca sesin dolgun ve yumuşak olmasına odaklan. Her uzun sesten önce derin bir nefes al."
+    },
+    {
+      "id": "g5-c1",
+      "kind": "calisma",
+      "title": "Yeni Nota: Mi",
+      "text": "Fa'dan Mi'ye sağ orta parmağını indirerek geç. Pes seslerde havayı yavaş ve dolgun ver.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "G4:4 | F4:4 | E4:4 | E4:4 |",
+        "E4:2 F4:2 | G4:2 E4:2 | F4 E4 F4 G4 | E4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-c2",
+      "kind": "calisma",
+      "title": "Yeni Nota: Pes Re",
+      "text": "Pes Re'de sağ yüzük parmağını indir, serçe parmağı kaldır. Ses çıkmazsa parmaklarının perdeleri tam kapatıp kapatmadığını kontrol et.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "E4:4 | D4:4 | E4:2 D4:2 | D4:4 |",
+        "D4 E4 F4 G4 | A4:2 G4:2 | F4 E4 D4 E4 | D4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-c3",
+      "kind": "calisma",
+      "title": "Bağ ile Uzat",
+      "text": "Bağlı notada dili yeniden vurma; sesi ölçü çizgisinin ötesine taşı ve vuruşları saymayı sürdür.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "G4:2 A4:2~ | A4:2 B4:2 | C5:4~ | C5:4 |",
+        "D5:2 C5:2~ | C5 B4 A4:2~ | A4 G4 F4 E4 | D4:4~ | D4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-c4",
+      "kind": "calisma",
+      "title": "Bağ mı, Nokta mı?",
+      "text": "Bağlı ikilik ile dörtlük, noktalı ikilikle aynı 3 vuruşu tutar. İkisi de kulağına aynı gelmeli.",
+      "time": 3,
+      "bpm": 72,
+      "rows": [
+        "D4:2~ D4 | E4:3 | F4:2~ F4 | G4:3 |",
+        "A4 G4 F4 | E4:2~ E4 | D4:3~ | D4:3 ||"
+      ]
+    },
+    {
+      "id": "g5-c5",
+      "kind": "calisma",
+      "title": "Derin Dalış",
+      "text": "Pes bölgede atlamalar. Re-Fa-La gibi sıçramalarda dudaklarını kıpırdatmadan yalnızca havayı ayarla.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "D4 E4 F4 G4 | A4 G4 F4 E4 | D4 F4 A4 F4 | D4:4 |",
+        "E4 G4 B4 G4 | E4 F4 G4 A4 | G4 F4 E4 F4 | D4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-p1",
+      "kind": "parca",
+      "title": "Ali Baba'nın Çiftliği",
+      "text": "Çocukların çok sevdiği çiftlik şarkısının ezgisi (Old MacDonald). Dördüncü ölçüdeki bağa dikkat: Sol'u 3 vuruş tut, sonra pes Re'yi 'tu' ile vur.",
+      "credit": "Geleneksel",
+      "time": 4,
+      "bpm": 76,
+      "rows": [
+        "G4 G4 G4 D4 | E4 E4 D4:2 | B4 B4 A4 A4 | G4:2~ G4 D4 |",
+        "G4 G4 G4 D4 | E4 E4 D4:2 | B4 B4 A4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-p2",
+      "kind": "parca",
+      "title": "Londra Köprüsü",
+      "text": "Köprü yıkılıyor diye söylenen eski bir İngiliz çocuk şarkısı (London Bridge), Fa majörde. Sondaki bağlı Fa'yı tam altı vuruş tut.",
+      "credit": "Geleneksel (İngiliz)",
+      "time": 4,
+      "bpm": 76,
+      "key": "F",
+      "rows": [
+        "C5 D5 C5 Bb4 | A4 Bb4 C5:2 | G4 A4 Bb4:2 | A4 Bb4 C5:2 |",
+        "C5 D5 C5 Bb4 | A4 Bb4 C5:2 | G4:2 C5:2 | A4:2 F4:2~ | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g5-p3",
+      "kind": "parca",
+      "title": "Kaplumbağa Yolu",
+      "text": "Ağır ağır yürüyen bir kaplumbağa: pes notalarda acele etme, bağlı notaları sonuna kadar tut.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "bpm": 66,
+      "key": "F",
+      "rows": [
+        "D4 E4 F4 | G4:3 | F4 E4 D4 | E4:3 |",
+        "F4 G4 A4 | Bb4:2 A4 | G4:2~ G4 | F4:3 |",
+        "A4 G4 F4 | E4:2 F4 | G4 F4 E4 | D4:3~ |",
+        "D4:3 | F4 E4 F4 | E4:2~ E4 | D4:3! ||"
+      ]
+    }
+  ]
+}

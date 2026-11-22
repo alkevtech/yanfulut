@@ -1,0 +1,133 @@
+{
+  "day": "tekrar-1",
+  "title": "Beş Günün Tekrarı",
+  "goals": [
+    "Öğrendiğin notaları, süreleri ve işaretleri hatırlamak",
+    "Sus, bağ, korona ve donanımı bir arada çalmak",
+    "Kendini dinleyerek eksiklerini bulmak"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Neler Öğrendik?",
+      "text": "Beş günde pes Re'den Re'ye kadar dokuz nota öğrendin: pes Re, Mi, Fa, Sol, La, Si bemol, Si, Do ve Re. Birlik, ikilik, dörtlük ve noktalı ikilik notaları; birlik, ikilik ve dörtlük susları tanıdın. 4/4 ve 3/4 ölçüyü, koronayı, bağı ve Fa majörün donanımını öğrendin."
+    },
+    {
+      "title": "Nasıl Çalışmalı?",
+      "text": "Önce soruları cevapla, sonra çalma bölümüne geç. Her parçadan önce donanıma ve ölçü sayısına bak, ritmi bir kez el çırparak say. Zorlandığın ölçüyü ayrı ve yavaş çal, sonra parçanın içine geri koy."
+    }
+  ],
+  "items": [
+    {
+      "id": "t1-q1",
+      "kind": "test",
+      "title": "Soru 1",
+      "text": "4/4 ölçüde birlik, ikilik ve dörtlük nota kaçar vuruş sürer?",
+      "answer": "Birlik 4, ikilik 2, dörtlük 1 vuruş."
+    },
+    {
+      "id": "t1-q2",
+      "kind": "test",
+      "title": "Soru 2",
+      "text": "Noktalı ikilik kaç vuruş sürer? Neden?",
+      "answer": "3 vuruş: ikilik 2 vuruştur, nokta yarısını (1 vuruş) ekler."
+    },
+    {
+      "id": "t1-q3",
+      "kind": "test",
+      "title": "Soru 3",
+      "text": "3/4 ölçünün her ölçüsünde kaç vuruş vardır?",
+      "answer": "Üç dörtlük vuruş."
+    },
+    {
+      "id": "t1-q4",
+      "kind": "test",
+      "title": "Soru 4",
+      "text": "Portede birlik sus ile ikilik susu nasıl ayırt edersin?",
+      "answer": "Birlik sus dördüncü çizgiden aşağı sarkar; ikilik sus üçüncü çizginin üstüne oturur."
+    },
+    {
+      "id": "t1-q5",
+      "kind": "test",
+      "title": "Soru 5",
+      "text": "Fa majörün donanımında hangi işaret vardır, ne anlama gelir?",
+      "answer": "Bir bemol: Si bemol. Parçadaki bütün Si'ler Si bemol çalınır."
+    },
+    {
+      "id": "t1-q6",
+      "kind": "test",
+      "title": "Soru 6",
+      "text": "Do notasında hangi parmaklar kapalıdır?",
+      "answer": "Yalnızca sol işaret parmağı; sağ serçe parmak Mi bemol perdesinde durur."
+    },
+    {
+      "id": "t1-q7",
+      "kind": "test",
+      "title": "Soru 7",
+      "text": "Aynı yükseklikteki iki notayı birleştiren bağda ikinci notayı nasıl çalarsın?",
+      "answer": "Dille yeniden vurmadan; iki notanın süresi toplanır ve tek bir ses olur."
+    },
+    {
+      "id": "t1-q8",
+      "kind": "test",
+      "title": "Soru 8",
+      "text": "Korona işaretini gördüğünde ne yaparsın?",
+      "answer": "Notayı yazılandan daha uzun tutarım."
+    },
+    {
+      "id": "t1-c1",
+      "kind": "calisma",
+      "title": "Süre ve Sus Karışımı",
+      "text": "Notalar, suslar ve bir bağ bir arada. Susları tam say, bağlı La'yı yeniden vurma.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "G4 A4 B4 C5 | D5:2 R:2 | C5 B4 A4:2~ | A4 R G4:2 |",
+        "E4 F4 G4 R | D4:4 | E4:2 F4 G4 | G4:4! ||"
+      ]
+    },
+    {
+      "id": "t1-c2",
+      "kind": "calisma",
+      "title": "Fa Majörde Üçlü Ölçü",
+      "text": "3/4 ölçüde Fa majör: pes Re'den Re'ye bütün notalar. Si bemolü ve bağlı Re'yi unutma.",
+      "time": 3,
+      "bpm": 76,
+      "key": "F",
+      "rows": [
+        "F4 G4 A4 | Bb4:2 C5 | D5:2~ D5 | C5:3 |",
+        "Bb4 A4 G4 | A4 F4 E4 | D4:2 E4 | F4:3 ||"
+      ]
+    },
+    {
+      "id": "t1-p1",
+      "kind": "parca",
+      "title": "Beş Gün Valsi",
+      "text": "Beş günde öğrendiğin her şey tek bir valste: Fa majör, 3/4 ölçü, noktalı ikilik, bağ, sus ve korona.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "bpm": 80,
+      "key": "F",
+      "rows": [
+        "F4 A4 C5 | D5:2 C5 | Bb4 A4 G4 | A4:3 |",
+        "G4 Bb4 D5 | C5:2 Bb4 | A4 G4 E4 | F4:3 |",
+        "D4 E4 F4 | G4:2 A4 | Bb4:2~ Bb4 | A4 R R |",
+        "C5 Bb4 A4 | G4:2 E4 | D4 E4 G4 | F4:3! ||"
+      ]
+    },
+    {
+      "id": "t1-p2",
+      "kind": "parca",
+      "title": "Kuzucuk Fa Majörde",
+      "text": "3. günde Sol'dan çaldığın Kuzucuk (Mary Had a Little Lamb) bu kez Fa majörde ve dörtlük suslarla. Donanıma dikkat!",
+      "credit": "Geleneksel",
+      "time": 4,
+      "bpm": 80,
+      "key": "F",
+      "rows": [
+        "A4 G4 F4 G4 | A4 A4 A4 R | G4 G4 G4 R | A4 C5 C5 R |",
+        "A4 G4 F4 G4 | A4 A4 A4 A4 | G4 G4 A4 G4 | F4:4! ||"
+      ]
+    }
+  ]
+}

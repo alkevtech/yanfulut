@@ -1,0 +1,138 @@
+{
+  "day": 3,
+  "title": "Üç Vuruşun Dansı",
+  "goals": [
+    "Yeni nota Re'yi çalmak",
+    "3/4 ölçüde üç vuruş saymak",
+    "Noktalı ikilik notayı tam üç vuruş tutmak",
+    "Korona işaretinde notayı uzatmak"
+  ],
+  "newNotes": ["D5"],
+  "sections": [
+    {
+      "title": "3/4 Ölçü",
+      "text": "3/4 ölçüde her ölçüde üç dörtlük vuruş vardır: 'bir-iki-üç, bir-iki-üç'. İlk vuruş biraz daha güçlü hissedilir; valsler ve salıncak şarkıları böyle sallanır. Birlik nota 3/4 ölçüye sığmaz, bu yüzden uzun notalar için noktalı ikilik kullanılır."
+    },
+    {
+      "title": "Noktalı İkilik",
+      "text": "Notanın sağındaki nokta, notaya kendi süresinin yarısı kadar ekler. İkilik nota 2 vuruştur, yarısı 1 vuruştur; bu yüzden noktalı ikilik 2 + 1 = 3 vuruş sürer. 3/4 ölçüde tek bir noktalı ikilik bütün ölçüyü doldurur."
+    },
+    {
+      "title": "Korona",
+      "text": "Korona, notanın üstünde duran, altında bir nokta olan küçük bir yay işaretidir. Korona gördüğün notayı yazılandan daha uzun tutarsın; ne kadar uzun olacağına sen karar verirsin. Çoğu zaman bir parçanın ya da cümlenin sonunda görülür."
+    },
+    {
+      "title": "Yeni Nota: Re",
+      "text": "Re'de sol işaret parmağı açık kalır. Sol başparmak, sol orta ve yüzük parmakları ile sağ elin işaret, orta ve yüzük parmakları kapalıdır; sağ serçe parmak Mi bemol perdesindedir. Re portenin dördüncü çizgisindedir. Do'dan Re'ye geçerken birçok parmak birden hareket eder; önce yavaşça dene."
+    }
+  ],
+  "items": [
+    {
+      "id": "g3-i1",
+      "kind": "info",
+      "title": "Nefes Sayma ve Re'yi Bulma",
+      "text": "Bir elini karnına koy: 3 vuruşta nefes al, 9 vuruşta 'fuu' diyerek ver; üç kez yap. Sonra flütte Sol'u çal; sol işaret parmağını kaldırıp sağ elin üç parmağını indirerek Re'ye geç ve 6 vuruş tut. Bu geçişi yavaşça birkaç kez tekrarla."
+    },
+    {
+      "id": "g3-c1",
+      "kind": "calisma",
+      "title": "Yeni Nota: Re",
+      "text": "Do'dan Re'ye geçişte parmaklar aynı anda insin. Son notada korona var: notayı istediğin kadar uzat.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "C5:4 | D5:4 | C5:2 D5:2 | D5:2 R:2 |",
+        "D5 C5 B4 C5 | D5:2 C5:2 | B4 C5 D5 C5 | D5:4! ||"
+      ]
+    },
+    {
+      "id": "g3-c2",
+      "kind": "calisma",
+      "title": "Bir-İki-Üç",
+      "text": "3/4 ölçüde her ölçünün ilk vuruşunu içinden biraz daha güçlü say. Dörtlükleri eşit tut.",
+      "time": 3,
+      "bpm": 72,
+      "rows": [
+        "G4 A4 B4 | C5 B4 A4 | B4 C5 D5 | C5:2 R |",
+        "D5 C5 B4 | A4 B4 C5 | B4 A4 G4 | G4:2 R ||"
+      ]
+    },
+    {
+      "id": "g3-c3",
+      "kind": "calisma",
+      "title": "Noktalı İkilik",
+      "text": "Noktalı ikilikte 'bir-iki-üç' diye say ve notayı üçüncü vuruşun sonuna kadar tut.",
+      "time": 3,
+      "bpm": 72,
+      "rows": [
+        "D5:3 | C5:3 | B4:2 A4 | G4:3 |",
+        "G4:2 A4 | B4:3 | C5:2 D5 | B4:3 ||"
+      ]
+    },
+    {
+      "id": "g3-c4",
+      "kind": "calisma",
+      "title": "Korona Durakları",
+      "text": "Korona gelince saymayı bırak: notayı rahatça uzat, sonra nefes al ve yeni ölçüye temiz bir 'tu' ile başla.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "G4 A4 B4 C5 | D5:4! | D5 C5 B4 A4 | G4:4! |",
+        "B4 C5 D5 C5 | B4:2 A4:2! | G4 A4 B4 A4 | G4:4! ||"
+      ]
+    },
+    {
+      "id": "g3-c5",
+      "kind": "calisma",
+      "title": "Susla Vals",
+      "text": "3/4 ölçüde dörtlük suslar: sus sırasında da 'bir-iki-üç' saymayı sürdür.",
+      "time": 3,
+      "bpm": 72,
+      "rows": [
+        "D5 R D5 | C5 R C5 | B4 C5 D5 | B4:2 R |",
+        "A4 R A4 | B4 R B4 | C5 B4 A4 | G4:3! ||"
+      ]
+    },
+    {
+      "id": "g3-p1",
+      "kind": "parca",
+      "title": "Kuzucuk",
+      "text": "Dünyanın her yerinde çocukların bildiği bir şarkı (Mary Had a Little Lamb). Re'ye çıkarken havayı biraz hızlandır; sondaki koronada notayı keyfince uzat.",
+      "credit": "Geleneksel",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "B4 A4 G4 A4 | B4 B4 B4:2 | A4 A4 A4:2 | B4 D5 D5:2 |",
+        "B4 A4 G4 A4 | B4 B4 B4 B4 | A4 A4 B4 A4 | G4:4! ||"
+      ]
+    },
+    {
+      "id": "g3-p2",
+      "kind": "parca",
+      "title": "Salıncak",
+      "text": "Bir salıncak gibi ileri geri sallanan bir vals. Her ölçünün ilk vuruşu salıncağın en uç noktası gibidir.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "bpm": 72,
+      "rows": [
+        "G4 B4 D5 | C5:2 B4 | A4 B4 C5 | B4:3 |",
+        "A4 C5 B4 | A4:2 G4 | A4 B4 A4 | G4:3 |",
+        "D5:2 C5 | B4:2 A4 | B4 C5 D5 | C5:3 |",
+        "B4 A4 G4 | A4:2 B4 | A4 B4 A4 | G4:3! ||"
+      ]
+    },
+    {
+      "id": "g3-p3",
+      "kind": "parca",
+      "title": "Akşam Çanı",
+      "text": "Uzaktan gelen çan sesleri gibi geniş ve sakin çal. İkilikler birbirine yumuşakça bağlansın.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "D5:2 B4:2 | C5:2 A4:2 | B4 A4 G4 A4 | B4:2 R:2 |",
+        "G4 A4 B4 C5 | D5:2 C5:2 | B4 A4 B4 A4 | G4:4! ||"
+      ]
+    }
+  ]
+}

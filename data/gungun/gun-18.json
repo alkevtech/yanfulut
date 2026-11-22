@@ -1,0 +1,127 @@
+{
+  "day": 18,
+  "title": "Tiri Tiri Onaltılıklar",
+  "goals": [
+    "Onaltılık notayı tanımak: dört onaltılık bir dörtlük eder",
+    "Onaltılıkları 'bir-e-ve-e' diye saymak",
+    "Noktalı sekizlik + onaltılık (uzun-kısa sekme) ritmini çalmak",
+    "Mozart'ın Türk Marşı temasını çalmak"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Onaltılık nota",
+      "text": "Onaltılık notanın sapında iki çengel, gruplanınca iki kiriş vardır. İki onaltılık bir sekizlik, dört onaltılık bir dörtlük eder. Bir vuruşu dörde bölerek 'bir-e-ve-e' diye sayarız; söylerken 'ti-ri-ti-ri' de diyebilirsin. Çok sık görülen iki desen var: bir sekizlik + iki onaltılık ('taa-ti-ri') ve iki onaltılık + bir sekizlik ('ti-ri-taa')."
+    },
+    {
+      "title": "Noktalı sekizlik + onaltılık",
+      "text": "Nokta, notaya kendi yarısı kadar süre ekler: noktalı sekizlik üç onaltılık kadar sürer. Arkasından gelen bir onaltılıkla birlikte tam bir vuruş eder. Bu ritim sekip zıplayan bir 'taaa-ti' gibi duyulur; at nalı sesine benzer. Swing'deki 'uzun-kısa'dan daha keskindir: kısa nota çok kısa ve bir sonraki notaya yapışık çalınır."
+    },
+    {
+      "title": "Hızlı notalarda dil ve parmak",
+      "text": "Onaltılıklarda dil vuruşu küçük ve hafif olmalı: 'tu' hecesini dilinin ucuyla, dişlerinin hemen arkasına dokunarak söyle. Parmaklarını tuşlardan çok kaldırma; az hareket hız demektir. Her alıştırmaya yavaş başla, notalar eşit olunca metronomu biraz hızlandır."
+    }
+  ],
+  "items": [
+    {
+      "id": "g18-i1",
+      "kind": "info",
+      "title": "Isınma: Dil Koşusu",
+      "text": "Flütsüz, metronomu yavaş bir tempoya kur. Her vuruşa önce bir 'tu', sonra iki 'tu-tu', sonra dört 'tu-tu-tu-tu' söyle; sesin hep aynı yükseklikte ve eşit kalsın. Ardından flütle Sol notasında aynısını yap: önce dörtlük, sonra sekizlik, sonra onaltılık. Dilin yorulursa dinlen ve omuzlarını gevşet."
+    },
+    {
+      "id": "g18-c1",
+      "kind": "calisma",
+      "title": "Dört Kardeş",
+      "text": "Aynı notada dört onaltılık, ardından bir dörtlük. Dört notayı tam olarak bir vuruşa sığdır ve 'bir-e-ve-e' diye say.",
+      "time": 4,
+      "key": "G",
+      "bpm": 60,
+      "rows": [
+        "G4:.25 G4:.25 G4:.25 G4:.25 G4 A4:.25 A4:.25 A4:.25 A4:.25 A4 | B4:.25 B4:.25 B4:.25 B4:.25 B4:.5 B4:.5 C5:2",
+        "C5:.25 B4:.25 A4:.25 G4:.25 A4 B4:.25 A4:.25 G4:.25 F#4:.25 G4 | A4:.25 B4:.25 A4:.25 G4:.25 F#4:.5 A4:.5 G4:2 ||"
+      ]
+    },
+    {
+      "id": "g18-c2",
+      "kind": "calisma",
+      "title": "Taa-tiri ve Tiri-taa",
+      "text": "Sekizlik + iki onaltılık ve iki onaltılık + sekizlik desenleri yan yana. Sekizlikte acele etme, onaltılıklarda geride kalma.",
+      "time": 2,
+      "key": "D",
+      "bpm": 66,
+      "rows": [
+        "D5:.5 C#5:.25 B4:.25 A4:.5 B4:.25 C#5:.25 | D5:.25 E5:.25 F#5:.5 E5:.25 D5:.25 C#5:.5 | B4:.5 A4:.25 G4:.25 F#4:.5 G4:.25 A4:.25 | D4:2",
+        "F#4:.25 G4:.25 A4:.5 B4:.25 C#5:.25 D5:.5 | E5:.5 F#5:.25 E5:.25 D5:.5 C#5:.5 | B4:.25 C#5:.25 D5:.25 B4:.25 A4:.5 C#5:.5 | D5:2 ||"
+      ]
+    },
+    {
+      "id": "g18-c3",
+      "kind": "calisma",
+      "title": "Legato Onaltılık Koşusu",
+      "text": "Dörtlü legato gruplar parmakları eşitler: dil yalnızca her grubun ilk notasında vurur. Parmaklar aynı anda ve küçük hareketlerle insin kalksın.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "(C5:.25 D5:.25 E5:.25 F5:.25) (G5:.25 F5:.25 E5:.25 D5:.25) C5:2 | (E5:.25 F5:.25 G5:.25 A5:.25) (B5:.25 A5:.25 G5:.25 F5:.25) E5:2",
+        "(A5:.25 G5:.25 F5:.25 E5:.25) (D5:.25 C5:.25 B4:.25 A4:.25) G4:2 | (G4:.25 A4:.25 B4:.25 D5:.25) (C5:.25 B4:.25 A4:.25 B4:.25) C5:2 ||"
+      ]
+    },
+    {
+      "id": "g18-c4",
+      "kind": "calisma",
+      "title": "Noktalı Sekme",
+      "text": "Noktalı sekizlik + onaltılık: 'taaa-ti'. Uzun notayı tam üç onaltılık tut, kısa notayı bir sonraki notaya yapıştır.",
+      "time": 4,
+      "key": "F",
+      "bpm": 66,
+      "rows": [
+        "F4:.75 G4:.25 A4:.75 Bb4:.25 C5 C5 | D5:.75 C5:.25 Bb4:.75 A4:.25 G4:2",
+        "A4:.75 Bb4:.25 C5:.75 A4:.25 Bb4:.75 G4:.25 A4:.75 F4:.25 | G4:.75 A4:.25 G4:.75 E4:.25 F4:2 ||"
+      ]
+    },
+    {
+      "id": "g18-c5",
+      "kind": "calisma",
+      "title": "Eşit mi, Sekmeli mi?",
+      "text": "Önce eşit sekizlikler, sonra aynı notalar noktalı ritimle. İki ölçü arasındaki farkı kulağınla duy.",
+      "time": 2,
+      "bpm": 72,
+      "rows": [
+        "C5:.5 D5:.5 E5:.5 C5:.5 | C5:.75 D5:.25 E5:.75 C5:.25 | G4:.5 A4:.5 B4:.5 G4:.5 | G4:.75 A4:.25 B4:.75 G4:.25",
+        "E5:.75 D5:.25 C5:.75 B4:.25 | A4:.75 B4:.25 C5:.75 A4:.25 | G4:.75 F4:.25 E4:.75 D4:.25 | C4:2 ||"
+      ]
+    },
+    {
+      "id": "g18-p1",
+      "kind": "parca",
+      "title": "Türk Marşı (Tema)",
+      "text": "Mozart'ın Rondo alla Turca'sının ünlü teması, onaltılık süslemelerle başlıyor. Onaltılıkları hafif ve parlak çal; sekizlik suslarda sesi temiz kes. Tempoyu ancak notalar eşit olunca artır.",
+      "credit": "W. A. Mozart",
+      "time": 2,
+      "key": "Am",
+      "pickup": 1,
+      "bpm": 56,
+      "rows": [
+        "p B4:.25 A4:.25 G#4:.25 A4:.25 | C5:.5 R:.5 D5:.25 C5:.25 B4:.25 C5:.25 | E5:.5 R:.5 F5:.25 E5:.25 D#5:.25 E5:.25",
+        "cresc. B5:.25 A5:.25 G#5:.25 A5:.25 B5:.25 A5:.25 G#5:.25 A5:.25 | f C6 A5:.5 B5:.5 | C6:.5 B5:.5 A5:.5 G#5:.5",
+        "A5:.5 E5:.5 F5:.5 D5:.5 | C5 B4 | A4 ||"
+      ]
+    },
+    {
+      "id": "g18-p2",
+      "kind": "parca",
+      "title": "Dörtnala Atlar",
+      "text": "Mi minörde, bozkırda koşan atlar: noktalı ritimler nal sesi, onaltılıklar rüzgâr. Son satırda atlar uzaklaşıyor; sesi azaltarak bitir.",
+      "credit": "Gün Gün Flüt",
+      "time": 2,
+      "key": "Em",
+      "bpm": 72,
+      "rows": [
+        "mf E4:.75 G4:.25 B4:.75 G4:.25 | E5:.5 D#5:.5 E5 | B4:.75 A4:.25 G4:.75 F#4:.25 | E4:.5 F#4:.5 G4 ,",
+        "G4:.25 A4:.25 B4:.25 C5:.25 D5:.5 B4:.5 | C5:.25 D5:.25 E5:.25 F#5:.25 G5 | F#5:.75 E5:.25 D#5:.75 F#5:.25 | E5:2 ,",
+        "f B4:.75 B4:.25 E5:.75 E5:.25 | D5:.75 C5:.25 B4:.75 A4:.25 | dim. G4:.25 F#4:.25 E4:.25 F#4:.25 G4:.5 D#4:.5 | p E4:2! ||"
+      ]
+    }
+  ]
+}
