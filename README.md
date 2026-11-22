@@ -168,6 +168,19 @@ Kullanıcının gönderdiği notalardan parçaların sağ el melodisi, ritmiyle 
 Yap biçiminde (`A4:3 G4:.5 F4:.5 |`); suslar ve bağla uzayan notalar sorulmaz, notalar sırayla çalınır (süre puanlanmaz).
 İlk parça: Tan Dun, *The Eternal Vow* (Crouching Tiger, Hidden Dragon); dört bölüm ve baştan sona.
 
+## Her Gün Bir Parça Öğrenelim (flüt, `#/hergun`)
+
+Kitabın (A New Tune A Day for Flute, 1. Kitap; telifli) 20 dersi ve 4 testi gün gün: hedefler, yeni notaların parmakları,
+çalışmalar ve parçalar Egzersiz Yap motoruyla çalınır. **Kitap verisi depoda ve herkese açık sitede durmaz:**
+- `private/` (`.gitignore`'da) yerel çalışma klasörü: sayfa resimleri, `ders-XX.json`, `test-K.json`, `book.json`.
+  `node tools/check-hergun.mjs private/hergun/*.json` aktarımı denetler, `node tools/build-hergun.mjs` `book.json`'u üretir.
+- `worker/hergun-worker.js` (Cloudflare Worker): `book.json` ona `book.txt` modülü olarak yüklenir. `POST /book` isteğindeki
+  Google kimlik jetonunu doğrular (imza, istemci kimliği, süre, doğrulanmış e-posta) ve yalnızca `ALLOWED_DOMAINS`
+  (alkev.k12.tr, stu.alkev.k12.tr) hesaplarına kitabı verir. Ortam: `GOOGLE_CLIENT_ID`, `ALLOWED_DOMAINS`, `ALLOWED_ORIGINS`.
+- `js/hergun-config.js`: Google OAuth istemci kimliği ve Worker adresi (gizli değil). İkisi dolmadan menüde görünmez.
+- `js/hergun.js`: Google ile giriş (Google Identity Services), veriyi yalnızca tarayıcı oturumunda (sessionStorage) tutar.
+  Yerel deneme: localhost'ta `localStorage['hergun.dev'] = '/private/hergun/book.json'`.
+
 ## Güncellemeler ve önbellek (`sw.js`)
 
 GitHub Pages dosyaları tarayıcıda 10 dakika saklatır; yeni sürümden hemen sonra bazı modüller yeni, bazıları eski gelirse sayfa

@@ -165,7 +165,7 @@ export function flute({ x = 80, y = 220, w = 640, note, highlight = [], labels =
   // Sağ serçe parmak: Mi bemol kolu
   key('eb', X(0.8), bot + 11 * s, 11 * s, 6 * s, -1);
   // Ayak: pes Do anahtarı ve yanındaki Do diyez makarası
-  out += el('rect', { x: X(0.9) - 7 * s, y: bot + 5 * s, width: 14 * s, height: 8 * s, rx: 4 * s, class: 'ink thin cup' });
+  key('cs', X(0.9), bot + 9 * s, 7 * s, 4 * s);
   key('c', X(0.95), bot + 11 * s, 11 * s, 6 * s, -1);
 
   if (labels) {

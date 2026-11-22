@@ -1,0 +1,3 @@
+
+# Telifli kitap verisi: yalnızca korumalı sunucuya (Cloudflare Worker) yüklenir, depoya ve siteye girmez
+private/
