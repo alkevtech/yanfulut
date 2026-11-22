@@ -1,0 +1,132 @@
+{
+  "day": 11,
+  "title": "İki Bemollü Ton",
+  "goals": [
+    "Si bemol majör donanımını (Si♭ ve Mi♭) tanımak",
+    "Pes Mi bemol ve ince Mi bemolü temiz çalmak",
+    "Sağ serçe parmağı Re ile Mi bemol arasında rahatça oynatmak",
+    "Pachelbel'in Kanon melodisini Si bemol majörde çalmak"
+  ],
+  "newNotes": ["Eb4", "Eb5"],
+  "sections": [
+    {
+      "title": "Si Bemol Majör",
+      "text": "Fa majörde donanımda tek bir bemol vardı: Si♭. Si bemol majörde iki bemol var: Si♭ ve Mi♭. Donanım portenin başında durur ve bütün parça boyunca geçerlidir; yani her Si ve her Mi, pes ya da ince, yarım ses pes çalınır. Dizi Si♭'de başlar ve Si♭'de biter: Si♭, Do, Re, Mi♭, Fa, Sol, La, Si♭."
+    },
+    {
+      "title": "Pes Mi Bemol",
+      "text": "Pes Re'yi hatırla: sol başparmak, sol elin üç parmağı ve sağ elin üç parmağı kapalı, sağ serçe parmak havada. Pes Mi bemol için bu parmakların hepsi kapalı kalır ve sağ serçe parmak Mi♭ anahtarına basar. Re ile Mi bemol arasında yalnızca serçe parmak oynar; öteki parmaklar kıpırdamasın."
+    },
+    {
+      "title": "İnce Mi Bemol",
+      "text": "İnce Mi bemol, ince Re gibi başlar: sol işaret parmağı kalkar, sol başparmak, sol orta ve yüzük parmakları ile sağ elin üç parmağı kapalı kalır. Buna sağ serçe parmakla Mi♭ anahtarını eklersin. Havayı pes Mi bemolden biraz daha hızlı ve dar üfle; ses kendiliğinden yukarı oturur."
+    },
+    {
+      "title": "Doğal Mi'yi Unutma",
+      "text": "Si bemol majörde bir Mi'nin önünde doğal işareti (♮) görürsen, o Mi bemol değil, düz Mi'dir. Doğal işareti yalnızca o ölçü boyunca geçerlidir. Bir sonraki ölçüde donanım yeniden söz sahibi olur."
+    }
+  ],
+  "items": [
+    {
+      "id": "g11-i1",
+      "kind": "info",
+      "title": "Isınma: Serçe Parmak Uyanıyor",
+      "text": "Önce üflemeden, yalnızca parmaklarla çalış: pes Re parmaklarını kapat ve sağ serçe parmağını Mi♭ anahtarına yavaşça on kez bas, kaldır. Öteki parmaklar deliklerin üstünde sakin dursun. Sonra pes Re'de ve pes Mi bemolde dörder vuruşluk uzun sesler çal; her nefeste sesi düz ve dolgun tut."
+    },
+    {
+      "id": "g11-c1",
+      "kind": "calisma",
+      "title": "Re ile Mi Bemol",
+      "text": "Re'den Mi bemole geçerken yalnızca sağ serçe parmak oynar. Önce pes, sonra ince oktavda çal; ince Mi bemolde sol işaret parmağının açık olduğunu unutma.",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 66,
+      "rows": [
+        "D4:2 Eb4:2 | D4:2 Eb4:2 | D4 Eb4 F4 Eb4 | D4:4 |",
+        "D5:2 Eb5:2 | D5:2 Eb5:2 | D5 Eb5 F5 Eb5 | D5:4 ||"
+      ]
+    },
+    {
+      "id": "g11-c2",
+      "kind": "calisma",
+      "title": "Aşağıda ve Yukarıda",
+      "text": "Her yayın içinde pes notadan ince notaya dil vurmadan geç. Parmakları değiştir, sonra havayı hızlandır; dudakların aynı yerde kalsın.",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 66,
+      "rows": [
+        "(Eb4:2 Eb5:2) | (D4:2 D5:2) | (Eb4:2 Eb5:2) | F5:4 |",
+        "(F4:2 F5:2) | (Eb4:2 Eb5:2) | (D4:2 D5:2) | Bb4:4 ||"
+      ]
+    },
+    {
+      "id": "g11-c3",
+      "kind": "calisma",
+      "title": "Si Bemol Majör Merdiveni",
+      "text": "Si bemolden ince Fa'ya çık, sonra pes Do'ya kadar in ve yeniden Si bemole dön. Her Si ve her Mi bemoldür; Mi'lerde serçe parmağın Mi♭ anahtarında olsun.",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 76,
+      "rows": [
+        "Bb4 C5 D5 Eb5 | F5:2 Eb5 D5 | C5 Bb4 A4 G4 | F4 Eb4 D4 C4 |",
+        "D4 Eb4 F4 G4 | A4 Bb4 C5 D5 | Eb5 D5 C5 A4 | Bb4:4 ||"
+      ]
+    },
+    {
+      "id": "g11-c4",
+      "kind": "calisma",
+      "title": "Akor Basamakları",
+      "text": "Si bemol, Mi bemol ve Fa akorlarının notalarını sırayla çalıyoruz. Sekizlikleri '1-ve-2-ve' diye sayarak eşit tut; atlamalarda parmakların birlikte insin.",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 80,
+      "rows": [
+        "Bb4:.5 D5:.5 F5 D5:.5 Bb4:.5 F4 | Eb4:.5 G4:.5 Bb4 G4:.5 Eb4:.5 Bb4 | F4:.5 A4:.5 C5 A4:.5 F4:.5 Eb5 | D5:2 Bb4:2 ||"
+      ]
+    },
+    {
+      "id": "g11-c5",
+      "kind": "calisma",
+      "title": "Mi Bemol mü, Doğal Mi mi?",
+      "text": "İki satır neredeyse aynı. İlk satırda Mi bemol, ikinci satırda doğal işaretli düz Mi var: düz Mi için sağ yüzük parmağını kaldır.",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 72,
+      "rows": [
+        "F4 G4 A4 Bb4 | C5 Bb4 A4 G4 | F4 Eb4 D4 Eb4 | F4:4 |",
+        "F4 G4 A4 Bb4 | C5 Bb4 A4 G4 | F4 E4 F4 G4 | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g11-p1",
+      "kind": "parca",
+      "title": "Kanon Melodisi",
+      "text": "Pachelbel'in ünlü Kanon'undan ilk keman ezgisi, Si bemol majöre aktarıldı. İlk satırı yaylarla şarkı söyler gibi bağlı çal; ikinci satırdaki sekizlikler biraz daha parlak olsun.",
+      "credit": "J. Pachelbel",
+      "time": 4,
+      "key": "Bb",
+      "bpm": 76,
+      "rows": [
+        "mp (D5 C5 Bb4 A4) | (G4 F4 G4 A4) | (Bb4 A4 G4 F4) | (Eb4 D4 Eb4 C4) , |",
+        "mf Bb4:.5 D5:.5 F5:.5 Eb5:.5 D5:.5 Bb4:.5 D5:.5 C5:.5 | Bb4:.5 G4:.5 Bb4:.5 F4:.5 Eb4:.5 G4:.5 F4:.5 Eb4:.5 | dim. D4:2 F4:2 | p Bb4:4! ||"
+      ]
+    },
+    {
+      "id": "g11-p2",
+      "kind": "parca",
+      "title": "Mi Bemol Valsi",
+      "text": "Anakruzla başlayan bir vals: Fa'yı hafif çal, ilk tam ölçüdeki Si bemole yaslan. Her ölçünün ilk vuruşunu biraz öne çıkar ve nefes işaretlerinde sakin nefes al.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "pickup": 1,
+      "key": "Bb",
+      "bpm": 104,
+      "rows": [
+        "mp F4 | Bb4:2 D5 | F5:2 Eb5 | D5:1.5 C5:.5 Bb4 | C5:3 , |",
+        "Eb5:2 C5 | A4:2 F4 | G4 A4 Bb4 | C5:2 , F4 |",
+        "mf Bb4:2 D5 | F5:2 Eb5 | D5:1.5 Eb5:.5 C5 | Bb4:2 G4 |",
+        "dim. Eb4:2 G4 | F4 A4 C5 | p Bb4:3~ | Bb4:2 ||"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "day": 12,
+  "title": "Marş Zamanı",
+  "goals": [
+    "2/4 ölçüyü '1-2, 1-2' diye saymak ve marş adımıyla çalmak",
+    "Sekizlik susu tanımak ve yarım vuruş susmak",
+    "İnce Si bemol ve ince Si'yi çalmak",
+    "Mozart'ın Küçük Gece Müziği temasını çalmak"
+  ],
+  "newNotes": ["Bb5", "B5"],
+  "sections": [
+    {
+      "title": "2/4 Ölçü",
+      "text": "Ölçü işaretinde üstte 2, altta 4 varsa her ölçüde iki dörtlük vuruş vardır. '1-2, 1-2' diye sayarız; tıpkı marşta sol-sağ adımları gibi. Birinci vuruş güçlü, ikinci vuruş hafiftir. Ölçüler kısa olduğu için ölçü çizgileri sık gelir; gözün hep bir sonraki ölçüde olsun."
+    },
+    {
+      "title": "Sekizlik Sus",
+      "text": "Sekizlik sus, yarım vuruşluk bir sessizliktir; küçük bir 7 rakamına benzer. '1-ve-2-ve' diye sayarken susun denk geldiği yerde ses çıkarma. Susta nefesi tut, dilini 'tu' için hazır beklet; sonraki notaya tam zamanında gir. Kısa suslar müziğe zıplayan, hafif bir hava verir."
+    },
+    {
+      "title": "İnce Si Bemol ve İnce Si",
+      "text": "İnce Si bemol, Si bemolün parmaklarıyla çalınır: sol başparmak, sol işaret parmağı, sağ işaret parmağı kapalı, sağ serçe parmak Mi♭ anahtarında. İnce Si de Si'nin parmaklarıyla çalınır: sol başparmak ve sol işaret parmağı kapalı, serçe Mi♭ anahtarında. İkisinde de dudak açıklığını küçült ve havayı hızlı, ince bir akımla üfle."
+    }
+  ],
+  "items": [
+    {
+      "id": "g12-i1",
+      "kind": "info",
+      "title": "Isınma: Yürüyerek Say",
+      "text": "Odada yerinde yürü ve her adımda bir vuruş say: sol ayakta '1', sağ ayakta '2'. Sonra adımlarını bozmadan ellerinle '1-ve-2-ve' diye sekizlik alkışla; bir ara 've'lerde alkışlamayı bırak, o boşluklar sekizlik sus olsun. En sonunda Si ve ince Si'de uzun sesler çal."
+    },
+    {
+      "id": "g12-c1",
+      "kind": "calisma",
+      "title": "Bir-İki Adımları",
+      "text": "İlk 2/4 alıştırmamız: her ölçüde iki dörtlük. Birinci vuruşu biraz daha güçlü çal, marş gibi dimdik yürüsün.",
+      "time": 2,
+      "key": "G",
+      "bpm": 88,
+      "rows": [
+        "G4 B4 | D5 B4 | C5 A4 | B4:2 |",
+        "G4 B4 | D5 G5 | F#5 D5 | G5:2 ||"
+      ]
+    },
+    {
+      "id": "g12-c2",
+      "kind": "calisma",
+      "title": "İnce Si'ye Tırmanış",
+      "text": "Yayların içinde Si'den ince Si'ye, La'dan ince La'ya parmak değiştirmeden çık. Yalnızca havayı hızlandır ve dudak açıklığını küçült.",
+      "time": 2,
+      "key": "G",
+      "bpm": 72,
+      "rows": [
+        "(B4 B5) | B5:2 | (A4 A5) | A5:2 |",
+        "(G5 A5) | (B5 A5) | (G5 F#5) | G5:2 ||"
+      ]
+    },
+    {
+      "id": "g12-c3",
+      "kind": "calisma",
+      "title": "Yukarıdaki Si Bemol",
+      "text": "Fa majörde ince Si bemolü çalıyoruz. Si bemol parmaklarını koru, havayla bir oktav yukarı çık; ince Si bemolden ince La'ya geçerken sağ işaret parmağını kaldır.",
+      "time": 2,
+      "key": "F",
+      "bpm": 72,
+      "rows": [
+        "(Bb4 Bb5) | Bb5:2 | A5 G5 | F5:2 |",
+        "G5 A5 | Bb5 A5 | G5 E5 | F5:2 ||"
+      ]
+    },
+    {
+      "id": "g12-c4",
+      "kind": "calisma",
+      "title": "Yarım Vuruş Sessizlik",
+      "text": "Sekizlik suslarda ses kesilir ama sayı devam eder: '1-ve-2-ve'. Susun ardından gelen notaya geç kalma.",
+      "time": 2,
+      "bpm": 80,
+      "rows": [
+        "G4 R:.5 G4:.5 | A4 R:.5 A4:.5 | B4:.5 R:.5 B4:.5 R:.5 | C5:2 |",
+        "C5 R:.5 B4:.5 | A4 R:.5 G4:.5 | F4:.5 R:.5 D4:.5 R:.5 | C4:2 ||"
+      ]
+    },
+    {
+      "id": "g12-c5",
+      "kind": "calisma",
+      "title": "Arka Vuruş Oyunu",
+      "text": "Bu kez sayıda susup 've'de çalıyorsun: notalar vuruşların arasına düşer. Ayağınla vuruşu tut, dilini kısa ve hafif vur.",
+      "time": 2,
+      "key": "G",
+      "bpm": 80,
+      "rows": [
+        "R:.5 B4:.5 R:.5 B4:.5 | R:.5 C5:.5 R:.5 C5:.5 | R:.5 D5:.5 R:.5 G5:.5 | B5:2 |",
+        "R:.5 A5:.5 R:.5 F#5:.5 | R:.5 D5:.5 R:.5 A4:.5 | B4:.5 R:.5 A4:.5 R:.5 | G4:2 ||"
+      ]
+    },
+    {
+      "id": "g12-p1",
+      "kind": "parca",
+      "title": "Küçük Gece Müziği",
+      "text": "Mozart'ın 'Eine kleine Nachtmusik' serenatının açılış teması. Sekizlik susları kısa ve net tut; ilk satır güçlü, ikinci satır yankı gibi yumuşak olsun. Son ölçü, parçayı Sol'da bitirmek için sadeleştirildi.",
+      "credit": "W. A. Mozart",
+      "time": 4,
+      "key": "G",
+      "bpm": 100,
+      "rows": [
+        "f G4 R:.5 D4:.5 G4 R:.5 D4:.5 | G4:.5 D4:.5 G4:.5 B4:.5 D5:2 | C5 R:.5 A4:.5 C5 R:.5 A4:.5 | C5:.5 A4:.5 F#4:.5 A4:.5 D4:2 , |",
+        "p G4 R:.5 D4:.5 G4 R:.5 D4:.5 | G4:.5 D4:.5 G4:.5 B4:.5 D5:2 | C5 R:.5 A4:.5 C5 R:.5 A4:.5 | C5:.5 A4:.5 F#4:.5 A4:.5 G4:2 ||"
+      ]
+    },
+    {
+      "id": "g12-p2",
+      "kind": "parca",
+      "title": "Oyuncak Askerler Geçidi",
+      "text": "Si bemol majörde 2/4 bir marş. Sekizlik suslu ölçülerde notaları zıplatır gibi kısa çal; ince Si bemole çıkarken omuzlarını kaldırma.",
+      "credit": "Gün Gün Flüt",
+      "time": 2,
+      "key": "Bb",
+      "bpm": 104,
+      "rows": [
+        "f Bb4 D5 | F5 Bb5 | A5:.5 R:.5 F5:.5 R:.5 | Bb5:2 |",
+        "G5 Eb5 | C5 A4 | Bb4:.5 C5:.5 D5:.5 Eb5:.5 | F5:2 , |",
+        "p F5:.5 R:.5 D5:.5 R:.5 | Eb5:.5 R:.5 C5:.5 R:.5 | D5:.5 C5:.5 Bb4:.5 A4:.5 | G4 F4 , |",
+        "cresc. Bb4 D5 | F5 A5 | f Bb5:.5 R:.5 F5:.5 R:.5 | Bb5 R ||"
+      ]
+    },
+    {
+      "id": "g12-p3",
+      "kind": "parca",
+      "title": "Bahçe Kapısı Marşı",
+      "text": "Sol majörde kısa bir marş; ikinci satırda ince Si'ye uzanıyorsun. Sondaki suslu ölçüde notaları hafif ve kısa bırak.",
+      "credit": "Gün Gün Flüt",
+      "time": 2,
+      "key": "G",
+      "bpm": 96,
+      "rows": [
+        "mf G5 D5 | B4 G4 | A4:.5 B4:.5 C5:.5 D5:.5 | E5 D5 |",
+        "D5 G5 | B5 A5 | G5:.5 R:.5 F#5:.5 R:.5 | G5:2 ||"
+      ]
+    }
+  ]
+}

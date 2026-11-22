@@ -1,0 +1,143 @@
+{
+  "day": 15,
+  "title": "Altı Sekizin Salıncağı",
+  "goals": [
+    "6/8 ölçüyü iki büyük vuruşla saymak: 1-2-3 4-5-6",
+    "Dörtlük + sekizlik (uzun–kısa) ritmini sallanarak çalmak",
+    "Noktalı dörtlüğün 6/8'de bir büyük vuruş ettiğini bilmek",
+    "Bir İrlanda jig'ini çalmak"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "6/8 Ölçü Nedir?",
+      "text": "6/8 ölçüde her ölçüde altı sekizlik vardır. Ama altısını tek tek değil, üçerli iki grup hâlinde hissederiz: 1-2-3 4-5-6. Güçlü vuruşlar 1 ve 4'tedir; bu yüzden 6/8, iki büyük vuruşlu bir ölçüdür. Kulağa sallanan bir salıncak ya da dörtnala koşan bir at gibi gelir."
+    },
+    {
+      "title": "3/4 ile Farkı",
+      "text": "3/4 ölçüye de altı sekizlik sığar, ama gruplanışları başkadır. 3/4'te üç dörtlük vuruş sayarız: 1-ve 2-ve 3-ve. 6/8'de ise iki üçlü grup vardır: 1-2-3 4-5-6. Bu yüzden 6/8'de sekizlikler üçer üçer birbirine bağlanarak yazılır."
+    },
+    {
+      "title": "6/8'in Sık Ritimleri",
+      "text": "Noktalı dörtlük üç sekizlik eder ve tek başına bir büyük vuruşu doldurur. Dörtlük + sekizlik ikilisi 'uzun–kısa' diye sallanır: dörtlük iki sekizlik, ardından bir sekizlik. Noktalı ikilik bütün ölçüyü doldurur. Uygulama 6/8'de sekizlikleri sayar; sen de içinden 1-2-3 4-5-6 de."
+    }
+  ],
+  "items": [
+    {
+      "id": "g15-i1",
+      "kind": "info",
+      "title": "Isınma: Salıncak Sayısı",
+      "text": "Ayakta dur ve '1-2-3 4-5-6' diye yüksek sesle say; 1'de ve 4'te ağırlığını bir ayağından ötekine aktararak salıncak gibi sallan. Sonra aynı sayıyla flüte üflemeden 'tu-tu-tu tu-tu-tu' diye dil vur. En sonunda ince Re'de birkaç uzun ses çal."
+    },
+    {
+      "id": "g15-c1",
+      "kind": "calisma",
+      "title": "Üçerli Gruplar",
+      "text": "Her ölçüde iki grup üç sekizlik var. Her grubun ilk notasını biraz öne çıkar: BİR-iki-üç DÖRT-beş-altı.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "G",
+      "bpm": 72,
+      "rows": [
+        "G4:.5 G4:.5 G4:.5 A4:.5 A4:.5 A4:.5 | B4:.5 B4:.5 B4:.5 C5:.5 C5:.5 C5:.5 | D5:.5 C5:.5 B4:.5 A4:.5 B4:.5 C5:.5 | B4:1.5 G4:1.5 |",
+        "D5:.5 D5:.5 D5:.5 E5:.5 E5:.5 E5:.5 | D5:.5 C5:.5 B4:.5 A4:.5 G4:.5 F#4:.5 | G4:.5 A4:.5 B4:.5 A4:.5 F#4:.5 D4:.5 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g15-c2",
+      "kind": "calisma",
+      "title": "Uzun–Kısa Salıncak",
+      "text": "Dörtlük + sekizlik ikilisini 'uzun–kısa, uzun–kısa' diye sallanarak çal. Dörtlüğü iki sekizlik boyunca tut, sekizliği hafif bırak.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "F",
+      "bpm": 72,
+      "rows": [
+        "F4 A4:.5 C5 A4:.5 | Bb4 G4:.5 E4 C4:.5 | F4 A4:.5 C5 F5:.5 | E5:1.5 C5:1.5 |",
+        "D5 Bb4:.5 C5 A4:.5 | Bb4 G4:.5 A4 F4:.5 | G4 C5:.5 E4 G4:.5 | F4:3 ||"
+      ]
+    },
+    {
+      "id": "g15-c3",
+      "kind": "calisma",
+      "title": "Büyük Vuruşlar",
+      "text": "Noktalı dörtlüklerin her biri bir büyük vuruş, yani üç sekizlik sürer. İçinden sekizlikleri saymayı sürdür ki notalar kısalmasın.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "D",
+      "bpm": 72,
+      "rows": [
+        "D5:1.5 F#5:1.5 | A5:1.5 F#5:1.5 | G5:1.5 E5:1.5 | C#5:3 |",
+        "D5:1.5 E5:1.5 | F#5 E5:.5 D5:1.5 | E5 C#5:.5 A4:1.5 | D5:3 ||"
+      ]
+    },
+    {
+      "id": "g15-c4",
+      "kind": "calisma",
+      "title": "Dörtnala At",
+      "text": "Uzun–kısa ritmi ile noktalı dörtlükler karışık geliyor. Atın dörtnala koşusu gibi hafif ve ileri doğru çal.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "G",
+      "bpm": 80,
+      "rows": [
+        "G4 G4:.5 B4 B4:.5 | D5 D5:.5 G5:1.5 | F#5 E5:.5 D5 B4:.5 | A4:3 |",
+        "G4 G4:.5 B4 B4:.5 | D5 D5:.5 G5 B5:.5 | A5 F#5:.5 D5 E5:.5 | G5:3 ||"
+      ]
+    },
+    {
+      "id": "g15-c5",
+      "kind": "calisma",
+      "title": "Altı Sekizde Tiz",
+      "text": "Dünkü tiz notaları 6/8'de çalıyoruz. Sekizliklerde parmakların hızlı ama dudakların sakin olsun.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "D",
+      "bpm": 72,
+      "rows": [
+        "A5:.5 B5:.5 C#6:.5 D6 A5:.5 | B5:.5 A5:.5 G5:.5 F#5:1.5 | G5 E5:.5 C#6 A5:.5 | D6:3 ||"
+      ]
+    },
+    {
+      "id": "g15-p1",
+      "kind": "parca",
+      "title": "İrlandalı Çamaşırcı Kadın",
+      "text": "'The Irish Washerwoman' adlı ünlü İrlanda jig'inin ilk bölümü. İki sekizlikle anakruzdan başla; her grubun ilk notasına hafifçe yaslanarak hep ileri doğru, dans eder gibi çal.",
+      "credit": "Geleneksel İrlanda jig'i",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "pickup": 1,
+      "key": "G",
+      "bpm": 76,
+      "rows": [
+        "mf D5:.5 C5:.5 | B4:.5 G4:.5 G4:.5 D4:.5 G4:.5 G4:.5 | B4:.5 G4:.5 B4:.5 D5:.5 C5:.5 B4:.5 | C5:.5 A4:.5 A4:.5 E4:.5 A4:.5 A4:.5 | C5:.5 B4:.5 C5:.5 E5:.5 D5:.5 C5:.5 |",
+        "B4:.5 G4:.5 G4:.5 D4:.5 G4:.5 G4:.5 | B4:.5 G4:.5 B4:.5 D5:.5 C5:.5 B4:.5 | C5:.5 B4:.5 C5:.5 A4:.5 D5:.5 C5:.5 | B4:.5 G4:.5 G4:.5 G4:1.5 ||"
+      ]
+    },
+    {
+      "id": "g15-p2",
+      "kind": "parca",
+      "title": "Atlıkarınca",
+      "text": "Dönüp duran bir atlıkarınca: tek bir sekizlikle başlayan, uzun–kısa ritmiyle sallanan bir 6/8 ezgi. Üçüncü satırda ince Si bemole uzan, sonda yavaş yavaş sesi azalt.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "pickup": 0.5,
+      "key": "F",
+      "bpm": 72,
+      "rows": [
+        "mp C5:.5 | F5 C5:.5 A4 C5:.5 | F5:1.5 E5:1.5 | D5 Bb4:.5 G4 Bb4:.5 | D5:1.5 C5 C5:.5 |",
+        "F5 C5:.5 A4 F4:.5 | G4 A4:.5 Bb4 D5:.5 | C5 A4:.5 G4 E4:.5 | F4:1.5 R C5:.5 |",
+        "mf A5 G5:.5 F5 C5:.5 | D5 E5:.5 F5:1.5 | Bb5 A5:.5 G5 F5:.5 | E5:1.5 G5:1.5 , |",
+        "p F5 C5:.5 A4 C5:.5 | Bb4 D5:.5 G4 Bb4:.5 | dim. A4 C5:.5 G4 E4:.5 | F4:2.5 ||"
+      ]
+    }
+  ]
+}

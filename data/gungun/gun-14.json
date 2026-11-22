@@ -1,0 +1,123 @@
+{
+  "day": 14,
+  "title": "Tiz Bölgeye Yolculuk",
+  "goals": [
+    "Tiz Do, tiz Do diyez ve tiz Re'yi çalmak",
+    "Tizde küçük dudak açıklığı ve hızlı hava kullanmak",
+    "Boğazı ve omuzları gevşek tutmak",
+    "Tizde de yumuşak ve temiz bir ses aramak"
+  ],
+  "newNotes": ["C6", "C#6", "D6"],
+  "sections": [
+    {
+      "title": "Tiz Bölge Nasıl Çalınır?",
+      "text": "Tiz notalar için daha çok hava değil, daha hızlı ve dar bir hava akımı gerekir. Dudak açıklığını küçült; sanki ince bir pipetten üflüyormuşsun gibi. Hava akımını biraz yukarı yönlendir, çeneni hafifçe öne alabilirsin. Flütü dudağına bastırma: bastırmak sesi sıkar ve inceltir."
+    },
+    {
+      "title": "Rahat Boğaz",
+      "text": "Tizde boğaz sıkılırsa ses sertleşir ya da hiç çıkmaz. İçinden 'oo' der gibi boğazını açık tut; omuzların aşağıda, nefesin karından gelsin. Ses çıkmazsa daha sert üfleme, önce dudak açıklığını küçült. Sık sık kısa dinlenmeler ver; tiz notalar dudak kaslarını çabuk yorar."
+    },
+    {
+      "title": "Yeni Parmaklar",
+      "text": "Tiz Do, ince Do'nun parmaklarıyla çalınır: sol işaret parmağı kapalı, sağ serçe parmak Mi♭ anahtarında, başparmak açık. Tiz Do diyezde yalnızca sağ serçe parmak Mi♭ anahtarında kalır, bütün delikler açıktır. Tiz Re yeni bir düzendir: sol başparmak, sol orta ve sol yüzük parmakları kapalı, sol işaret parmağı açık, sağ serçe parmak Mi♭ anahtarında."
+    }
+  ],
+  "items": [
+    {
+      "id": "g14-i1",
+      "kind": "info",
+      "title": "Isınma: Doğuşkan Merdiveni",
+      "text": "Pes Do parmaklarını kapat ve parmaklarını hiç değiştirmeden önce pes Do'yu, sonra havayı hızlandırıp dudak açıklığını küçülterek ince Do'yu, ardından ince Sol'u ve tiz Do'yu çıkarmayı dene. Bu seslere doğuşkan denir; nota değiştirmeyi yalnızca dudak ve havayla öğretir. İki ses çıkarabilmek bile iyi bir başlangıçtır, zorlanınca dinlen."
+    },
+    {
+      "id": "g14-c1",
+      "kind": "calisma",
+      "title": "İnce Do'dan Tiz Do'ya",
+      "text": "Yaylarda ince Do'dan tiz Do'ya yalnızca havayla çık; parmaklar aynı kalır. Sonra tiz Do'ya basamak basamak tırman ve yavaşça in.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "(C5:2 C6:2) | (C5:2 C6:2) | B5 A5 G5 A5 | B5:2 C6:2 |",
+        "G5 A5 B5 C6 | B5:2 A5:2 | G5 F5 E5 D5 | C5:4 ||"
+      ]
+    },
+    {
+      "id": "g14-c2",
+      "kind": "calisma",
+      "title": "Tiz Re'ye Merhaba",
+      "text": "Re majörde tiz Do diyez ve tiz Re. Tiz Re'de sol işaret parmağını kaldırmayı ve sol orta, sol yüzük parmaklarını kapatmayı unutma.",
+      "time": 4,
+      "key": "D",
+      "bpm": 66,
+      "rows": [
+        "A5 B5 C#6 D6 | D6:2 C#6:2 | B5 A5 G5 F#5 | A5:4 |",
+        "(D5:2 D6:2) | C#6 B5 A5:2 | B5 G5 E5 C#5 | D5:4 ||"
+      ]
+    },
+    {
+      "id": "g14-c3",
+      "kind": "calisma",
+      "title": "Oktav Kaydırağı",
+      "text": "Her yayda bir notadan oktavına çık ve kaydırak gibi yarım ses yarım ses aşağı in. Pes notayı da tiz notayı da aynı rahatlıkla, boğazını sıkmadan çal.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "(D5 D6) (C#5 C#6) | (C5 C6) (B4 B5) | (Bb4 Bb5) (A4 A5) | (G4:2 G5:2) ||"
+      ]
+    },
+    {
+      "id": "g14-c4",
+      "kind": "calisma",
+      "title": "Tiz Akor Atlayışı",
+      "text": "Re, Mi ve Fa diyez ile başlayan akor atlayışlarıyla tiz Re ve tiz Do diyeze uzanıyoruz. Sekizlikleri eşit tut; en yüksek notada dudaklarını sıkma.",
+      "time": 4,
+      "key": "D",
+      "bpm": 76,
+      "rows": [
+        "D5:.5 F#5:.5 A5:.5 D6:.5 A5:.5 F#5:.5 D5 | E5:.5 G5:.5 B5:.5 C#6:.5 B5:.5 G5:.5 E5 | F#5:.5 A5:.5 D6:.5 A5:.5 C#6:.5 A5:.5 E5 | D5:2 D6:2! ||"
+      ]
+    },
+    {
+      "id": "g14-c5",
+      "kind": "calisma",
+      "title": "Tizde Fısıltı",
+      "text": "Tiz notaları önce orta güçte, sonra yumuşak çal. Yumuşak çalarken havayı yavaşlatma, dudak açıklığını daha da küçült; yoksa ses pesleşir.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "mf C6:4 | p C6:4 | mf D6:4 | p D6:4 |",
+        "mf C#6:2 D6:2 | p C#6:2 C6:2 | mp B5:2 A5:2 | G5:4! ||"
+      ]
+    },
+    {
+      "id": "g14-p1",
+      "kind": "parca",
+      "title": "Kırlangıç Dansı",
+      "text": "Gökyüzünde süzülen kırlangıçlar gibi tiz bölgede dolaşan bir vals. Uzun notalarda sesi düz tut, son tiz Re'yi koronada rahatça bitir.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "key": "D",
+      "bpm": 100,
+      "rows": [
+        "mf A5 B5 C#6 | D6:2 A5 | B5 G5 E5 | F#5:2 D5 |",
+        "E5 F#5 G5 | A5:2 D6 | C#6:1.5 B5:.5 C#6 | A5:3 , |",
+        "mp D6:2 B5 | A5:2 F#5 | G5 A5 B5 | C#6:3 , |",
+        "f D6:1.5 C#6:.5 B5 | A5:1.5 G5:.5 F#5 | E5 A5 C#6 | D6:3! ||"
+      ]
+    },
+    {
+      "id": "g14-p2",
+      "kind": "parca",
+      "title": "Dağdaki Yankı",
+      "text": "Her küçük ezgiyi önce aşağıda orta güçte çal, sonra dağın yankısı gibi bir oktav yukarıda yumuşacık tekrarla. Son satırda yankı büyüyüp tiz Do'ya ulaşır.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 84,
+      "rows": [
+        "mf G4:.5 A4:.5 C5 D5:2 | p G5:.5 A5:.5 C6 D6:2 | mf A4 G4 E4 G4 | p A5 G5 E5 G5 |",
+        "mf F4:.5 G4:.5 A4 B4 C5 | p F5:.5 G5:.5 A5 B5 C6 | mf D5 C5 B4 C5 | D5:2 G4:2 , |",
+        "cresc. G4 C5 E5 G5 | B5:2 A5:2 | G5:.5 A5:.5 B5 C6 D6 | f C6:4! ||"
+      ]
+    }
+  ]
+}

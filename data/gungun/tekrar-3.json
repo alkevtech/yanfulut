@@ -1,0 +1,136 @@
+{
+  "day": "tekrar-3",
+  "title": "Tekrar: Tonlar, Ölçüler, Tiz Sesler",
+  "goals": [
+    "11–15. günlerde öğrendiklerini sorularla yoklamak",
+    "Si bemol majör, La minör ve tiz bölgeyi bir arada çalmak",
+    "2/4 ve 6/8 ölçüleri karıştırmadan saymak"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Neler Öğrendik?",
+      "text": "Si bemol majörde iki bemol (Si♭ ve Mi♭) kullandık ve pes ile ince Mi bemolü çaldık. 2/4 ölçüyle marş yürüdük, sekizlik susla yarım vuruş sustuk. La minörün hüzünlü rengini ve La'ya çeken Sol diyezi tanıdık. Tiz Do, tiz Do diyez ve tiz Re'ye çıktık; 6/8 ölçüde iki büyük vuruşla sallandık."
+    },
+    {
+      "title": "Tekrar Nasıl Çalışılır?",
+      "text": "Önce soruları cevapla, sonra cevabını kontrol et. Çalma bölümünde her parçaya başlamadan donanıma ve ölçü işaretine bak: kaç bemol, kaç diyez, ölçüde kaç vuruş? Zorlandığın bir yer olursa o günün sayfasına dönüp kısa bir alıştırma çal."
+    }
+  ],
+  "items": [
+    {
+      "id": "t3-q1",
+      "kind": "test",
+      "title": "Soru 1",
+      "text": "Si bemol majörün donanımında hangi bemoller vardır?",
+      "answer": "Si bemol (Si♭) ve Mi bemol (Mi♭)."
+    },
+    {
+      "id": "t3-q2",
+      "kind": "test",
+      "title": "Soru 2",
+      "text": "Pes Re'den pes Mi bemole geçerken hangi parmak oynar?",
+      "answer": "Yalnızca sağ serçe parmak: Mi♭ anahtarına basar."
+    },
+    {
+      "id": "t3-q3",
+      "kind": "test",
+      "title": "Soru 3",
+      "text": "2/4 ölçüde bir ölçüde kaç dörtlük vuruş vardır?",
+      "answer": "İki dörtlük vuruş."
+    },
+    {
+      "id": "t3-q4",
+      "kind": "test",
+      "title": "Soru 4",
+      "text": "Sekizlik sus kaç vuruş sürer?",
+      "answer": "Yarım vuruş (bir sekizlik nota kadar)."
+    },
+    {
+      "id": "t3-q5",
+      "kind": "test",
+      "title": "Soru 5",
+      "text": "La minör armonik dizisinde hangi nota yarım ses yükseltilir?",
+      "answer": "Sol, Sol diyez (Sol♯) olur."
+    },
+    {
+      "id": "t3-q6",
+      "kind": "test",
+      "title": "Soru 6",
+      "text": "Sol diyez için Sol parmaklarına ne eklersin?",
+      "answer": "Sol serçe parmakla Sol♯ anahtarına basmayı."
+    },
+    {
+      "id": "t3-q7",
+      "kind": "test",
+      "title": "Soru 7",
+      "text": "Tiz notalarda dudak açıklığı ve hava nasıl olmalı?",
+      "answer": "Dudak açıklığı küçük, hava hızlı ve dar; boğaz ve omuzlar rahat."
+    },
+    {
+      "id": "t3-q8",
+      "kind": "test",
+      "title": "Soru 8",
+      "text": "6/8 ölçüde kaç büyük vuruş vardır ve her biri kaç sekizliktir?",
+      "answer": "İki büyük vuruş; her biri üç sekizlik."
+    },
+    {
+      "id": "t3-c1",
+      "kind": "calisma",
+      "title": "Bemollü Marş Adımları",
+      "text": "Si bemol majörde 2/4 ve sekizlik suslar. Mi bemollerde serçe parmağı unutma, susları kısa ve net tut.",
+      "time": 2,
+      "key": "Bb",
+      "bpm": 88,
+      "rows": [
+        "Bb4 D5 | F5:.5 R:.5 Eb5:.5 R:.5 | D5 C5 | Bb4:2 |",
+        "Eb4 G4 | Bb4:.5 R:.5 D5:.5 R:.5 | C5 A4 | Bb4:2 ||"
+      ]
+    },
+    {
+      "id": "t3-c2",
+      "kind": "calisma",
+      "title": "Minör Tizler",
+      "text": "La minörü tiz bölgede çalıyoruz: ince Sol diyez, tiz Do ve tiz Re bir arada. Yüksek notalarda dudak açıklığını küçült, boğazını gevşek tut.",
+      "time": 4,
+      "key": "Am",
+      "bpm": 76,
+      "rows": [
+        "A5 B5 C6 B5 | A5 G#5 A5:2 | E5 G#5 B5 D6 | C6:2 B5:2 |",
+        "A5 C6 B5 G#5 | A5 E5 F5 D5 | C6 B5 A5 G#5 | A5:4 ||"
+      ]
+    },
+    {
+      "id": "t3-p1",
+      "kind": "parca",
+      "title": "Gölde Kayık",
+      "text": "Si bemol majörde 6/8 bir kayık şarkısı. İki büyük vuruşu hisset ve uzun–kısa ritmini dalgalar gibi yumuşak salla.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "Bb",
+      "bpm": 72,
+      "rows": [
+        "p F4 Bb4:.5 D5 Bb4:.5 | Eb5:1.5 D5:1.5 | C5 A4:.5 F4 A4:.5 | Bb4:1.5 F4:1.5 , |",
+        "mf G4 Bb4:.5 Eb5 G5:.5 | F5 Bb5:.5 D5:1.5 | Eb5 C5:.5 A4 C5:.5 | Bb4:3 ||"
+      ]
+    },
+    {
+      "id": "t3-p2",
+      "kind": "parca",
+      "title": "Gece Nöbeti Marşı",
+      "text": "La minörde 2/4 bir marş: sekizlik suslar, Sol diyezler ve tiz Re bir arada. Üçüncü satırda en yükseğe çık, sonra sesi azaltarak aşağıya in.",
+      "credit": "Gün Gün Flüt",
+      "time": 2,
+      "key": "Am",
+      "bpm": 96,
+      "rows": [
+        "mf A4 E5 | A5:.5 R:.5 G#5:.5 R:.5 | A5 E5 | C5:2 |",
+        "D5 F5 | B5:.5 R:.5 G#5:.5 R:.5 | A5 C6 | B5:2 , |",
+        "f C6 D6 | C6:.5 B5:.5 A5:.5 G#5:.5 | A5 E5 | F5:2 |",
+        "dim. D5 B4 | C5:.5 B4:.5 A4:.5 G#4:.5 | A4 E4 | p A4 R ||"
+      ]
+    }
+  ]
+}

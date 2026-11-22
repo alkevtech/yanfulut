@@ -1,0 +1,131 @@
+{
+  "day": 13,
+  "title": "Minörün Rengi",
+  "goals": [
+    "Majör ile minör ton arasındaki renk farkını duymak",
+    "La minör ve armonik minör dizisini çalmak",
+    "Sol diyez (Sol♯) ve ince Sol diyezi temiz çalmak",
+    "Minör bir parçayı duygusuyla çalmak"
+  ],
+  "newNotes": ["G#4", "G#5"],
+  "sections": [
+    {
+      "title": "Minör Ton",
+      "text": "Majör tonlar çoğu zaman parlak ve neşeli duyulur; minör tonlar ise hüzünlü, gizemli ya da düşünceli. La minör, Do majörle aynı donanımı kullanır: hiç diyez, hiç bemol yok. Fark, ezginin La çevresinde dolaşıp La'da durmasıdır. Do majör ile La minöre bu yüzden 'akraba tonlar' denir."
+    },
+    {
+      "title": "Armonik Minör ve Sol Diyez",
+      "text": "La minörde yedinci basamak olan Sol çoğu zaman yarım ses yükseltilir ve Sol diyez (Sol♯) olur. Sol♯ bir mıknatıs gibi La'ya çeker; ezgi La'ya gelince 'eve vardım' duygusu güçlenir. Bu diziye armonik minör denir: La, Si, Do, Re, Mi, Fa, Sol♯, La. Sol♯ donanımda yazılmaz, her seferinde notanın önündeki diyez işaretiyle görünür."
+    },
+    {
+      "title": "Sol Diyez Parmakları",
+      "text": "Sol diyez, Sol'un parmaklarıyla çalınır: sol başparmak, sol işaret, orta ve yüzük parmakları kapalı, sağ serçe parmak Mi♭ anahtarında. Buna sol serçe parmakla Sol♯ anahtarına basmayı eklersin. Sol serçe parmağın anahtarın üstünde hazır beklesin, sert bastırma. İnce Sol diyez aynı parmaklarla, daha hızlı ve dar bir havayla çalınır."
+    }
+  ],
+  "items": [
+    {
+      "id": "g13-i1",
+      "kind": "info",
+      "title": "Isınma: Sol Serçe Parmak",
+      "text": "Sol parmaklarını kapat ve üflemeden sol serçe parmağınla Sol♯ anahtarına on kez yavaşça bas, kaldır. Öteki parmaklar kıpırdamasın. Sonra Sol ve Sol diyezde dörder vuruşluk uzun sesler çal; iki sesin arasındaki küçük farkı dinle."
+    },
+    {
+      "id": "g13-c1",
+      "kind": "calisma",
+      "title": "Sol ve Sol Diyez",
+      "text": "Sol'dan Sol diyeze yalnızca sol serçe parmak iner. Sol diyezin La'ya nasıl çektiğini dinle; ikinci satırda aynı şeyi ince oktavda yap.",
+      "time": 4,
+      "key": "Am",
+      "bpm": 72,
+      "rows": [
+        "G4:2 G#4:2 | A4:4 | G#4 A4 B4 A4 | G#4:2 A4:2 |",
+        "E5:2 G#5:2 | A5:4 | F5 E5 D5 G#4 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g13-c2",
+      "kind": "calisma",
+      "title": "La Minör Dizisi",
+      "text": "Armonik minör dizisini çık ve in. Fa ile Sol diyez arasındaki geniş adımı dikkatle dinle; bu adım minöre doğulu bir renk katar.",
+      "time": 4,
+      "key": "Am",
+      "bpm": 76,
+      "rows": [
+        "A4 B4 C5 D5 | E5 F5 G#5 A5 | G#5 F5 E5 D5 | C5 B4 A4:2 |",
+        "A4 G#4 A4 B4 | C5 B4 A4 G#4 | A4 E4 F4 G#4 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g13-c3",
+      "kind": "calisma",
+      "title": "Minör Akorlar",
+      "text": "La minör, Re minör ve Mi majör akorlarının notalarını çalıyoruz. Mi akorundaki Sol diyez, bir sonraki La'ya yolu açar.",
+      "time": 4,
+      "key": "Am",
+      "bpm": 80,
+      "rows": [
+        "A4 C5 E5 C5 | A4:2 E4:2 | D4 F4 A4 F4 | E4 G#4 B4:2 |",
+        "A4 C5 E5 A5 | G#5 E5 B4 G#4 | A4 C5 B4 G#4 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g13-c4",
+      "kind": "calisma",
+      "title": "Majör mü, Minör mü?",
+      "text": "İki satır aynı ezgi; yalnızca Do değişiyor. İlk satırda Do diyezle La majör, ikinci satırda düz Do ile La minör duyarsın. Hangisi sana daha hüzünlü geliyor?",
+      "time": 4,
+      "key": "Am",
+      "bpm": 72,
+      "rows": [
+        "A4 B4 C#5 D5 | E5:2 C#5:2 | D5 B4 G#4 B4 | A4:4 |",
+        "A4 B4 C5 D5 | E5:2 C5:2 | D5 B4 G#4 B4 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g13-c5",
+      "kind": "calisma",
+      "title": "Hüzünlü Vals",
+      "text": "3/4 ölçüde noktalı dörtlük ve sekizlikle küçük bir minör vals. Noktalı dörtlüğü tam bir buçuk vuruş tut, sekizliği hafifçe ardına ekle.",
+      "time": 3,
+      "key": "Am",
+      "bpm": 92,
+      "rows": [
+        "A4:1.5 B4:.5 C5 | B4:2 A4 | G#4:1.5 A4:.5 B4 | E4:3 |",
+        "A4:1.5 B4:.5 C5 | D5:2 C5 | B4:1.5 A4:.5 G#4 | A4:3 ||"
+      ]
+    },
+    {
+      "id": "g13-p1",
+      "kind": "parca",
+      "title": "Kumdan Kervan",
+      "text": "Çölde ağır ağır ilerleyen bir kervan. Fa ile Sol diyez arasındaki adım ezgiye uzak diyarların rengini verir; dinamiklere uyarak kervanın yaklaşıp uzaklaştığını duyur.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "key": "Am",
+      "bpm": 88,
+      "rows": [
+        "mp A4 B4 C5 B4 | A4 G#4 A4:2 | C5 D5 E5 D5 | C5 B4 A4:2 , |",
+        "E5 F5 G#5 F5 | E5 D5 C5:2 | D5 C5 B4 G#4 | A4:2 E4:2 , |",
+        "mf A4 C5 E5 A5 | G#5:1.5 F5:.5 E5:2 | F5 E5 D5 B4 | C5:2 B4:2 , |",
+        "p A4 B4 C5 B4 | A4 G#4 F4 G#4 | dim. A4:2 E4:2 | A4:4! ||"
+      ]
+    },
+    {
+      "id": "g13-p2",
+      "kind": "parca",
+      "title": "Eski Saat Kulesi",
+      "text": "Anakruzla başlayan, La minörde ağırbaşlı bir vals. Pes Mi'yi hafif çal, ilk tam ölçüdeki La'ya yaslan; sondaki bağlı La'yı sonuna kadar tut.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "pickup": 1,
+      "key": "Am",
+      "bpm": 100,
+      "rows": [
+        "mp E4 | A4:2 B4 | C5:2 D5 | E5:2 C5 | A4:2 E4 |",
+        "F4:2 A4 | D5:2 C5 | B4:1.5 A4:.5 G#4 | E4:2 , E4 |",
+        "mf A4:2 B4 | C5:2 E5 | D5:1.5 C5:.5 B4 | C5:2 A4 |",
+        "dim. F4 G#4 B4 | D5 C5 B4 | p A4:3~ | A4:2 ||"
+      ]
+    }
+  ]
+}
