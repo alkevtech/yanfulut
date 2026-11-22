@@ -1,9 +1,9 @@
 // Yan flüt notaları ve parmak pozisyonları (Boehm sistemi, standart parmaklar).
 // Anahtarlar: th = sol başparmak, l1-l3 = sol el işaret/orta/yüzük,
 // gs = sol serçe (Sol diyez), r1-r3 = sağ el işaret/orta/yüzük,
-// eb = sağ serçe (Mi bemol), c = ayak kısmındaki pes Do anahtarı.
+// eb = sağ serçe (Mi bemol), c = ayak kısmındaki pes Do anahtarı, cs = yanındaki Do diyez makarası.
 
-export const KEYS = ['th', 'l1', 'l2', 'l3', 'gs', 'r1', 'r2', 'r3', 'eb', 'c'];
+export const KEYS = ['th', 'l1', 'l2', 'l3', 'gs', 'r1', 'r2', 'r3', 'eb', 'c', 'cs'];
 
 export const KEY_NAMES = {
   th: 'Sol başparmak',
@@ -16,6 +16,7 @@ export const KEY_NAMES = {
   r3: 'Sağ yüzük parmağı',
   eb: 'Sağ serçe parmak (Mi♭ anahtarı)',
   c: 'Sağ serçe parmak (pes Do anahtarı)',
+  cs: 'Sağ serçe parmak (pes Do diyez makarası)',
 };
 
 const SOLFEGE = { C: 'Do', D: 'Re', E: 'Mi', F: 'Fa', G: 'Sol', A: 'La', B: 'Si' };
@@ -28,6 +29,7 @@ const f = (s) => new Set(s.split(' ').filter(Boolean));
 // daha hızlı ve dar bir hava akımıyla (üfleyerek bir üst oktava çıkarak) çalınır.
 const FINGERINGS = {
   C4: f('th l1 l2 l3 r1 r2 r3 c'),
+  'C#4': f('th l1 l2 l3 r1 r2 r3 cs'),
   D4: f('th l1 l2 l3 r1 r2 r3'),
   Eb4: f('th l1 l2 l3 r1 r2 r3 eb'),
   E4: f('th l1 l2 l3 r1 r2 eb'),
@@ -51,6 +53,8 @@ const FINGERINGS = {
   Bb5: f('th l1 r1 eb'),
   B5: f('th l1 eb'),
   C6: f('l1 eb'),
+  'C#6': f('eb'),
+  D6: f('th l2 l3 eb'),
 };
 
 const TIPS = {
@@ -69,6 +73,9 @@ const TIPS = {
   Eb5: 'İnce Re parmakları (sol işaret parmağı açık) ve sağ serçe parmak Mi♭ anahtarında.',
   Bb5: 'Si bemol parmaklarıyla bir oktav yukarı: dudak açıklığı küçük, hava hızlı.',
   D4: 'Bütün delikleri kapat, sağ serçe parmak havada kalsın.',
+  'C#4': 'Pes Do gibi bütün delikler kapalı; sağ serçe parmak Do anahtarı yerine yanındaki Do diyez makarasında.',
+  'C#6': 'İnce Do diyez ile aynı parmaklar (yalnızca Mi♭ anahtarı); hızlı ve dar hava akımı.',
+  D6: 'Tiz Re: başparmak, sol orta ve yüzük parmakları ile Mi♭ anahtarı (sol işaret parmağı açık). Dudak açıklığı çok küçük.',
 };
 
 export function parseNote(id) {
@@ -133,14 +140,19 @@ export function titleName(id) {
   return n.charAt(0).toLocaleUpperCase('tr') + n.slice(1);
 }
 
+/** Eş sesli yazımlar (A#4 = Bb4, Gb4 = F#4…) tablodaki yazıma çevrilir */
+export function canonicalNote(id) {
+  return FINGERINGS[id] ? id : noteFromMidi(midiOf(id));
+}
+
 export function fingeringOf(id) {
-  const keys = FINGERINGS[id];
+  const keys = FINGERINGS[canonicalNote(id)];
   if (!keys) throw new Error(`Parmak pozisyonu yok: ${id}`);
   return keys;
 }
 
 export function tipOf(id) {
-  return TIPS[id] || '';
+  return TIPS[id] || TIPS[canonicalNote(id)] || '';
 }
 
 export const ALL_NOTES = Object.keys(FINGERINGS).sort((a, b) => midiOf(a) - midiOf(b));

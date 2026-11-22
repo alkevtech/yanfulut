@@ -4,7 +4,7 @@
 // birlikte bir ölçü eder), bağlar aynı notaya, notalar flüt aralığında ve parmak tablosunda, donanım adı geçerli.
 import { readFileSync } from 'node:fs';
 import { parseRow, KEY_SIGNATURES } from '../js/data/worksheet.js';
-import { ALL_NOTES } from '../js/data/notes.js';
+import { ALL_NOTES, canonicalNote } from '../js/data/notes.js';
 
 const known = new Set(ALL_NOTES);
 let problems = 0;
@@ -39,7 +39,7 @@ for (const file of process.argv.slice(2)) {
     }
     const items = rows.flat();
     items.forEach((x, k) => {
-      if (!x.rest && !known.has(x.note)) missingNotes.add(x.note);
+      if (!x.rest && !known.has(canonicalNote(x.note))) missingNotes.add(x.note);
       if (x.tie && items[k + 1]?.note !== x.note) say(`${where}: ${k + 1}. öğedeki bağ aynı notaya gitmiyor (${x.note} → ${items[k + 1]?.note})`);
     });
     // Ölçüler: satır sonu da ölçü çizgisi sayılır
