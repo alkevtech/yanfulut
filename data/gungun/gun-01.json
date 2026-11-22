@@ -1,0 +1,139 @@
+{
+  "day": 1,
+  "title": "Flütle İlk Tanışma",
+  "goals": [
+    "Flütü doğru tutmayı ve rahat durmayı öğrenmek",
+    "Ağızlıktan temiz ve sakin bir ses çıkarmak",
+    "Si, La ve Sol notalarını çalmak",
+    "Birlik, ikilik ve dörtlük notaları 4/4 ölçüde saymak"
+  ],
+  "newNotes": ["B4", "A4", "G4"],
+  "sections": [
+    {
+      "title": "Flüt ve Duruşun",
+      "text": "Flüt üç parçadan oluşur: ağızlık, gövde ve ayak. Dik dur ya da sandalyenin ön kenarına otur; omuzların gevşek, başın dik olsun. Flütü sağ tarafına doğru, yere aşağı yukarı paralel tut. Flüt üç noktada dengede durur: çenen, sol işaret parmağının kökü ve sağ başparmağın."
+    },
+    {
+      "title": "Nefes",
+      "text": "Nefes alırken omuzlarını kaldırma; karnının ve belinin genişlediğini hisset. Havayı dudaklarının arasındaki küçük bir aralıktan, ılık ve düzgün bir akışla ver. Ses kesik kesik geliyorsa daha çok değil, daha düzgün üflemeyi dene."
+    },
+    {
+      "title": "Porte, Sol Anahtarı ve Süreler",
+      "text": "Notalar beş çizgili porteye yazılır. Portenin başındaki sol anahtarı, ikinci çizgideki notanın Sol olduğunu gösterir; onun üstündeki aralıkta La, üçüncü çizgide Si vardır. 4/4 ölçüde her ölçüde dört dörtlük vuruş vardır. Dörtlük nota 1 vuruş, ikilik nota 2 vuruş, birlik nota 4 vuruş sürer."
+    },
+    {
+      "title": "Yeni Notalar: Si, La, Sol",
+      "text": "Si: sol başparmak ve sol işaret parmağı kapalı. La: bunlara sol orta parmak eklenir. Sol: sol elin başparmak, işaret, orta ve yüzük parmakları kapalı. Üç notada da sağ serçe parmak en alttaki küçük Mi bemol perdesine basılı kalır; sağ elin öteki parmakları perdelerin üstünde hafifçe bekler."
+    }
+  ],
+  "items": [
+    {
+      "id": "g1-i1",
+      "kind": "info",
+      "title": "Yalnız Ağızlıkla İlk Ses",
+      "text": "Flütün yalnızca ağızlık parçasını al. Dudak plakasını çenene yasla; alt dudağın deliğin yaklaşık üçte birini örtsün. Dudaklarını rahatça kapat ve 'pu' der gibi havayı deliğin karşı kenarına doğru üfle. Ses gelene kadar ağızlığı çok az öne ve arkaya çevir; temiz bir ses bulunca 4 vuruş tut, dinlen ve beş kez tekrarla. Sonra ağızlığın açık ucunu avucunla kapatıp yine üfle: ses daha pes çıkar."
+    },
+    {
+      "id": "g1-i2",
+      "kind": "info",
+      "title": "Duruş ve Karın Nefesi",
+      "text": "Ayakta dik dur, ayaklarını omuz genişliğinde aç. Bir elini karnına koy: 4 sayarak nefes al ve elinin dışarı itildiğini hisset, sonra 'fuu' diyerek 8 sayarak yavaşça ver. Omuzların yukarı kalkmasın. Üç kez yap; sonra flütü birleştir ve aynanın karşısında duruşunu kontrol et."
+    },
+    {
+      "id": "g1-c1",
+      "kind": "calisma",
+      "title": "Si'yi Bul",
+      "text": "Yalnızca Si: her birlik notayı dört vuruş boyunca düz ve sakin tut. Nefes almak için notayı bir parça erken bitirebilirsin.",
+      "time": 4,
+      "bpm": 60,
+      "rows": ["B4:4 | B4:4 | B4:4 | B4:4 ||"]
+    },
+    {
+      "id": "g1-c2",
+      "kind": "calisma",
+      "title": "Si'den La'ya",
+      "text": "Sol orta parmağını indirip kaldırarak Si ile La arasında gidip gel. Parmak hareket ederken havayı kesme.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "B4:4 | A4:4 | B4:2 A4:2 | B4:2 A4:2 |",
+        "A4:4 | B4:4 | A4:2 B4:2 | A4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-c3",
+      "kind": "calisma",
+      "title": "Sol'a İniş",
+      "text": "Şimdi sol yüzük parmağını da ekle. İkilik notalarda iki vuruş say: 'bir-iki'.",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "B4:2 A4:2 | G4:4 | G4:2 A4:2 | B4:4 |",
+        "B4:2 G4:2 | A4:4 | A4:2 B4:2 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-c4",
+      "kind": "calisma",
+      "title": "Dörtlüklerle Yürüyüş",
+      "text": "Her vuruşa bir nota: yürür gibi düzenli say. Aynı notayı tekrar ederken her notayı küçük, yeni bir hava itişiyle başlat; dil vuruşunu yarın öğreneceğiz.",
+      "time": 4,
+      "bpm": 63,
+      "rows": [
+        "G4 A4 B4 A4 | G4 A4 B4:2 | B4 A4 G4 A4 | B4:4 |",
+        "B4 B4 A4 A4 | G4 G4 A4:2 | B4 A4 G4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-c5",
+      "kind": "calisma",
+      "title": "Süre Karışımı",
+      "text": "Birlik, ikilik ve dörtlük bir arada. Çalmadan önce ritmi bir kez el çırparak say.",
+      "time": 4,
+      "bpm": 63,
+      "rows": [
+        "G4:2 A4 B4 | A4:2 G4:2 | B4 A4 B4:2 | A4:4 |",
+        "A4 B4 A4 G4 | B4:2 A4:2 | G4 A4 B4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-p1",
+      "kind": "parca",
+      "title": "Sıcak Çörekler",
+      "text": "İngiltere'de sokak satıcılarının söylediği çok eski bir şarkı (Hot Cross Buns). Dörtlükleri eşit çal, ikilikleri tam iki vuruş tut.",
+      "credit": "Geleneksel (İngiliz)",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "B4 A4 G4:2 | B4 A4 G4:2 | G4 G4 G4 G4 | A4 A4 A4 A4 |",
+        "B4 A4 G4:2 | B4 A4 G4:2 | B4:2 A4:2 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-p2",
+      "kind": "parca",
+      "title": "Üç Notalı Ninni",
+      "text": "Sakin, yumuşak bir ninni. Uzun notalarda sesin sonuna kadar aynı güzellikte kalmasına dikkat et.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 60,
+      "rows": [
+        "G4:2 A4:2 | B4:4 | A4:2 B4 A4 | G4:4 |",
+        "B4 A4 G4 A4 | B4:2 B4:2 | A4 A4 B4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g1-p3",
+      "kind": "parca",
+      "title": "Sabah Yürüyüşü",
+      "text": "Neşeli adımlarla bir sabah yürüyüşü. Dörtlükleri bir saatin tik-takı gibi eşit tut.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "G4 G4 A4 A4 | B4:2 A4:2 | G4 A4 B4 B4 | A4:4 |",
+        "B4 B4 A4 A4 | G4:2 A4:2 | B4 A4 G4 A4 | G4:4 ||"
+      ]
+    }
+  ]
+}
