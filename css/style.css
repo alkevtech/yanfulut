@@ -895,14 +895,11 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
 .breath-mark { font: 700 26px Georgia, serif; fill: var(--ink); }
 /* Nota adları kapalıyken porte altındaki adlar gizlenir (yer korunur, satırlar oynamaz) */
 .no-note-names .dur-name { visibility: hidden; }
-/* Her Gün Bir Parça Öğrenelim */
-.hg-login { max-width: 640px; margin: 16px 0; }
-.hg-login .hg-gbtn { margin: 12px 0; min-height: 44px; }
+/* Gün Gün Flüt */
 .hg-today { display: grid; gap: 4px; margin: 14px 0; text-decoration: none; color: inherit; border-color: var(--coral); }
 .hg-today b { font-size: 1.2rem; }
 .hg-days { margin-top: 10px; }
 .hg-test { border-style: dashed; }
-.hg-page-no { font-size: 0.95rem; font-weight: 500; }
 .hg-goals ol { margin: 6px 0 0; padding-left: 1.4em; }
 .hg-section { margin: 10px 0; }
 .hg-section p { margin: 8px 0 0; }
@@ -910,3 +907,7 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
 .hg-info p { margin: 6px 0 0; }
 .hg-page .ws-new-notes { margin: 12px 0; }
 .hg-info .node-kind { display: block; }
+.hg-q summary { cursor: pointer; list-style: none; display: grid; gap: 4px; }
+.hg-q summary::-webkit-details-marker { display: none; }
+.hg-q[open] summary .small { display: none; }
+.hg-answer { margin: 10px 0 0; font-weight: 600; color: var(--ink); }

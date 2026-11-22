@@ -168,18 +168,17 @@ Kullanıcının gönderdiği notalardan parçaların sağ el melodisi, ritmiyle 
 Yap biçiminde (`A4:3 G4:.5 F4:.5 |`); suslar ve bağla uzayan notalar sorulmaz, notalar sırayla çalınır (süre puanlanmaz).
 İlk parça: Tan Dun, *The Eternal Vow* (Crouching Tiger, Hidden Dragon); dört bölüm ve baştan sona.
 
-## Her Gün Bir Parça Öğrenelim (flüt, `#/hergun`)
+## Gün Gün Flüt (flüt, `#/gungun`)
 
-Kitabın (A New Tune A Day for Flute, 1. Kitap; telifli) 20 dersi ve 4 testi gün gün: hedefler, yeni notaların parmakları,
-çalışmalar ve parçalar Egzersiz Yap motoruyla çalınır. **Kitap verisi depoda ve herkese açık sitede durmaz:**
-- `private/` (`.gitignore`'da) yerel çalışma klasörü: sayfa resimleri, `ders-XX.json`, `test-K.json`, `book.json`.
-  `node tools/check-hergun.mjs private/hergun/*.json` aktarımı denetler, `node tools/build-hergun.mjs` `book.json`'u üretir.
-- `worker/hergun-worker.js` (Cloudflare Worker): `book.json` ona `book.txt` modülü olarak yüklenir. `POST /book` isteğindeki
-  Google kimlik jetonunu doğrular (imza, istemci kimliği, süre, doğrulanmış e-posta) ve yalnızca `ALLOWED_DOMAINS`
-  (alkev.k12.tr, stu.alkev.k12.tr) hesaplarına kitabı verir. Ortam: `GOOGLE_CLIENT_ID`, `ALLOWED_DOMAINS`, `ALLOWED_ORIGINS`.
-- `js/hergun-config.js`: Google OAuth istemci kimliği ve Worker adresi (gizli değil). İkisi dolmadan menüde görünmez.
-- `js/hergun.js`: Google ile giriş (Google Identity Services), veriyi yalnızca tarayıcı oturumunda (sessionStorage) tutar.
-  Yerel deneme: localhost'ta `localStorage['hergun.dev'] = '/private/hergun/book.json'`.
+Bu uygulama için yazılmış **özgün**, gün gün ilerleyen başlangıç kitabı: 20 gün ve her beş günde bir tekrar günü.
+Her gün: hedefler, kısa konu anlatımı, yeni notaların parmak resimleri, ısınma, alıştırmalar ve parçalar (Egzersiz Yap
+motoruyla çalınır, yıldızlar `ws-gg-<id>`). Tekrar günlerinde cevabı açılan sorular ve karışık tekrar alıştırmaları var.
+Parçalar kamu malı ezgilerin (geleneksel, 1900 öncesi besteciler) basit düzenlemeleri ve özgün bestelerdir.
+- `data/gungun/plan.json`: günlerin sırası, yeni notaları ve konusu.
+- `data/gungun/gun-NN.json`, `tekrar-K.json`: günler (biçim: `rows` Egzersiz Yap nota yazımı; `kind`: calisma, parca, info, test).
+- `node tools/check-gungun.mjs [gün…]`: ölçü süreleri, bağlar, o güne kadar öğretilmemiş nota, parçanın kaynağı, test cevabı.
+- `node tools/build-gungun.mjs`: günleri `data/gungun/kitap.json`'da toplar (uygulama bunu yükler). Gün dosyasını
+  değiştirince yeniden çalıştır.
 
 ## Güncellemeler ve önbellek (`sw.js`)
 
