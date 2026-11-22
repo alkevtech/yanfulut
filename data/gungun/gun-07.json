@@ -1,0 +1,129 @@
+{
+  "day": 7,
+  "title": "Diyezle Tanış: Sol Majör",
+  "goals": [
+    "Diyez işaretini tanımak ve okumak",
+    "Pes Fa diyez ve ince Fa diyezi çalmak",
+    "Sol majör donanımını anlamak",
+    "Fa ile Fa diyezi kulakla ayırt etmek"
+  ],
+  "newNotes": ["F#4", "F#5"],
+  "sections": [
+    {
+      "title": "Diyez işareti (♯)",
+      "text": "Diyez, notayı yarım ses tizleştirir. Notanın hemen önüne yazılır ve aynı ölçünün sonuna kadar geçerlidir; ölçü çizgisini geçince etkisi biter. Fa diyez (Fa♯), Fa ile Sol arasındaki sestir."
+    },
+    {
+      "title": "Sol majör ve donanımı",
+      "text": "Sol majör dizisi Sol'den başlar ve kulağa doğru gelmesi için Fa yerine Fa♯ ister. Her Fa'nın önüne diyez yazmak yerine, porteye anahtarın hemen yanına bir kez diyez konur; buna donanım denir. Donanımda Fa çizgisinde diyez varsa parçadaki bütün Fa'lar, pes ya da ince, Fa♯ çalınır."
+    },
+    {
+      "title": "Yeni notalar: Fa diyez",
+      "text": "Pes Fa diyez için sol elin bütün parmakları kapalı (başparmak, işaret, orta, yüzük). Sağ elde işaret ve orta parmak açık kalır, yalnızca yüzük parmağı kapanır; serçe parmak Mi♭ anahtarında. İnce Fa diyez aynı parmaklarla, daha hızlı ve dar bir havayla çalınır. Fa'dan Fa♯'ye geçerken sağ işaret parmağı kalkar, yüzük parmağı iner: ikisi aynı anda hareket etmeli."
+    }
+  ],
+  "items": [
+    {
+      "id": "g7-i1",
+      "kind": "info",
+      "title": "Isınma: Parmak Takası",
+      "text": "Flütü çalmadan tut. Fa parmaklarını yap, sonra sağ işaret parmağını kaldırırken aynı anda sağ yüzük parmağını indir: Fa♯ oldu. Bunu yavaşça on kez gidip gel. Sonra Sol üzerinde dört vuruşluk uzun bir ses çal, ardından Fa♯ üzerinde; iki sesi de eşit ve dolgun tutmaya çalış."
+    },
+    {
+      "id": "g7-c1",
+      "kind": "calisma",
+      "title": "Fa Diyez Uzun Sesler",
+      "text": "Sol ile Fa♯ arasında yavaşça gidip gel. Donanımdaki diyez yüzünden bütün Fa'lar Fa♯; parmak takasını temiz yap.",
+      "time": 4,
+      "bpm": 66,
+      "key": "G",
+      "rows": [
+        "G4:2 F#4:2 | G4:4 | A4:2 F#4:2 | G4:4 |",
+        "F#4:2 E4:2 | F#4:4 | D4:2 F#4:2 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g7-c2",
+      "kind": "calisma",
+      "title": "Fa mı, Fa Diyez mi?",
+      "text": "Burada donanım yok: diyez yalnızca önüne yazıldığı ölçüde geçerli. Fa ve Fa♯ ölçülerini ayrı ayrı dinle; Fa♯ daha parlak ve Sol'e daha yakın duyulur.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "F4 G4 A4 G4 | F4:4 | F#4 G4 A4 G4 | F#4:4 |",
+        "E4 F4 G4:2 | E4 F#4 G4:2 | D4 F4 E4:2 | D4 F#4 G4:2 ||"
+      ]
+    },
+    {
+      "id": "g7-c3",
+      "kind": "calisma",
+      "title": "Sol Majör Basamakları",
+      "text": "Pes Re'den ince Re'ye ve ince Fa diyeze kadar Sol majör notaları. Her Fa'yı Fa♯ çalmayı unutma.",
+      "time": 4,
+      "bpm": 72,
+      "key": "G",
+      "rows": [
+        "D4 E4 F#4 G4 | A4 B4 C5 D5 | E5 F#5 E5 D5 | C5:2 B4:2 |",
+        "A4 G4 F#4 E4 | D4 E4 F#4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g7-c4",
+      "kind": "calisma",
+      "title": "İnce Fa Diyez",
+      "text": "Yaylı oktavlarla ince Fa diyeze çık, sonra çevresindeki notalarla dolaş. İnce notalarda havayı hızlı ama yumuşak ver.",
+      "time": 4,
+      "bpm": 66,
+      "key": "G",
+      "rows": [
+        "(F#4:2 F#5:2) | (E4:2 E5:2) | F#5 E5 D5 E5 | F#5:4 |",
+        "D5 E5 F#5 D5 | E5 C5 A4:2 | B4 A4 F#4 A4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g7-c5",
+      "kind": "calisma",
+      "title": "Sol Majörde Vals Adımı",
+      "text": "3/4 ölçüde Sol majör. Birinci vuruşu biraz belirgin çal, ikinci satırdaki yaylarda havayı kesme.",
+      "time": 3,
+      "bpm": 80,
+      "key": "G",
+      "rows": [
+        "G4 B4 D5 | F#5:2 E5 | D5 C5 A4 | B4:3 |",
+        "(A4 B4 C5) | (D5:2 B4) | A4 F#4 A4 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g7-p1",
+      "kind": "parca",
+      "title": "Dağ Yolu",
+      "text": "Sol majörde neşeli bir yürüyüş: yokuş yukarı ince Fa diyeze çıkıp yine Sol'e iniyoruz. Tempoyu sabit tut, yaylı ölçülerde dil vurma.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 80,
+      "key": "G",
+      "rows": [
+        "G4 A4 B4 G4 | D5:2 B4:2 | C5 B4 A4 G4 | F#4:2 D4:2 |",
+        "G4 A4 B4 C5 | D5 E5 F#5:2 | E5 D5 C5 A4 | D5:4 |",
+        "(E5 D5 C5 B4) | (C5 B4 A4 G4) | F#4 A4 D5 C5 | B4:2 A4:2 |",
+        "G4 A4 B4 G4 | D5:2 B4:2 | A4 F#4 E4 F#4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g7-p2",
+      "kind": "parca",
+      "title": "Akşam Vakti",
+      "text": "Ağır ve sakin bir 3/4 ezgisi. Uzun notaları sonuna kadar dolu tut; son ölçüdeki bağ ve koronayla sesi yavaşça söndür.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "bpm": 72,
+      "key": "G",
+      "rows": [
+        "D5:2 B4 | G4:2 B4 | A4 B4 C5 | B4:3 |",
+        "C5:2 A4 | F#4:2 A4 | G4 A4 F#4 | D4:3 |",
+        "E4 F#4 G4 | A4:2 B4 | (C5 B4 A4) | (B4:2 G4) |",
+        "A4:2 F#4 | D4 E4 F#4 | G4:3~ | G4:3! ||"
+      ]
+    }
+  ]
+}

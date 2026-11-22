@@ -1,0 +1,136 @@
+{
+  "day": 8,
+  "title": "İkişer İkişer: Sekizlik Notalar",
+  "goals": [
+    "Sekizlik notayı tanımak: iki sekizlik bir dörtlük eder",
+    "\"1-ve-2-ve\" diye sayarak sekizlik çalmak",
+    "İnce Sol ve ince La'yı çalmak",
+    "Petzold'un Sol majör Menuet'ini çalmak"
+  ],
+  "newNotes": ["G5", "A5"],
+  "sections": [
+    {
+      "title": "Sekizlik nota",
+      "text": "Sekizlik nota, içi dolu bir baş, bir sap ve sapın ucunda küçük bir bayraktan oluşur. Süresi dörtlüğün yarısıdır: iki sekizlik bir dörtlük, yani bir vuruş eder. Yan yana gelen sekizliklerin bayrakları çoğu zaman tek bir kalın çizgiyle birleştirilir; böylece hangi notaların aynı vuruşa ait olduğunu kolayca görürsün."
+    },
+    {
+      "title": "1-ve-2-ve diye saymak",
+      "text": "Sekizlik çalarken her vuruşu ikiye böl: \"1-ve-2-ve-3-ve-4-ve\". Sayıların üstüne ilk sekizlik, \"ve\"lerin üstüne ikinci sekizlik gelir. Ayağın yalnızca sayılarda yere vursun, \"ve\"de havaya kalksın. Sekizlikler hızlı görünse de acele etme; eşit ve düzenli olmaları hızdan daha önemlidir."
+    },
+    {
+      "title": "Yeni notalar: ince Sol ve ince La",
+      "text": "İnce Sol, Sol ile aynı parmaklarla çalınır: sol başparmak, sol işaret, orta ve yüzük parmakları kapalı, sağ elde yalnızca serçe parmak Mi♭ anahtarında. İnce La da La gibidir: sol başparmak, sol işaret ve orta parmak kapalı, sağ serçe parmak Mi♭ anahtarında. Bu notalar için dudak açıklığını iyice küçült ve havayı hızlı ama sıkmadan ver."
+    }
+  ],
+  "items": [
+    {
+      "id": "g8-i1",
+      "kind": "info",
+      "title": "Ritim Isınması: Alkışla",
+      "text": "Flütü bırak. Ayağınla dört vuruş say, ellerinle her vuruşa bir kez alkışla: dörtlükler. Sonra her vuruşa iki kez alkışla ve yüksek sesle \"1-ve-2-ve-3-ve-4-ve\" de: sekizlikler. Dört ölçü dörtlük, dört ölçü sekizlik alkışlayarak iki ritim arasında gidip gel."
+    },
+    {
+      "id": "g8-i2",
+      "kind": "info",
+      "title": "Isınma: Sol'den İnce Sol'e",
+      "text": "Sol parmaklarıyla uzun ve rahat bir ses çal. Parmakları değiştirmeden dudak açıklığını küçült, havayı hızlandır: ince Sol duyulsun. Aynısını La ile dene. Ses ince notada ince ve titrekse havayı biraz daha hızlı ver, ama omuzlarını kaldırma."
+    },
+    {
+      "id": "g8-c1",
+      "kind": "calisma",
+      "title": "Bir-ve, İki-ve",
+      "text": "Dörtlüklerle sekizlikleri karıştıran kısa bir sayma alıştırması. Her sekizliğe ayrı dil vur ve içinden \"1-ve-2-ve\" diye say.",
+      "time": 4,
+      "bpm": 66,
+      "key": "G",
+      "rows": [
+        "G4 G4 G4:.5 G4:.5 G4 | A4 A4 A4:.5 A4:.5 A4 | B4:.5 B4:.5 B4:.5 B4:.5 B4:2 | A4:.5 A4:.5 G4:.5 A4:.5 B4:2 |",
+        "G4:.5 A4:.5 B4:.5 C5:.5 D5:2 | C5:.5 B4:.5 A4:.5 G4:.5 A4:2 | B4 A4:.5 A4:.5 G4 F#4 | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g8-c2",
+      "kind": "calisma",
+      "title": "İnce Sol ve İnce La",
+      "text": "Önce oktav sıçramalarıyla yeni notaları bul, sonra onları ince Fa diyez ve ince Mi ile birleştir. Ses kırılırsa yavaşla ve havayı hızlandır.",
+      "time": 4,
+      "bpm": 66,
+      "key": "G",
+      "rows": [
+        "G4:2 G5:2 | A4:2 A5:2 | G5 A5 G5 F#5 | G5:4 |",
+        "A5 G5 F#5 E5 | D5:2 G5:2 | F#5 E5 F#5 A5 | G5:4 ||"
+      ]
+    },
+    {
+      "id": "g8-c3",
+      "kind": "calisma",
+      "title": "Sekizlik Merdiven",
+      "text": "Sol majör dizisini sekizliklerle çık ve in. Birinci satırda her notaya dil vur, ikinci satırda dört notalık yaylarla legato çal.",
+      "time": 4,
+      "bpm": 63,
+      "key": "G",
+      "rows": [
+        "G4:.5 A4:.5 B4:.5 C5:.5 D5:.5 E5:.5 F#5:.5 G5:.5 | A5:2 G5:2 | G5:.5 F#5:.5 E5:.5 D5:.5 C5:.5 B4:.5 A4:.5 G4:.5 | A4:2 G4:2 |",
+        "(G4:.5 A4:.5 B4:.5 C5:.5) (D5:.5 E5:.5 F#5:.5 G5:.5) | A5:4 | (A5:.5 G5:.5 F#5:.5 E5:.5) (D5:.5 C5:.5 B4:.5 A4:.5) | G4:4 ||"
+      ]
+    },
+    {
+      "id": "g8-c4",
+      "kind": "calisma",
+      "title": "Üçlü Ölçüde Sekizlikler",
+      "text": "3/4 ölçüde dörtlük ve sekizlikler. \"1-ve-2-ve-3-ve\" diye say; her ölçünün ilk vuruşu hafifçe belirgin olsun.",
+      "time": 3,
+      "bpm": 72,
+      "key": "G",
+      "rows": [
+        "B4 A4:.5 B4:.5 C5 | D5:2 B4 | C5 B4:.5 A4:.5 G4 | A4:3 |",
+        "G4:.5 A4:.5 B4:.5 C5:.5 D5 | E5:.5 D5:.5 C5:.5 B4:.5 A4 | B4 A4:.5 F#4:.5 A4 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g8-c5",
+      "kind": "calisma",
+      "title": "İnce La'ya Uzan",
+      "text": "Sekizliklerle ince bölgeye tırman ve ince La'da dinlen. Yukarı çıktıkça havayı hızlandır, sesi sertleştirme.",
+      "time": 4,
+      "bpm": 66,
+      "key": "G",
+      "rows": [
+        "D5:.5 E5:.5 F#5:.5 G5:.5 A5:2 | G5:.5 F#5:.5 E5:.5 F#5:.5 G5:2 | A5 G5 F#5 E5 | D5:4 |",
+        "B4:.5 C5:.5 D5:.5 E5:.5 F#5 A5 | G5:.5 F#5:.5 E5:.5 D5:.5 E5 F#5 | G5:4 ||"
+      ]
+    },
+    {
+      "id": "g8-p1",
+      "kind": "parca",
+      "title": "Menuet Sol Majör",
+      "text": "Barok dönemden zarif bir saray dansı; uzun yıllar J. S. Bach'a atfedildi, bugün Christian Petzold'un olduğu biliniyor. Her ölçünün ilk vuruşunu hafif bir dans adımı gibi belirt, sekizlikleri eşit ve akıcı çal.",
+      "credit": "C. Petzold",
+      "time": 3,
+      "bpm": 88,
+      "key": "G",
+      "rows": [
+        "D5 G4:.5 A4:.5 B4:.5 C5:.5 | D5 G4 G4 | E5 C5:.5 D5:.5 E5:.5 F#5:.5 | G5 G4 G4 |",
+        "C5 D5:.5 C5:.5 B4:.5 A4:.5 | B4 C5:.5 B4:.5 A4:.5 G4:.5 | F#4 G4:.5 A4:.5 B4:.5 G4:.5 | A4:3 |",
+        "D5 G4:.5 A4:.5 B4:.5 C5:.5 | D5 G4 G4 | E5 C5:.5 D5:.5 E5:.5 F#5:.5 | G5 G4 G4 |",
+        "C5 D5:.5 C5:.5 B4:.5 A4:.5 | B4 C5:.5 B4:.5 A4:.5 G4:.5 | A4 B4:.5 A4:.5 G4:.5 F#4:.5 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g8-p2",
+      "kind": "parca",
+      "title": "Pazar Yürüyüşü",
+      "text": "Sekizliklerle zıplayan, ince La'ya kadar çıkan neşeli bir yürüyüş. Dörtlükleri kısa ve hafif, sekizlikleri eşit çal; ölçü başlarında ayağınla vuruşu tut.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "bpm": 80,
+      "key": "G",
+      "rows": [
+        "G4 B4:.5 A4:.5 G4 D5 | C5:.5 B4:.5 A4:.5 B4:.5 G4:2 | E5 D5:.5 C5:.5 B4 A4 | B4:.5 A4:.5 G4:.5 A4:.5 D4:2 |",
+        "G4 B4:.5 A4:.5 G4 D5 | G5:.5 F#5:.5 E5:.5 F#5:.5 G5:2 | A5 G5:.5 F#5:.5 E5 C5 | D5:4 |",
+        "B4:.5 C5:.5 D5:.5 B4:.5 C5:.5 D5:.5 E5:.5 C5:.5 | D5:.5 E5:.5 F#5:.5 D5:.5 G5:2 | A5:.5 G5:.5 F#5:.5 E5:.5 D5 C5 | B4:2 A4:2 |",
+        "G4 B4:.5 A4:.5 G4 D5 | E5:.5 D5:.5 C5:.5 B4:.5 A4 B4 | A4:.5 G4:.5 F#4:.5 A4:.5 D5 F#4 | G4:4 ||"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "day": 16,
+  "title": "Yarım Adım Merdiveni",
+  "goals": [
+    "Pes Do diyez (Do♯) notasını öğrenmek",
+    "Kromatik diziyi yarım ses yarım ses çıkıp inmek",
+    "Eş sesli notaları tanımak: La♯ = Si♭ gibi",
+    "Für Elise'nin ünlü açılışını çalmak"
+  ],
+  "newNotes": ["C#4"],
+  "sections": [
+    {
+      "title": "Yarım ses ve kromatik dizi",
+      "text": "İki nota arasındaki en küçük adıma yarım ses denir; piyanoda yan yana iki tuş (beyaz ya da siyah) arasında hep yarım ses vardır. Kromatik dizi, hiçbir notayı atlamadan bütün yarım sesleri sırayla çalar. Artık pes Do'dan tiz Re'ye kadar bütün yarım sesleri biliyorsun, yani flütünle tam bir kromatik dizi çalabilirsin! Çıkarken notalar genellikle diyezle (Do♯, Re♯), inerken bemolle (Si♭, La♭) yazılır."
+    },
+    {
+      "title": "Eş sesli notalar",
+      "text": "Bazı notaların iki adı vardır: La♯ ile Si♭ aynı sestir, aynı parmakla çalınır. Do♯ = Re♭, Re♯ = Mi♭, Fa♯ = Sol♭, Sol♯ = La♭ de böyledir. Bunlara eş sesli notalar denir. Hangi adın yazılacağına ton ve ezginin yönü karar verir; sen kâğıtta hangisini görürsen gör, parmağın ve sesin aynı kalır."
+    },
+    {
+      "title": "Yeni nota: pes Do diyez",
+      "text": "Pes Do diyez, pes Do'nun yarım ses üstündedir. Pes Re'deki gibi sol elin başparmağı ve üç parmağı, sağ elin üç parmağı kapalıdır. Sağ serçe parmağın ayak parçasındaki Do diyez tuşuna basar: pes Do'da bastığın en alttaki tuşun hemen üstündeki tuş. Pes Do'daki gibi yavaş, sıcak ve bol hava ver; dudaklarını sıkma."
+    }
+  ],
+  "items": [
+    {
+      "id": "g16-i1",
+      "kind": "info",
+      "title": "Isınma: Yarım Ses Uzun Sesleri",
+      "text": "Sol notasında dört vuruş uzun ve düz bir ses çal, sonra yarım ses inerek Fa♯'ta, sonra Fa'da, Mi'de ve Mi♭'te aynısını yap. Her seste sesin rengi aynı kalsın; sadece parmakların değişsin. Sonunda pes Re, pes Do diyez ve pes Do'da üçer uzun ses çal: karnından gelen sakin, geniş bir hava kullan."
+    },
+    {
+      "id": "g16-c1",
+      "kind": "calisma",
+      "title": "Pes Do Diyez ile Tanışma",
+      "text": "Yeni notayı komşuları pes Do ve pes Re arasında çalıştırır. Sağ serçe parmağını tuşlar arasında yavaşça kaydır, ses kopmasın.",
+      "time": 4,
+      "bpm": 66,
+      "rows": [
+        "C4:2 C#4:2 | D4:2 C#4:2 | C4 C#4 D4 C#4 | C4:4",
+        "D4 C#4 D4 E4 | F4 E4 D4 C#4 | D4:2 C#4:2 | D4:4 ||"
+      ]
+    },
+    {
+      "id": "g16-c2",
+      "kind": "calisma",
+      "title": "Kromatik Merdiven",
+      "text": "Pes Do'dan ince Do'ya kadar bütün yarım sesler: çıkarken diyezli, inerken bemollü yazıldı. Her notayı yumuşak bir 'tu' ile vur ve eşit uzunlukta tut.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "C4 C#4 D4 D#4 | E4 F4 F#4 G4 | G#4 A4 A#4 B4 | C5:4",
+        "C5 B4 Bb4 A4 | Ab4 G4 Gb4 F4 | E4 Eb4 D4 Db4 | C4:4 ||"
+      ]
+    },
+    {
+      "id": "g16-c3",
+      "kind": "calisma",
+      "title": "Eş Sesli İkizler",
+      "text": "Her ölçüde aynı sesi iki farklı adla göreceksin. Parmağını hiç değiştirme; ikinci notayı yalnızca dilinle yeniden vur.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "A#4:2 Bb4:2 | C#5:2 Db5:2 | D#5:2 Eb5:2 | F#5:2 Gb5:2",
+        "G#4:2 Ab4:2 | F#4:2 Gb4:2 | D#4:2 Eb4:2 | C#4:2 Db4:2 ||"
+      ]
+    },
+    {
+      "id": "g16-c4",
+      "kind": "calisma",
+      "title": "İnce Bölgede Kromatik",
+      "text": "Sol'den ince Sol'e kromatik çıkış ve iniş, dörder sekizlik legato gruplarla. Parmakların aynı anda kalkıp insin; ses merdivende tökezlemesin.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "(G4:.5 G#4:.5 A4:.5 A#4:.5) (B4:.5 C5:.5 C#5:.5 D5:.5) | (D#5:.5 E5:.5 F5:.5 F#5:.5) G5:2",
+        "(G5:.5 F#5:.5 F5:.5 E5:.5) (Eb5:.5 D5:.5 Db5:.5 C5:.5) | (B4:.5 Bb4:.5 A4:.5 Ab4:.5) G4:2 ||"
+      ]
+    },
+    {
+      "id": "g16-c5",
+      "kind": "calisma",
+      "title": "Yarım Ses Komşuları",
+      "text": "Her notanın bir yarım ses altındaki komşusuyla salınması; Für Elise'ye hazırlık. Sekizlikleri hafif ve eşit çal, uzun notada dinlen.",
+      "time": 3,
+      "key": "Am",
+      "bpm": 72,
+      "rows": [
+        "E5:.5 D#5:.5 E5:.5 D#5:.5 E5 | B4:.5 A#4:.5 B4:2 | C5:.5 B4:.5 C5:.5 B4:.5 C5 | A4:3",
+        "A4:.5 G#4:.5 A4:.5 G#4:.5 A4 | E4:.5 D#4:.5 E4:2 | F4:.5 E4:.5 D#4:.5 E4:.5 G#4 | A4:3 ||"
+      ]
+    },
+    {
+      "id": "g16-p1",
+      "kind": "parca",
+      "title": "Für Elise (Açılış)",
+      "text": "Dünyanın en tanınmış piyano ezgilerinden biri, flüt için sekizliklerle yazıldı. Mi ile Re♯ arasındaki salınım kromatik bir komşu: çok hafif ve sessizce başla.",
+      "credit": "L. van Beethoven",
+      "time": 3,
+      "key": "Am",
+      "pickup": 1,
+      "bpm": 66,
+      "rows": [
+        "pp E5:.5 D#5:.5 | E5:.5 D#5:.5 E5:.5 B4:.5 D5:.5 C5:.5 | A4 R:.5 C4:.5 E4:.5 A4:.5 | B4 R:.5 E4:.5 G#4:.5 B4:.5",
+        "C5 R:.5 E4:.5 E5:.5 D#5:.5 | E5:.5 D#5:.5 E5:.5 B4:.5 D5:.5 C5:.5 | A4 R:.5 C4:.5 E4:.5 A4:.5",
+        "B4 R:.5 E4:.5 C5:.5 B4:.5 | A4:2! ||"
+      ]
+    },
+    {
+      "id": "g16-p2",
+      "kind": "parca",
+      "title": "Yılan Dansı",
+      "text": "Yarım seslerle kıvrılan, Re minörde gizemli bir dans. Kromatik inişleri yılanın süzülmesi gibi düzgün çal; son satırda sesi giderek azalt.",
+      "credit": "Gün Gün Flüt",
+      "time": 4,
+      "key": "Dm",
+      "bpm": 84,
+      "rows": [
+        "mp D4 Eb4 D4 C#4 | D4:2 A4:2 | Bb4 A4 G#4 A4 | F4:2 D4:2 ,",
+        "mf D5 C#5 C5 B4 | Bb4 A4 G#4 A4 | F4 E4 Eb4 D4 | C#4:2 E4:2 ,",
+        "f (A4:.5 Bb4:.5 B4:.5 C5:.5) C#5 D5 | (D5:.5 C#5:.5 C5:.5 B4:.5) Bb4 A4 | dim. G4 F4 E4 C#4 | p D4:4! ||"
+      ]
+    }
+  ]
+}

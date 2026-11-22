@@ -1,0 +1,131 @@
+{
+  "day": 17,
+  "title": "Vuruşun Arkasından Gelen Ritim",
+  "goals": [
+    "Senkopu tanımak ve saymak: ta-taa-ta",
+    "Vuruşun ya da ölçü çizgisinin üstünden geçen bağları çalmak",
+    "Swing hissini 'uzun-kısa' çiftleriyle yakalamak",
+    "Bir blues ve bir ragtime parçası çalmak"
+  ],
+  "newNotes": [],
+  "sections": [
+    {
+      "title": "Senkop nedir?",
+      "text": "Müzikte vuruşlar genellikle güçlü yerlerde (1, 2, 3, 4) duyulur. Senkopta uzun ve vurgulu nota, vuruşun tam üstünde değil, aradaki 've'de başlar. En sık görülen senkop sekizlik-dörtlük-sekizlik dizisidir: 'ta-taa-ta'. Ortadaki dörtlük bir sonraki vuruşun üstüne taşar; o vuruşta yeni nota çalmazsın, sesi sürdürürsün."
+    },
+    {
+      "title": "Senkopu saymak",
+      "text": "Sekizlikleri '1-ve-2-ve' diye sayıyorsun; senkopta ayağın vuruşta kalır ama ses 've'de başlar. Sesi ayağının vuruşuyla kesme, bir sonraki 've'ye kadar sür. Bağ da senkop yapar: 've'deki bir nota bir sonraki vuruşa ya da ölçü çizgisinin ötesine bağlanınca vurgu öne kayar. Önce el çırparak, sonra flütle dene."
+    },
+    {
+      "title": "Swing hissi",
+      "text": "Caz ve blues çalanlar sekizlikleri eşit değil, 'uzun-kısa' çalar; buna swing denir. Uzun nota kısanın iki katı kadar sürer, tıpkı 'dum-da, dum-da' diye yürüyen bir adım gibi. Bu kitapta swing parçalarını 6/8 ölçüyle yazıyoruz: her büyük vuruşta bir dörtlük (uzun) ve bir sekizlik (kısa) var. Böylece uygulama da senin swing'ini doğru dinleyebilir."
+    }
+  ],
+  "items": [
+    {
+      "id": "g17-i1",
+      "kind": "info",
+      "title": "Isınma: Ayak ve El",
+      "text": "Ayakta dur ve ayağınla yavaş, eşit vuruşlar say: 1, 2, 3, 4. Ayağın devam ederken ellerinle 'ta-taa-ta' çırp: ilk çırpış vuruşta, ikinci çırpış 've'de, üçüncüsü bir sonraki 've'de. Sonra aynı ritmi flütsüz olarak 'tu-tuu-tu' diye dilinle söyle ve rahat bir uzun Sol sesiyle bitir."
+    },
+    {
+      "id": "g17-c1",
+      "kind": "calisma",
+      "title": "Ta-taa-ta",
+      "text": "Sekizlik-dörtlük-sekizlik senkopu. Ortadaki dörtlüğü ikinci vuruşun üstüne taşırken sesi kesme; ayağın vuruşta, sesin 've'de olsun.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "G4:.5 A4 G4:.5 A4:2 | G4:.5 A4 G4:.5 B4:2 | C5:.5 B4 A4:.5 G4 A4 | G4:4",
+        "E4:.5 G4 E4:.5 D4 E4 | F4:.5 A4 F4:.5 E4 F4 | G4:.5 B4 G4:.5 C5:2 | C5:4 ||"
+      ]
+    },
+    {
+      "id": "g17-c2",
+      "kind": "calisma",
+      "title": "Vuruşun Üstünden Bağ",
+      "text": "'Ve'de başlayan sekizlik bir sonraki vuruşa bağlanıyor. Bağlı ikinci notayı dille vurma; vurgunun öne kaydığını hisset.",
+      "time": 4,
+      "bpm": 72,
+      "rows": [
+        "C5 D5:.5 E5:.5~ E5:.5 D5:.5 C5 | A4 B4:.5 C5:.5~ C5 R | G4 A4:.5 B4:.5~ B4:.5 A4:.5 G4 | E4:4",
+        "G4:.5 A4:.5~ A4:.5 B4:.5~ B4:.5 C5:.5~ C5 | D5:.5 C5:.5~ C5:.5 A4:.5~ A4:2 ||"
+      ]
+    },
+    {
+      "id": "g17-c3",
+      "kind": "calisma",
+      "title": "Ölçü Çizgisinin Ötesine",
+      "text": "Son sekizlik ölçü çizgisini aşıp bir sonraki ölçünün birinci vuruşuna bağlanıyor: buna öne atılan senkop denir. Birinci vuruşta ayağın vursun ama ses yeniden başlamasın.",
+      "time": 4,
+      "key": "F",
+      "bpm": 76,
+      "rows": [
+        "F4 G4 A4 C5:.5 D5:.5~ | D5:2 C5 A4 | G4 A4 Bb4 D5:.5 C5:.5~ | C5:4",
+        "A4 Bb4 C5 F5:.5 E5:.5~ | E5:2 D5 C5 | Bb4 A4 G4 E4:.5 F4:.5~ | F4:4 ||"
+      ]
+    },
+    {
+      "id": "g17-c4",
+      "kind": "calisma",
+      "title": "Swing Çiftleri",
+      "text": "6/8 ölçüde dörtlük + sekizlik: 'dum-da, dum-da'. Uzun notayı dolu tut, kısa notayı hafifçe bırak; iki büyük vuruşu ayağınla say.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "key": "G",
+      "bpm": 80,
+      "rows": [
+        "G4 A4:.5 B4 A4:.5 | G4 B4:.5 D5:1.5 | C5 B4:.5 A4 G4:.5 | A4:3",
+        "B4 C5:.5 D5 B4:.5 | A4 G4:.5 E4:1.5 | D4 E4:.5 G4 A4:.5 | G4:3 ||"
+      ]
+    },
+    {
+      "id": "g17-c5",
+      "kind": "calisma",
+      "title": "Swing'de Senkop",
+      "text": "Swing çiftlerinin arasına 'kısa-uzun' senkoplar ve hüzünlü bir Si♭ (blues notası) karışıyor. Kısa notadan uzun notaya geçerken vurguyu uzun notaya ver.",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "bpm": 80,
+      "rows": [
+        "C5 A4:.5 G4 E4:.5 | G4:.5 A4 C5:1.5 | C5 A4:.5 G4 E4:.5 | D4:.5 E4 C4:1.5",
+        "E4 G4:.5 A4 Bb4:.5 | A4 G4:.5 E4:1.5 | G4:.5 A4 G4:.5 E4 | C4:3 ||"
+      ]
+    },
+    {
+      "id": "g17-p1",
+      "kind": "parca",
+      "title": "Mahalle Kedisinin Blues'u",
+      "text": "On iki ölçülük bir blues: Do, Fa ve Sol akorlarının üstünde, Mi♭, Fa♯ ve Si♭ gibi 'blues notalarıyla' gezinen bir kedi. Swing çiftlerini tembel ve rahat çal.",
+      "credit": "Gün Gün Flüt",
+      "time": 3,
+      "sig": "6/8",
+      "beatUnit": 0.5,
+      "bpm": 76,
+      "rows": [
+        "mf C5 Eb5:.5 C5 G4:.5 | Bb4 G4:.5 C5:1.5 | C5 Eb5:.5 F5 F#5:.5 | G5:1.5 Eb5 C5:.5 ,",
+        "F5 Eb5:.5 C5 Bb4:.5 | C5 Bb4:.5 F4:1.5 | C5 Eb5:.5 C5 G4:.5 | Bb4 G4:.5 C5:1.5 ,",
+        "f G5 F5:.5 D5 B4:.5 | F5 Eb5:.5 C5 A4:.5 | dim. G4:.5 Bb4 C5 Eb5:.5 | p C5:3! ||"
+      ]
+    },
+    {
+      "id": "g17-p2",
+      "kind": "parca",
+      "title": "Tramvay Ragtime'ı",
+      "text": "Eski zaman ragtime'ı gibi zıplayan bir 2/4 parça. Ritim düz sekizliklerle ama senkoplarla dolu: 'ta-taa-ta' her ölçüde. Bağlı Si'leri ölçü çizgisinin ötesine sürdür.",
+      "credit": "Gün Gün Flüt",
+      "time": 2,
+      "key": "G",
+      "bpm": 88,
+      "rows": [
+        "mf D5:.5 B4 G4:.5 | A4:.5 B4 G4:.5 | E4:.5 G4 E4:.5 | D4:2",
+        "D4:.5 E4:.5 G4:.5 A4:.5 | B4:.5 D5 B4:.5~ | B4:.5 A4 G4:.5 | A4:2 ,",
+        "f D5:.5 B4 G4:.5 | A4:.5 C5 A4:.5 | F#4:.5 A4 F#4:.5 | E4:2",
+        "D4:.5 F#4:.5 A4:.5 C5:.5 | B4:.5 D5 B4:.5~ | B4:.5 A4 F#4:.5 | G4:2 ||"
+      ]
+    }
+  ]
+}
