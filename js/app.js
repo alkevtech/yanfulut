@@ -7,6 +7,7 @@ import { DotsGame } from './dots.js';
 import { DrillGame } from './drill.js';
 import { SheetGame } from './sheet.js';
 import { showGungun } from './gungun.js';
+import { sinifBagla } from './sinif-kayit.js';
 import { ReadingGame, readingKind } from './reading.js';
 import { progress } from './progress.js';
 import { playNote, PitchListener, micErrorMessage, SILENT_MIC_MESSAGE, tuningOffset, resetTuning, setTuning } from './audio.js';
@@ -746,6 +747,7 @@ export async function boot(id) {
   const inst = (await import(`./instruments/${id}.js`)).default;
   inst.activate();
   setInstrument(inst);
+  sinifBagla(); // okul hesabıyla girildiyse atanan ödevlerin ilerlemesi öğretmene gider
   COURSE = inst.course;
   document.title = inst.appTitle;
   document.querySelector('.logo-name').textContent = inst.appTitle;

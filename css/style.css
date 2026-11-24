@@ -911,3 +911,9 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 24px 16
 .hg-q summary::-webkit-details-marker { display: none; }
 .hg-q[open] summary .small { display: none; }
 .hg-answer { margin: 10px 0 0; font-weight: 600; color: var(--ink); }
+
+/* Okulun sınıf sistemi: ödev kaydı rozeti (js/sinif-kayit.js) */
+.sinif-rozet { position: fixed; left: 12px; bottom: 12px; z-index: 50; max-width: calc(100vw - 24px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 13px/1.2 'Baloo 2', system-ui, sans-serif; background: var(--paper, #fffaf0); color: var(--ink, #171411); text-decoration: none; padding: 7px 12px; border-radius: 999px; box-shadow: 0 0 0 1.5px var(--ink, #171411), 0 8px 18px -12px rgba(60, 40, 10, 0.6); }
+.sinif-rozet span { color: var(--coral, #b8741a); margin-left: 4px; }
+.sinif-rozet span.hata { color: #c4432b; }
+@media print { .sinif-rozet { display: none; } }

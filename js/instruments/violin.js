@@ -16,7 +16,7 @@ export default {
   nextNote: 'D4', // alıştırma bitince bu nota uzun çalınırsa sonrakine geçer
   playWith: 'Kemanla', // "… çal" düğmeleri için
   appTitle: 'Nokta Nokta Keman',
-  liveLabel: 'hakanatas.github.io/yanfulut/keman',
+  liveLabel: 'alkevtech.github.io/yanfulut/keman',
   storageKey: 'keman.progress.v1',
   heroTitle: 'Nokta nokta keman',
   heroText: 'Çizimli video dersleri izle, Nota ile birlikte keman çal. Her doğru nota bir noktayı birleştirir!',
@@ -43,7 +43,7 @@ export default {
   pictureName: 'parmak yeri şemasını',
   worksheets: UNITS,
   worksheetSource: SOURCE,
-  other: { name: 'Yan Flüt', href: '../', live: 'https://hakanatas.github.io/yanfulut/' },
+  other: { name: 'Yan Flüt', href: '../', live: 'https://alkevtech.github.io/yanfulut/' },
   lessons: LESSONS,
   songs: SONGS,
   drills: DRILLS,

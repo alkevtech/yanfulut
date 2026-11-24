@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ödevlerim · Nokta Nokta Müzik</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Okulun ortak sınıf sayfası: Ödevlerim (öğrenci), öğretmen paneli, rapor. Kod ve stil portal deposunda (ortak/). -->
+    <link rel="stylesheet" href="../ortak/css/sinif.css" />
+    <style>
+      /* Ortak sınıf stilinin (ortak/css/sinif.css) beklediği temel: renkler, yazı tipleri, düğmeler (Nokta'nın öbür sitelerindeki gibi) */
+      :root {
+        --paper: #f1eadc; --sheet: #fffaf0; --ink: #171411; --ink-soft: #5a4f45; --ink-faint: #b9ad9c;
+        --amber: #e3a23b; --amber-deep: #b8741a; --amber-wash: #f8ead0; --seal: #c4432b;
+        --brush: 'Caveat Brush', cursive; --mono: 'JetBrains Mono', ui-monospace, monospace;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 16.5px/1.5 Fraunces, Georgia, serif; }
+      .wrap { margin: 0 auto; padding: 0 18px 40px; }
+      a { color: var(--amber-deep); }
+      .topline a { font-family: var(--mono); font-size: 13px; text-decoration: none; }
+      .small { font-size: 13.5px; color: var(--ink-soft); }
+      .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; padding: 6px 14px; border-radius: 8px; border: 1.5px solid var(--ink); background: transparent; color: var(--ink); font: 500 13.5px var(--mono); cursor: pointer; text-decoration: none; }
+      .btn:hover { background: var(--amber-wash); }
+      .btn.primary { background: var(--ink); color: var(--sheet); }
+      .btn.primary:hover { background: #3a332c; }
+      input, select, textarea { font: inherit; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topline"><a class="back" href="./">← 🎵 Müzik uygulamaları</a><a href="/">Portal</a><span class="sp" id="ben"></span></div>
+      <header class="hd">
+        <img src="../ortak/img/nokta.png" alt="" width="96" height="96" />
+        <div>
+          <h1 id="baslik">Sınıfım</h1>
+          <p class="alt" id="altbaslik">Nokta Nokta Müzik · yan flüt, keman ve piyano</p>
+        </div>
+      </header>
+      <main id="ana"></main>
+      <p class="small" id="modnot" style="margin: 28px 0"></p>
+    </div>
+    <script src="../ortak/ayar.js"></script>
+    <script src="js/site-ayar.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="../ortak/js/veri.js"></script>
+    <script src="js/sinif/katalog.js"></script>
+    <script src="../ortak/js/dersler.js"></script>
+    <script src="../ortak/js/sinif.js"></script>
+  </body>
+</html>
