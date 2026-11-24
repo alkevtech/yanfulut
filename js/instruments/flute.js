@@ -30,7 +30,7 @@ export default {
   nextNote: 'A4', // alıştırma bitince bu nota uzun çalınırsa sonrakine geçer
   playWith: 'Flütle', // "… çal" düğmeleri için
   appTitle: 'Nokta Nokta Flüt',
-  liveLabel: 'hakanatas.github.io/yanfulut',
+  liveLabel: 'alkevtech.github.io/yanfulut',
   storageKey: 'yanflut.progress.v1',
   heroTitle: 'Nokta nokta yan flüt',
   heroText: 'Çizimli video dersleri izle, Nota ile birlikte çal. Her doğru nota bir noktayı birleştirir!',
@@ -47,7 +47,7 @@ export default {
   restrikeHint: 'dil vur (tu-tu)', // aynı nota art arda gelince yeniden başlatma
   worksheetIntro: 'Çalışma kağıdındaki egzersizler satır satır.',
   pictureName: 'flüt resmini',
-  other: { name: 'Keman', href: 'keman/', live: 'https://hakanatas.github.io/yanfulut/keman/' },
+  other: { name: 'Keman', href: 'keman/', live: 'https://alkevtech.github.io/yanfulut/keman/' },
   lessons: LESSONS,
   songs: SONGS,
   drills: DRILLS,

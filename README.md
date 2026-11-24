@@ -2,8 +2,8 @@
 
 Yan flüt ve keman öğrenmek isteyenler için **çizimli, etkileşimli video dersler** ve **nota-nokta şarkı oyunları** sunan bir web uygulaması.
 
-- Yan flüt: `index.html` → https://hakanatas.github.io/yanfulut/
-- Keman: `keman/index.html` → https://hakanatas.github.io/yanfulut/keman/
+- Yan flüt: `index.html` → https://alkevtech.github.io/yanfulut/
+- Keman: `keman/index.html` → https://alkevtech.github.io/yanfulut/keman/
 
 İki enstrüman aynı altyapıyı (oynatıcı, çizim motoru, nota algılama, Google seslendirmesi, şarkı oyunu) paylaşır; dersler, şarkılar, çizimler ve parmak yerleri enstrümana özgü paketlerdedir (`js/instruments/`).
 
@@ -179,6 +179,20 @@ Parçalar kamu malı ezgilerin (geleneksel, 1900 öncesi besteciler) basit düze
 - `node tools/check-gungun.mjs [gün…]`: ölçü süreleri, bağlar, o güne kadar öğretilmemiş nota, parçanın kaynağı, test cevabı.
 - `node tools/build-gungun.mjs`: günleri `data/gungun/kitap.json`'da toplar (uygulama bunu yükler). Gün dosyasını
   değiştirince yeniden çalıştır.
+
+## Okulun ortak sistemi (alkevtech.github.io)
+
+Site, okulun dijital eğitim portalına **Müzik** dersi olarak bağlıdır (portal deposu `alkevtech/alkevtech.github.io`, ortak kod `ortak/`).
+- **Giriş:** üç sayfanın (`index.html`, `keman/`, `piyano/`) başındaki `ortak/js/kapi.js` okul Google hesabı ister
+  (`@alkev.k12.tr` öğretmen, `@stu.alkev.k12.tr` öğrenci). `data-oyun=""`: birçok ödevi içeren uygulama; öğrenci her şeyi açar.
+- **Ayar:** `js/site-ayar.js` (`buDers: 'muzik'`, site adı, sağ altta Ödevlerim şeridi). Ders, portalın `ortak/ayar.js` · `dersler` listesinde.
+- **Ödev kataloğu:** `js/sinif/katalog.js` (öğretmen panelinde atanabilen 102 ödev: Gün Gün Flüt günleri, flüt/keman ders yolu ve
+  Egzersiz Yap üniteleri, piyano nota okuma). Uygulamanın verisinden üretilir; içerik değişince `node tools/build-katalog.mjs`.
+- **Ödevlerim ve öğretmen paneli:** `sinif.html` (ortak `sinif.js`). Öğretmenin bu sitede yetkisi için yönetici ona **Müzik** dersinde şube yetkisi verir.
+- **Sonuç kaydı:** `js/sinif-kayit.js` öğrencinin atanan ödevlerdeki ilerlemesini (yıldızlar, bitirilen adımlar) öğretmene yazar
+  (`sonuclar/{şube}/{uid}/{ödev}`, `ilerleme/…`); sol altta 🎒 rozeti görünür. Ödev, bütün adımlarında en az bir yıldız olunca biter.
+- **Yerel test:** portal deposunun `ortak/` klasörü sitenin yanında olmalı (ör. bir klasörde `yanfulut/` ve `ortak/` bağlantıları);
+  localhost'ta test modu açılır (hazır öğretmen ve öğrenci hesapları, veri tarayıcıda).
 
 ## Güncellemeler ve önbellek (`sw.js`)
 

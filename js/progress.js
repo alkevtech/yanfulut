@@ -24,16 +24,26 @@ function save() {
   }
 }
 
+/** İlerleme değişince haber verir (js/sinif-kayit.js öğretmene gönderir) */
+const changed = (key) => dispatchEvent(new CustomEvent('ilerleme', { detail: { key } }));
+
 export const progress = {
   isLessonDone: (id) => !!S().lessons[id],
   completeLesson(id) {
     S().lessons[id] = { done: true, at: Date.now() };
     save();
+    changed(`L:${id}`);
   },
   songStars: (id) => S().songs[id]?.stars || 0,
   completeSong(id, stars) {
     S().songs[id] = { stars: Math.max(stars, S().songs[id]?.stars || 0), at: Date.now() };
     save();
+    changed(id);
+  },
+  /** Okulun sınıf sistemi için: ilerleme anahtarının durumu ('L:<ders>' video ders, başkası yıldız anahtarı) */
+  status(key) {
+    if (key.startsWith('L:')) return S().lessons[key.slice(2)]?.done ? 3 : 0;
+    return S().songs[key]?.stars || 0;
   },
   get settings() {
     return S().settings;
